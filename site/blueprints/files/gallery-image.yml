@@ -1,0 +1,11 @@
+titles: File
+
+accept: 
+  mime: image/*
+  minwidth: 600
+
+fields:
+  alt:
+    type: text
+  caption:
+    type: text

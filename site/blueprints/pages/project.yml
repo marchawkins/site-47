@@ -1,0 +1,61 @@
+title: Project
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          text:
+            label: Project description
+            type: textarea
+            size: large
+            required: true
+          year_start:
+            label: Year Started
+            before: Started
+            type: number
+            min: 1976
+            width: 1/2
+            required: true
+          year_end:
+            label: Year Ended (if any)
+            before: Finished
+            type: number
+            width: 1/2
+          link:
+            type: url
+          tags:
+            type: tags
+          mymap:
+            type: locator
+            label: Location
+            center:
+              lat: 39.9607
+              lon: -75.6055
+  - width: 1/3
+    sections:
+      thumbnail:
+        type: files
+        max: 1
+        multiple: false
+        headline: Thumbnail
+        size: medium
+        info: "{{ file.dimensions }}"
+        help: Make it a good one.
+        layout: cards
+        template: thumbnail-image
+        image:
+          ratio: 1/1
+      gallery:
+        headline: Gallery
+        size: tiny
+        info: "{{ file.dimensions }}"
+        help: Bigger is better.
+        type: files
+        max: 20
+        layout: list
+        template: gallery-image
+        image:
+          ratio: 1/1
+

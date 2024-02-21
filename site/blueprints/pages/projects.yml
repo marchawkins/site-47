@@ -1,0 +1,33 @@
+title: Projects
+
+sections:
+  related:
+    type: fields
+    fields:
+      related:
+        label: Featured Projects
+        type: pages
+        query: site.find('projects').children
+  drafts:
+    headline: Drafts
+    type: pages
+    layout: list
+    template: project
+    text: "{{ page.title }}"
+    status: drafts
+    help: Always upload a nice cover first
+    image:
+      ratio: 4/5
+      cover: true
+  published:
+    headline: Published Projects
+    type: pages
+    layout: cards
+    template: project
+    text: "{{ page.title }}"
+    status: published
+    limit: 12
+    image:
+      ratio: 4/5
+      cover: true
+      

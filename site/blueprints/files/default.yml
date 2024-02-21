@@ -1,0 +1,6 @@
+titles: File
+
+fields:
+  alt:
+    type: text
+    

@@ -1,0 +1,55 @@
+title: Photo
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          text:
+            label: Caption (optional)
+            type: textarea
+            size: small
+            required: false
+          date_taken:
+            label: Date Taken
+            type: date
+            default: today
+            width: 1/2
+            required: true
+          people:
+            label: People in photo
+            type: tags
+            options:
+              marc: marc
+              danielle: danielle
+              maddie: maddie
+              carter: carter
+              megan: megan
+              brooks: brooks
+              gary: gary
+              sandy: sandy
+          tags:
+            label: General photo tags
+            type: tags
+          mymap:
+            type: locator
+            label: Location
+            center:
+              lat: 39.9607
+              lon: -75.6055
+  - width: 1/3
+    sections:
+      photo:
+        headline: Photo
+        size: medium
+        info: "{{ file.dimensions }}"
+        help: Make it a good one.
+        type: files
+        min: 1
+        multiple: true
+        layout: cards
+        template: gallery-image
+        image:
+          ratio: 1/1
+

@@ -1,0 +1,26 @@
+title: Photos
+
+sections:
+  drafts:
+    headline: Draft Photos
+    type: pages
+    layout: list
+    template: photo
+    text: "{{ page.title }}"
+    status: drafts
+    help: Always upload a nice cover first
+    image:
+      ratio: 4/5
+      cover: true
+  published:
+    headline: Published Photos
+    type: pages
+    layout: cards
+    template: photo
+    text: "{{ page.title }}"
+    status: published
+    limit: 12
+    image:
+      ratio: 4/5
+      cover: true
+      

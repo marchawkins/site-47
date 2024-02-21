@@ -1,5 +1,5 @@
 Title: Home
-
 ----
-
+Text: Welcome to my kickin' website.
+----
 Uuid: UCkNytHp0mJlLv49

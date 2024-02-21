@@ -1,0 +1,37 @@
+Title: Sideshow Office Visits
+
+----
+
+Text: A collection of shots taken during my various visits to Sideshow HQ in Thousand Oaks, CA. As you can see, it's a pretty special place. Twelve year old me woulda been pretty stoked to be working for a place like this someday.
+
+----
+
+Year-start: 2005
+
+----
+
+Year-end: 
+
+----
+
+Link: https://www.sideshow.com
+
+----
+
+Tags: sideshow, work, office
+
+----
+
+Mymap:
+
+lat: 34.1705609
+lon: -118.8375937
+city: Thousand Oaks
+region: California
+country: United States
+countryCode: us
+osm: 112603
+
+----
+
+Uuid: b2nj1qNlqcLQ6THw
