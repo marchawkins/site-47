@@ -53,7 +53,7 @@ columns:
         info: "{{ file.dimensions }}"
         help: Bigger is better.
         type: files
-        max: 20
+        max: 40
         layout: list
         template: gallery-image
         image:

@@ -1,0 +1,34 @@
+Title: Scrub it up
+
+----
+
+Text: This one really doesn't need a caption, but definitely a keeper.
+
+----
+
+Date-taken: 2013-11-30
+
+----
+
+People: maddie, megan, carter
+
+----
+
+Tags: bath
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: l64QyAsCNQXUYUhH

@@ -1,0 +1,16 @@
+/* homepage-specific styles */
+
+body {
+    background: url('/assets/images/home-bg.gif') 50% 0% no-repeat #000;
+}
+
+
+#home-container {
+    /* width: 590px; */
+    min-height: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    display: none;
+}

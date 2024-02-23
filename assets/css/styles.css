@@ -1,45 +1,7 @@
+/* global stylesheet */
+
 body {
-    background: #efefef;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 3rem;
-}
-
-.projects img {
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
-.pagination {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-}
-
-.pagination span {
-    color: #999;
-}
-
-.filter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.filter a {
-    padding: .5rem 1rem;
-    background-color: #000;
-    color: #fff;
-    margin-right: .5rem;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-.filter a[aria-selected] {
-    
+    margin: 0;
+    padding: 0;
+    background: #fff;
 }

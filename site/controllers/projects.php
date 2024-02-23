@@ -8,7 +8,8 @@ return function($page) {
         ->when($filterBy, function($filterBy) {
             return $this->filterBy('category',$filterBy);
         })
-        ->paginate(3);
+        //->paginate(3)
+        ;
 
     $pagination = $projects->pagination();
     $filters = $unfiltered->pluck('category', null, true);

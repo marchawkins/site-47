@@ -1,0 +1,34 @@
+Title: Our Little Goalie
+
+----
+
+Text: Maddie's first time playing goalie. Did a pretty good job!
+
+----
+
+Date-taken: 2014-05-17
+
+----
+
+People: maddie
+
+----
+
+Tags: soccer
+
+----
+
+Mymap:
+
+lat: 40.0520086
+lon: -75.6443972
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19381"
+osm: 10120027154
+
+----
+
+Uuid: 0w7W99l9EdYhLeIZ

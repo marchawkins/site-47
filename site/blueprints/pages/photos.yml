@@ -13,13 +13,14 @@ sections:
       ratio: 4/5
       cover: true
   published:
-    headline: Published Photos
+    headline: Published Photos (date taken, newest first)
     type: pages
     layout: cards
+    sortBy: date_taken desc
     template: photo
     text: "{{ page.title }}"
     status: published
-    limit: 12
+    limit: 40
     image:
       ratio: 4/5
       cover: true

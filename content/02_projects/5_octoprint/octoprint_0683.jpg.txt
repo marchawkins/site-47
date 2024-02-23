@@ -1,0 +1,9 @@
+Sort: 24
+
+----
+
+Uuid: Zot8GqIZECJZn6ue
+
+----
+
+Template: gallery-image

@@ -1,0 +1,34 @@
+Title: Twins Field Trip to Green Valley Nature Center
+
+----
+
+Text: Took the twins on their field trip to (link: http://www.greenvalleys.org text: Green Valley Nature Center).
+
+----
+
+Date-taken: 2014-04-04
+
+----
+
+People: carter, megan
+
+----
+
+Tags: field trip, school
+
+----
+
+Mymap:
+
+lat: 40.2452976
+lon: -75.6496424
+city: Pottstown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19464"
+osm: 187801
+
+----
+
+Uuid: ebESpQj9RVYdYgg5

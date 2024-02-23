@@ -1,0 +1,48 @@
+Title: Octoprint
+
+----
+
+Text:
+
+(image: img_0819.jpg)
+
+Octoprint on a Raspberry Pi with a Printrbot
+
+Some old shots from when I setup (link: https://octoprint.org text: Octoprint) software on a (link: https://www.raspberrypi.org text: Raspberry Pi), used to control an original (link: https://en.wikipedia.org/wiki/Printrbot text: Printrbot) 3d printer. The printer hasn't been manufactured for years, so there's not much point in a detailed explanation of this project, but it was definitely a learning experience. The whole thing was a little flaky, but when it worked, it was pretty cool. Made for some nice time lapse video of longer 3d prints.
+
+(video: https://www.youtube.com/watch?v=2EJCJTGXJ9I)
+
+(video: https://www.youtube.com/watch?v=JMk2CcyXgco)
+
+----
+
+Year-start: 2015
+
+----
+
+Year-end: 2015
+
+----
+
+Link: 
+
+----
+
+Tags: 3d printing, dyi, electronics, raspberry pi
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: BCaNRXWZFVdAE3sb

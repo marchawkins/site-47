@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: jDkZoeDnSAt7nPTY
+
+----
+
+Template: gallery-image

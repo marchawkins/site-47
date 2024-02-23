@@ -1,0 +1,34 @@
+Title: Maddie's 9th Birthday
+
+----
+
+Text: Maddie's 9th birthday party with friends at (link: https://www.skyzone.com text: Sky Zone) trampoline park.
+
+----
+
+Date-taken: 2014-02-12
+
+----
+
+People: maddie, megan, valerie
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: x4VuTBm0v1xmXTp7
