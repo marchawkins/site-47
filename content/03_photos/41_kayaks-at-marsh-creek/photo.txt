@@ -1,0 +1,34 @@
+Title: Kayaks at Marsh Creek
+
+----
+
+Text: A little Labor Day fun at Marsh Creek State Park with Tom and Deb, who took Maddie on her first kayak on the lake!
+
+----
+
+Date-taken: 2014-08-30
+
+----
+
+People: maddie, deb
+
+----
+
+Tags: kayaks, park
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Chester County
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: PWrJfgAQB6mnyU8x

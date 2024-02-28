@@ -5,7 +5,7 @@
 
     <h1><?php echo $page->title() ?></h1>
     <h2><?php echo $page->subtitle() ?></h2>
-    <?php echo $page->text() ?>
+    <?php echo $page->text()->kirbytext() ?>
 
 </main>
 

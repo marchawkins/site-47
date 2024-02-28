@@ -4,4 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
+    font-family: "Andale Mono", courier, monospace;
+    font-size: 1.5rem;
 }

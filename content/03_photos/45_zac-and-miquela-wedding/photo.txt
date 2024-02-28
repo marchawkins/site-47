@@ -1,0 +1,34 @@
+Title: Zac and Miquela's Wedding
+
+----
+
+Text: Congratulations to my nephew, Zac, and his new wife Miquela. Great time had by all, including the flower girl. Also Brooks' first big family function. Obviously, he was wiped out from the big event.
+
+----
+
+Date-taken: 2014-09-20
+
+----
+
+People: zac, miquela, maddie
+
+----
+
+Tags: wedding
+
+----
+
+Mymap:
+
+lat: 40.2854881
+lon: -76.6506001
+city: Dauphin County
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17033"
+osm: 188234
+
+----
+
+Uuid: RlaSuUKeZhOq3fyW

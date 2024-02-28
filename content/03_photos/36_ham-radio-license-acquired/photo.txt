@@ -1,0 +1,33 @@
+Title: Ham Radio License Acquired
+
+----
+
+Text: When all else fails, ham radio works. (link: https://kc3dfx.com text: https://kc3dfx.com)
+
+----
+
+Date-taken: 2014-07-25
+
+----
+
+People: 
+
+----
+
+Tags: ham radio
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: bWoNcNV7AWXWDQ1F

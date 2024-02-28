@@ -1,3 +1,4 @@
+<?php snippet('head') ?> 
 
     <header>
         <a class="logo" href="<?php echo $site->url() ?>"><?php echo $site->title() ?></a>
