@@ -1,9 +1,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <?php snippet('ascii-title01') ?> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $page->title() ?> | <?= $site->title() ?></title>
-    <?= css('assets/css/styles.css'); ?>
+    <?php if($page->title()!='Home'): ?>
+        <?= css('assets/css/styles.css'); ?>
+    <?php endif ?>
     <?= css('@auto'); ?>
+    <?= css($page->files()->filterBy('extension', 'css')->pluck('url')) ?>
+    <?= js($page->files()->filterBy('extension', 'js')->pluck('url')) ?>
+
 </head>
-<body class="<?= $page->slug() ?>">
+<body id="<?= $page->slug() ?>">

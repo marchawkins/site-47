@@ -1,12 +1,13 @@
-<?php snippet('head') ?>
 <?php snippet('header') ?>    
 
 <main>
-
-    <h1><?php echo $page->title() ?></h1>
-    <h2><?php echo $page->subtitle() ?></h2>
-    <?php echo $page->text()->kirbytext() ?>
-
+    <article>
+        <h1><?php echo $page->title() ?></h1>
+        <h2><?php echo $page->subtitle() ?></h2>
+        <div id="content">
+            <?php echo $page->text()->kirbytext() ?>
+        </div><!-- .section -->
+    </article>
 </main>
 
 <?php snippet('footer') ?>
