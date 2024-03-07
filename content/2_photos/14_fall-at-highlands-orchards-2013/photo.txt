@@ -1,0 +1,34 @@
+Title: Fall at Highlands Orchards 2013
+
+----
+
+Text: Annual family trip to kick off Fall at (link: https://highlandorchards.net text: Highland Orchards) for apple picking and pumpkins. And cider donuts. My God, the cider donuts...
+
+----
+
+date_taken: 2013-10-06
+
+----
+
+People: carter
+
+----
+
+Tags: fall, pumpkin
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: MJVJBqnbHpwmw5eA

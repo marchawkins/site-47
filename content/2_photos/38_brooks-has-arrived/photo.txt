@@ -1,0 +1,34 @@
+Title: Brooks has arrived
+
+----
+
+Text: Brooks has arrived! Weighing in at a healthy 7.2lbs. Momma and baby are doing great!
+
+----
+
+date_taken: 2014-08-23
+
+----
+
+People: brooks
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0417847
+lon: -75.4838685
+city: Tredyffrin Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19301"
+osm: 157639353
+
+----
+
+Uuid: 9oiuora3lBGH2HeW

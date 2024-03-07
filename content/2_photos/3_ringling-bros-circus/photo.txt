@@ -1,0 +1,34 @@
+Title: Ringling Bros Circus
+
+----
+
+Text: Didn't know it at the time, but we got to check out one of the last Ringling Bros. and Barnum Baily Circus performances - complete with lions, tigers and elephants, oh my.
+
+----
+
+date_taken: 2013-05-26
+
+----
+
+People: carter, megan
+
+----
+
+Tags: circus
+
+----
+
+Mymap:
+
+lat: 40.2854881
+lon: -76.6506001
+city: Dauphin County
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17033"
+osm: 188234
+
+----
+
+Uuid: hGBGLcVMLQMABcU5

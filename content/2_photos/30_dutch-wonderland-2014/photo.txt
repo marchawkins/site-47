@@ -1,0 +1,33 @@
+Title: Dutch Wonderland 2014
+
+----
+
+Text: Celebrating Carter and Megan's preschool graduation, and Maddie's upcoming last day of school, at Dutch Wonderland. An entire day of fun and only took one lonely photo.
+
+----
+
+date_taken: 2014-06-01
+
+----
+
+People: carter, maddie, megan
+
+----
+
+Tags: amusement park
+
+----
+
+Mymap:
+
+lat: 40.08067
+lon: -76.2411283
+city: Lancaster County
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 417768
+
+----
+
+Uuid: dMV4PXxe2UozNkfO

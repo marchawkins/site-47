@@ -1,0 +1,34 @@
+Title: Maddie and Megan - Dance Costumes 2013
+
+----
+
+Text: Maddie (jazz) and Megan (ballet) dance photos for 2013 at (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy).
+
+----
+
+date_taken: 2013-10-27
+
+----
+
+People: megan, maddie
+
+----
+
+Tags: dance
+
+----
+
+Mymap:
+
+lat: '40.0533733'
+lon: '-75.662006776412'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 3049175
+
+----
+
+Uuid: YOR97xyPjRKmpnI0

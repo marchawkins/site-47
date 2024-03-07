@@ -9,9 +9,9 @@
         <div id="home-content">
             <nav>
                 <ul>
-                    <li><a href="/about" title="about">about</a></li>
-                    <li><a href="/projects" title="projects">projects</a></li>
-                    <li><a href="/photos" title="photos">photos</a></li>
+                <?php foreach($pages->listed() as $page): ?>
+                    <li><a href="<?php echo $page->url() ?>" title="<?php echo $page->title() ?>"><?php echo $page->title() ?></a></li>
+                <?php endforeach ?>
                 </ul>
             </nav>
             <p>Est. 1976</p>

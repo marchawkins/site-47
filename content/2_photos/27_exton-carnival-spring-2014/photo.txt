@@ -1,0 +1,34 @@
+Title: Exton Carnival Spring 2014
+
+----
+
+Text: Having some fun at the annual Exton Carnival.
+
+----
+
+date_taken: 2014-05-17
+
+----
+
+People: megan
+
+----
+
+Tags: carnival
+
+----
+
+Mymap:
+
+lat: 40.0289955
+lon: -75.6207651
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19381"
+osm: 157611350
+
+----
+
+Uuid: Maie8jXITeJSb947

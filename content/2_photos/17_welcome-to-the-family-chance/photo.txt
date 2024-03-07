@@ -1,0 +1,34 @@
+Title: Welcome to the family, Chance
+
+----
+
+Text: Maddie and Megan checking out their new cousin, Chance.
+
+----
+
+date_taken: 2013-10-29
+
+----
+
+People: maddie, megan, chance
+
+----
+
+Tags: baby
+
+----
+
+Mymap:
+
+lat: 40.2854881
+lon: -76.6506001
+city: Dauphin County
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17033"
+osm: 188234
+
+----
+
+Uuid: IWUmWosAIlsDTv3I
