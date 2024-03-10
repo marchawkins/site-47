@@ -1,2 +1,17 @@
 /* single photo page styles */
 
+
+article {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#photos img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+

@@ -17,7 +17,21 @@ header {
     height: 60px;
     border-bottom: 5px solid #000;
     background: url('/assets/images/header-bg-img_125.gif') 0 0 repeat;
+    /* -webkit-animation: myfirst 1s;
+    animation: myfirst 1s; */
 }
+
+/*
+@-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+@keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+*/
 
 header nav {
     display: flex;
@@ -50,9 +64,17 @@ header a {
     cursor: pointer;    
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 header a.active {
     margin-top: 30px;
     text-decoration: line-through;
+}
+
+header a.active:hover {
+    text-decoration: none;
 }
 
 header li.logo a {
@@ -72,4 +94,37 @@ footer  {
     background: #000;
     color: #fff;
     font-size: .75rem;
+}
+
+article {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#content    {
+    padding: 1rem 2rem 2rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagination a   {
+    display: block;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    background: #666;
+    color: #efefef;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pagination a:hover {
+    background: #ccc;
+    color: #000;
 }

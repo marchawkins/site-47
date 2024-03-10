@@ -1,18 +1,7 @@
 /* about page styles */
 
-#about  {
-    background: #fff;
-    color: #000;
-}
-
 article {
-    width: 80%;
-    margin: 350px auto 2rem auto;
-}
-
-#content    {
-    padding: 1rem 2rem 2rem 2rem;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 350px;
 }
 
 h1  {
