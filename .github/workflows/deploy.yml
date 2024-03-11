@@ -1,36 +1,32 @@
-name: Deploy
+name: Deploy to VPS
 
-on: 
+on:
   push:
     branches:
       - main  # Adjust this to your main branch name
-workflow_dispatch:
-
+  workflow_dispatch: 
+  
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: checkout code
-    - uses: actions/checkout@v1
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: copy repository contents via scp
+    - name: Copy files to VPS
       uses: appleboy/scp-action@master
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
       with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}  # If your SSH server uses a different port, add this line
         source: "."
-        target: "/var/www/marchawkins_usr/data/www"
-
-    - name: executing remote command
-      uses: appleboy/ssh-action@master
+        target: "/var/www/marchawkins_usr/data/www/"
+    - name: multiple command
+      uses: appleboy/ssh-action@v1.0.3
       with:
-        host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-        script: ls
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
