@@ -23,7 +23,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEY }}
+        password: ${{ secrets.PASSWORD }}
         source: ./
         target: /var/www/marchawkins_usr/data/www 
  
@@ -42,5 +42,5 @@ jobs:
         host: ${{ secrets.HOST }}
         port: ${{ secrets.PORT }}
         user: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEY}}
+        password: ${{ secrets.PASSWORD }}
         args: "-tt -vvv"
