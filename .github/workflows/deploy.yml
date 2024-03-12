@@ -1,30 +1,46 @@
-name: Deploy to VPS
-
+name: Deploy
+ 
 on:
-  push:
-    branches:
-      - main  # Adjust this to your main branch name
-  workflow_dispatch: 
-  
+    push:
+        branches:
+            - main
 jobs:
-  deploy:
+  build:
+ 
     runs-on: ubuntu-latest
-    
+ 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Copy files to VPS
-      uses: appleboy/scp-action@master
+ 
+    - name: Setup SSH connection
+      uses: webfactory/ssh-agent@v0.5.0
+      with:
+        ssh-private-key: ${{ secrets.SSHKEY }}
+ 
+    - name: Copy files into the server
+      uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
-        source: "."
-        target: "/var/www/marchawkins_usr/data/www/"
-    - name: multiple command
-      uses: appleboy/ssh-action@master
+        source: ./
+        target: /var/www/marchawkins_usr/data/www 
+ 
+    - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
+        php-version: '8.0'
+    - uses: actions/checkout@v3
+      with:
+        ref: dev
+    - name: Deploy
+      uses: fifsky/ssh-action@master
+      with:
+        command: | 
+          cd /var/www/marchawkins_usr/data/www
+          # run any command you want.
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEY }}
+        port: ${{ secrets.PORT }}
+        user: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSHKEY}}
+        args: "-tt -vvv"
