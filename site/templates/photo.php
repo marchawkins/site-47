@@ -18,14 +18,14 @@
 
         <nav class="pagination">
         <?php if ($page->hasPrevListed()): ?>
-            <a class="next" href="<?= $page->prevListed()->url() ?>" title="previous photo">older photos</a>
+            <a class="next" href="<?= $page->prevListed()->url() ?>" title="previous photo">older</a>
         <?php endif ?>
 
         <?php if ($page->hasNextListed()): ?>
-            <a class="prev" href="<?= $page->nextListed()->url() ?>" title="next photo">newer photos</a>
+            <a class="prev" href="<?= $page->nextListed()->url() ?>" title="next photo">newer</a>
         <?php endif ?>
 
-            <a href="/photos" title="all photos">all photos</a>
+            <a href="/photos" title="all photos">all</a>
         </nav>
     </article>
 </main>
