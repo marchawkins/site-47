@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <?php
-    $photos   = $page->children()->listed()->sortBy('date_taken', 'desc')->paginate(5);
+    $photos   = $page->children()->listed()->sortBy('date_taken', 'desc')->paginate(24);
     $pagination = $photos->pagination();
 ?>
 <main>
@@ -10,7 +10,7 @@
         <ul>
             <?php foreach($photos as $photopage): ?>
             <li>
-                <a href="<?= $photopage->url() ?>" title="<?php echo $photopage->title() ?>"><img loading="lazy" src="<?php echo $photopage->image()->crop(200,200)->url() ?>" alt="<?php echo $photopage->title() ?>"/></a>
+                <a href="<?= $photopage->url() ?>?page_num=<?= $pagination->page() ?>" title="<?php echo $photopage->title() ?>"><img loading="lazy" src="<?php echo $photopage->image()->crop(200,200)->url() ?>" alt="<?php echo $photopage->title() ?>"/></a>
             </li>
             <?php endforeach ?>
             <li></li>

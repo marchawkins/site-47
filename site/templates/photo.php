@@ -25,13 +25,8 @@
             <a class="prev" href="<?= $page->nextListed()->url() ?>" title="next photo">newer</a>
         <?php endif ?>
 
-            <a href="/photos" title="all photos">all</a>
+            <a href="/photos/<?php if(isset($_GET['page_num'])):?>page:<?= $_GET['page_num'] ?><?php endif ?>" title="all photos">all</a>
         </nav>
-        <?php
-            $photos   = $page->siblings()->listed()->sortBy('date_taken', 'desc')->paginate(30);
-            $pagination = $photos->pagination();
-            echo 'The current page is ' . $pagination->page();
-        ?>
     </article>
 </main>
 
