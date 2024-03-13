@@ -27,6 +27,11 @@
 
             <a href="/photos" title="all photos">all</a>
         </nav>
+        <?php
+            $photos   = $page->siblings()->listed()->sortBy('date_taken', 'desc')->paginate(30);
+            $pagination = $photos->pagination();
+            echo 'The current page is ' . $pagination->page();
+        ?>
     </article>
 </main>
 

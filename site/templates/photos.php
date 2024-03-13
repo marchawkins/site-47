@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <?php
-    $photos   = $page->children()->listed()->sortBy('date_taken', 'desc')->paginate(30);
+    $photos   = $page->children()->listed()->sortBy('date_taken', 'desc')->paginate(5);
     $pagination = $photos->pagination();
 ?>
 <main>
