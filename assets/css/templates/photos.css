@@ -10,11 +10,11 @@ article {
     margin-top: 0;
 }
 
-h1 {
+article h1 {
     display: none;
 }
 
-ul {
+article ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -22,18 +22,18 @@ ul {
     list-style: none;
   }
   
-li {
+article li {
     margin: 0;
     padding: 0;
     /* height: 40vh; */
     flex-grow: 1;
 }
 
-li:last-child {
+article li:last-child {
     flex-grow: 10;
 }
 
-img {
+article img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -42,7 +42,7 @@ img {
     filter: grayscale(100%);
 }
 
-img:hover {
+article img:hover {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
 }

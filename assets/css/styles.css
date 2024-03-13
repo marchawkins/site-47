@@ -9,7 +9,7 @@ body {
     background: #fff;
     color: #000;
     font-family: "Andale Mono", courier, monospace;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 header {
@@ -42,30 +42,22 @@ header li {
 
 header a {
     display: block;
-    margin: 20px 0 0 0;
+    margin: 30px 5px 0 5px;
     padding: 0;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    font-size: 1.25rem;
     font-weight: bold;
     cursor: pointer;    
 }
-
-@media (min-width: 767px) {
-    header a {
-        margin: 20px 5px 0 5px;
-        padding: .5rem 1rem;
-    }
-}
-
-
 
 header a:hover {
     text-decoration: underline;
 }
 
 header a.active {
-    margin-top: 30px;
+    margin-top: 42px;
     text-decoration: line-through;
 }
 
@@ -93,12 +85,12 @@ footer  {
 }
 
 article {
-    width: 80%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 #content    {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0 2rem 2rem 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -123,4 +115,26 @@ article {
 .pagination a:hover {
     background: #ccc;
     color: #000;
+}
+
+@media (min-width: 767px) {
+    header {
+        a {
+            margin: 20px 5px 0 5px;
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+        }
+
+        a.active {
+            margin-top: 30px;
+        }
+    }
+
+    article {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    #content    {
+        padding: 1rem 2rem 2rem 2rem;
+    }
 }

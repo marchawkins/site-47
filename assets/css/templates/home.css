@@ -36,7 +36,7 @@ h1 {
 
 nav {
     margin-top: auto;
-    margin-bottom: 1.25rem;
+    margin-bottom: .5rem;
 }
 
 ul {
@@ -67,4 +67,10 @@ p {
     padding: 1rem;
     background: #000;
     font-size: .8rem;
+}
+
+@media (min-width: 767px) {
+    nav {
+        margin-bottom: 1.25rem;
+    }
 }
