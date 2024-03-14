@@ -7,6 +7,10 @@
     <?php if($page->title()!='Home'): ?>
         <?= css('assets/css/styles.css'); ?>
     <?php endif ?>
+    <?php if($page->title()=='About'): ?>
+        <?= css('assets/css/flickity.css'); ?>
+        <?= js('assets/js/flickity.pkgd.min.js'); ?>
+    <?php endif ?>
     <?= css('@auto'); ?>
     <?= css($page->files()->filterBy('extension', 'css')->pluck('url')) ?>
     <?= js($page->files()->filterBy('extension', 'js')->pluck('url')) ?>

@@ -1,9 +1,5 @@
 /* about page styles */
 
-article {
-    margin-top: 225px;
-}
-
 h1  {
     display: none;
 }
@@ -27,31 +23,7 @@ h2  {
     color: #666;
 }
 
-#photostrip {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2px;
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-
-#photostrip img {
-    height: 200px;
-}
-
 @media (min-width: 767px) {
-    article {
-        margin-top: 350px;
-    }
-    #photostrip {
-        height: 300px;
-    }
-    #photostrip img {
-        height: 300px;
-    }
     article h2 {
         font-size: 2.5rem;
     }

@@ -1,12 +1,12 @@
-<?php snippet('header') ?>    
+<?php snippet('header') ?>
 
 <main>
     <?php if($photos = $page->files()->shuffle()): ?>
-        <div id="photostrip">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "prevNextButtons": false, "pageDots": false }'>
         <?php foreach($photos as $photo): ?>
-            <img loading="lazy" src="<?php echo $photo->url() ?>" alt="<?php echo $photo->name() ?> photo" height="300"/>
+            <div class="carousel-cell"><img src="<?php echo $photo->url() ?>" alt="<?php echo $photo->name() ?> photo" height="300"/></div>
         <?php endforeach ?>
-        </div><!-- #photostrip -->
+        </div><!-- .carousel -->
     <?php endif ?>
     <article>
         <h1><?php echo $page->title() ?></h1>

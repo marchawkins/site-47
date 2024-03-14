@@ -9,12 +9,14 @@
         <?php if($page->text()): ?>
             <p><?php echo $page->text()->kirbytext() ?></p>
         <?php endif ?>
-
-        <div id="photos">
-        <?php foreach($page->files() as $file): ?>
-            <img loading="lazy" src="<?php echo $file->url() ?>" alt="<?php echo $page->title() ?> photo"/>
-        <?php endforeach ?>
-        </div><!-- #photos -->
+        
+        <?php if($photos = $page->files()): ?>
+            <div id="photos">
+            <?php foreach($photos as $photo): ?>
+                <img src="<?php echo $photo->url() ?>" alt="<?php echo $photo->name() ?> photo"/>
+            <?php endforeach ?>
+            </div><!-- #photos -->
+        <?php endif ?>       
 
         <nav class="pagination">
         <?php if ($page->hasPrevListed()): ?>
