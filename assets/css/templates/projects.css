@@ -1,0 +1,47 @@
+/* projects page styles */
+
+h1  {
+    display: none;
+}
+
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-wrapper div   {
+    flex-grow: 1;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.projects-wrapper a {
+    display: block;
+    height: 100%;
+    margin: .5rem;
+    padding: .5rem;
+    background: #efefef;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+article a   {
+    color: #000;
+    font-weight: bold;
+}
+
+article a:visited {
+    color: #666;
+}
+*/
+
+@media (min-width: 767px) {
+    .projects-wrapper div   {
+        flex-basis: 33.333333%;
+        max-width: 33.333333%;
+    }
+}
