@@ -2,6 +2,10 @@ Title: Sideshow Office
 
 ----
 
+Full-gallery: true
+
+----
+
 Text: A collection of shots taken during my various visits to Sideshow HQ in Thousand Oaks, CA. As you can see, it's a pretty special place. Twelve year old me woulda been pretty stoked to be working for a place like this someday.
 
 ----

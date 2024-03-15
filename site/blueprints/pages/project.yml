@@ -6,6 +6,18 @@ columns:
       info:
         type: fields
         fields:
+          featured_project:
+            type: toggle
+            label: Show in featured projects?
+            text:
+              - "no"
+              - "yes"
+          full_gallery:
+            type: toggle
+            label: Show full gallery?
+            text:
+              - "no"
+              - "yes"
           text:
             label: Project description
             type: textarea
@@ -58,4 +70,3 @@ columns:
         template: gallery-image
         image:
           ratio: 1/1
-

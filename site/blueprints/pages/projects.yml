@@ -1,13 +1,6 @@
 title: Projects
 
 sections:
-  related:
-    type: fields
-    fields:
-      related:
-        label: Featured Projects
-        type: pages
-        query: site.find('projects').children
   drafts:
     headline: Drafts
     type: pages

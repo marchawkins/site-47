@@ -6,7 +6,7 @@
             <div class="project-info">
                 <?php if($page->text()->isNotEmpty()): ?>
                     <div class="project-text">
-                        <?php echo $page->text() ?>
+                        <?php echo $page->text()->kirbytext() ?>
                     </div>
                 <?php endif ?>
                 
@@ -32,7 +32,8 @@
                     <?php endif ?>
                 </dl>
             </div><!-- .project-info -->
-
+            
+            <?php if($page->full_gallery()->toBool() === true): ?>
             <div class="project-gallery">
                 <ul>
                     <?php foreach($page->images() as $image): ?>
@@ -47,6 +48,7 @@
                     <?php endforeach ?>
                 </ul>
             </div><!--. project-gallery -->
+            <?php endif ?>
         </div><!-- .project-layout -->
     </article>
 </main>

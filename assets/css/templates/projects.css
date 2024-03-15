@@ -28,17 +28,6 @@ h1  {
     font-weight: bold;
 }
 
-/*
-article a   {
-    color: #000;
-    font-weight: bold;
-}
-
-article a:visited {
-    color: #666;
-}
-*/
-
 @media (min-width: 767px) {
     .projects-wrapper div   {
         flex-basis: 33.333333%;

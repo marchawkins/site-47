@@ -1,34 +1,28 @@
-.project-layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 6rem;
+/* single project styles */
+
+h2  {
+    margin: 0;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.75rem;
+    font-style: italic;
+    background: #000;
+    color: #fff;
+    text-align: center;
 }
 
-.project-info {
-    line-height: 1.5em;
-}
-
-.project-text {
-    margin-bottom: 1.5rem;
-}
-
-.project-info dt {
+#content a   {
+    color: #000;
     font-weight: bold;
 }
 
-.project-gallery ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    grid-gap: 1.5rem;
+#content a:visited {
+    color: #666;
 }
 
-.project-gallery li:first-child {
-    grid-column-start: 1;
-    grid-column-end:  -1;
-}
-
-.project-gallery img {
-    width: 100%;
+@media (min-width: 767px) {
+    article h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
 }
