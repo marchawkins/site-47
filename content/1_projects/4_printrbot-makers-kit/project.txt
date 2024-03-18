@@ -2,6 +2,14 @@ Title: Printrbot Makers Kit
 
 ----
 
+Featured-project: false
+
+----
+
+Full-gallery: false
+
+----
+
 Text:
 
 (image: printrbot-spaceship-3d-print.jpg)
@@ -14,7 +22,7 @@ Year-start: 2015
 
 ----
 
-Year-end: 2015
+Year-end: 2016
 
 ----
 

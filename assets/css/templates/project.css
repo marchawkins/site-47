@@ -1,28 +1,18 @@
 /* single project styles */
 
-h2  {
-    margin: 0;
-    padding: 1rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.75rem;
-    font-style: italic;
-    background: #000;
-    color: #fff;
+h1 {
     text-align: center;
 }
 
-#content a   {
+article a   {
     color: #000;
     font-weight: bold;
 }
 
-#content a:visited {
+article a:visited {
     color: #666;
 }
 
 @media (min-width: 767px) {
-    article h2 {
-        font-size: 2.5rem;
-        text-align: left;
-    }
+    
 }

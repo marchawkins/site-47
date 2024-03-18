@@ -11,24 +11,25 @@
                 <?php endif ?>
                 
                 <dl>
-                    <?php if($page->year()->isNotEmpty()): ?>
+                    <?php if($page->year_start()->isNotEmpty()): ?>
                     <dt>Year</dt>
-                    <dd><?php echo $page->year() ?></dd>
+                    <dd><?= $page->year_start() ?><?php if($page->year_end()->isNotEmpty() && $page->year_end()->value()!=$page->year_start()->value()): ?> - <?= $page->year_end() ?><?php endif; ?></dd>
                     <?php endif ?>
                     
-                    <?php if($page->client()->isNotEmpty()): ?>
-                    <dt>Client</dt>
-                    <dd><?php echo $page->client() ?></dd>
-                    <?php endif ?>
-
-                    <?php if($page->category()->isNotEmpty()): ?>
-                    <dt>Category</dt>
-                    <dd><?php echo $page->category() ?></dd>
-                    <?php endif ?>
-
                     <?php if($page->link()->isNotEmpty()): ?>
                     <dt>Link</dt>
-                    <dd><?php echo $page->link() ?></dd>
+                    <dd><?= $page->link() ?></dd>
+                    <?php endif ?>
+
+                    <?php if($page->tags()->isNotEmpty()): ?>
+                    <dt>Tags</dt>
+                    <dd>
+                        <ul>
+                        <?php foreach ($page->tags()->split() as $tag): ?>
+                            <li><?= $tag ?></li>
+                        <?php endforeach ?>
+                        </ul>
+                    </dd>
                     <?php endif ?>
                 </dl>
             </div><!-- .project-info -->
