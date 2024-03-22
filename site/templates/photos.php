@@ -5,7 +5,7 @@
     $pagination = $photos->pagination();
 ?>
 <main>
-    <article>
+    <article class="gallery">
         <h1><?php echo $page->title() ?></h1>
         <ul>
             <?php foreach($photos as $photopage): ?>

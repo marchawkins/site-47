@@ -1,4 +1,5 @@
-/* global stylesheet */
+/* ----- 
+    global stylesheet -----           */
 
 html {
     scroll-behavior: smooth;
@@ -16,6 +17,20 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.25rem;
 }
+
+article {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+#content    {
+    padding: 0 2rem 2rem 2rem;
+    
+}
+
+/* ----- 
+    header & footer styles -----           */
+
 
 header {
     width: 100%;
@@ -89,15 +104,10 @@ footer  {
     font-size: .75rem;
 }
 
-article {
-    width: 100%;
-    margin: 1rem auto;
-}
 
-#content    {
-    padding: 0 2rem 2rem 2rem;
-    
-}
+/* ----- 
+    pagination styles -----           */
+
 
 .pagination {
     display: flex;
@@ -143,3 +153,73 @@ article {
         padding: 1rem 2rem 2rem 2rem;
     }
 }
+
+/* ----- 
+    gallery styles -----           */
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+.gallery li {
+    margin: 0;
+    padding: 0;
+    /* height: 40vh; */
+    flex-grow: 1;
+}
+
+.gallery li:last-child {
+    flex-grow: 10;
+}
+
+.gallery img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .gallery li {
+      height: 30vh;
+    }
+}
+
+@media (max-height: 480px) {
+    .gallery li {
+        height: 80vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .gallery ul {
+      flex-direction: row;
+    }
+  
+    .gallery li {
+      height: auto;
+      width: 50%;
+    }
+  
+    .gallery img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+}
+
+@media (hover: hover) {
+    .gallery img {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    .gallery img:hover {
+        -webkit-filter: none; /* Safari 6.0 - 9.0 */
+        filter: none;
+    }
+}
+

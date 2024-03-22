@@ -1,9 +1,10 @@
-<?php snippet('header') ?>    
+<?php snippet('header') ?>
+
 <main>
     <article>
-        <h1><?php echo $page->title() ?></h1>
-        <div class="project-layout">
-            <div class="project-info">
+        <section class="text">
+            <h1><?php echo $page->title() ?></h1>
+       
                 <?php if($page->text()->isNotEmpty()): ?>
                     <div class="project-text">
                         <?php echo $page->text()->kirbytext() ?>
@@ -18,13 +19,13 @@
                     
                     <?php if($page->link()->isNotEmpty()): ?>
                     <dt>Link</dt>
-                    <dd><?= $page->link() ?></dd>
+                    <dd><a href="<?= $page->link() ?>" title="view project"><?= $page->link() ?></a></dd>
                     <?php endif ?>
 
                     <?php if($page->tags()->isNotEmpty()): ?>
                     <dt>Tags</dt>
                     <dd>
-                        <ul>
+                        <ul class="comma-list">
                         <?php foreach ($page->tags()->split() as $tag): ?>
                             <li><?= $tag ?></li>
                         <?php endforeach ?>
@@ -32,25 +33,24 @@
                     </dd>
                     <?php endif ?>
                 </dl>
-            </div><!-- .project-info -->
-            
-            <?php if($page->full_gallery()->toBool() === true): ?>
-            <div class="project-gallery">
+        </section>
+        
+        <?php if($page->full_gallery()->toBool() === true): ?>
+            <section class="gallery">
                 <ul>
                     <?php foreach($page->images() as $image): ?>
                     <li>
-                        <figure>
-                        <a href="<?php echo $image->url() ?>">
-                            <img src="<?php echo $image->resize(600, 600)->url() ?>" alt="<?php echo $image->alt() ?>"/>
+                        <a href="<?php echo $image->url() ?>" target="_blank" title="View larger">
+                            <img src="<?php echo $image->crop(300,300)->url() ?>" alt="<?php echo $image->alt() ?>"/>
                         </a>
-                        <figcaption><?php echo $image->caption() ?></figcaption>
-                        </figure>
+                        <!-- <?php echo $image->caption() ?> -->
                     </li>
                     <?php endforeach ?>
+                    <li></li>
                 </ul>
-            </div><!--. project-gallery -->
-            <?php endif ?>
-        </div><!-- .project-layout -->
+            </section>
+        <?php endif ?>
+
     </article>
 </main>
 

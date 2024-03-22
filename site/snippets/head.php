@@ -7,7 +7,7 @@
     <?php if($page->title()!='Home'): ?>
         <?= css('assets/css/styles.css'); ?>
     <?php endif ?>
-    <?php if($page->title()=='About' || $page->title()=='Projects'): ?>
+    <?php if($page->title()=='About' || $page->title()=='Projects' || $page->intendedTemplate()->name()=='project'): ?>
         <?= css('assets/css/flickity.css'); ?>
         <?= js('assets/js/flickity.pkgd.min.js'); ?>
     <?php endif ?>
