@@ -6,7 +6,7 @@ Featured-project: false
 
 ----
 
-Full-gallery: false
+Full-gallery: true
 
 ----
 

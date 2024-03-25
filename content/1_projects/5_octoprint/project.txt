@@ -2,17 +2,25 @@ Title: Octoprint
 
 ----
 
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
 Text:
 
 (image: img_0819.jpg)
 
-Octoprint on a Raspberry Pi with a Printrbot
+##Octoprint on a Raspberry Pi with a Printrbot##
 
 Some old shots from when I setup (link: https://octoprint.org text: Octoprint) software on a (link: https://www.raspberrypi.org text: Raspberry Pi), used to control an original (link: https://en.wikipedia.org/wiki/Printrbot text: Printrbot) 3d printer. The printer hasn't been manufactured for years, so there's not much point in a detailed explanation of this project, but it was definitely a learning experience. The whole thing was a little flaky, but when it worked, it was pretty cool. Made for some nice time lapse video of longer 3d prints.
 
-(video: https://www.youtube.com/watch?v=2EJCJTGXJ9I)
+(video: https://www.youtube.com/watch?v=2EJCJTGXJ9I width:100% height: 100%)
 
-(video: https://www.youtube.com/watch?v=JMk2CcyXgco)
+(video: https://www.youtube.com/watch?v=JMk2CcyXgco width:100% height: 100%)
 
 ----
 

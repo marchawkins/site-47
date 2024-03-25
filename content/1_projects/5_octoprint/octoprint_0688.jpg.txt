@@ -1,9 +1,0 @@
-Sort: 24
-
-----
-
-Uuid: k0y0IHcQxt4SJqHy
-
-----
-
-Template: gallery-image

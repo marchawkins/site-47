@@ -1,9 +1,0 @@
-Sort: 24
-
-----
-
-Uuid: QfKxtzaROHfTJC1x
-
-----
-
-Template: gallery-image
