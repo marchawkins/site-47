@@ -82,6 +82,11 @@ h4 {
     max-width: 100%;
 }
 
+.video iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
   /* https://stackoverflow.com/a/1517228/7532 */
 
 @media (min-width: 767px) {

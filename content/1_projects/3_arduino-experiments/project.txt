@@ -14,37 +14,37 @@ Text:
 
 ### Blink an LED ###
 How to blink an LED with an Arduino Rev 3.
-(video: http://www.youtube.com/watch?v=_2yCpyLvXpA width: 100% height: 100%)
+(video: http://www.youtube.com/watch?v=_2yCpyLvXpA)
 (gist: https://gist.github.com/36c67f493a4dc5150593)
 
 ### Control LED Blink Rate with Arduino ###
 Using a light sensor and an Arduino to control the blink rate of an LED.
-(video: https://www.youtube.com/watch?v=2c0CMv7y0VQ width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=2c0CMv7y0VQ)
 (gist: https://gist.github.com/marchawkins/dd94547c84c9aa96f439)
 
 ### Simple Push Button LED Control ###
 Arduino Push Button LED Control - push and hold to illuminate LED, release to turn off.
-(video: https://www.youtube.com/watch?v=IuiDoXZvDHU width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=IuiDoXZvDHU)
 (gist: https://gist.github.com/marchawkins/186e2594e18b64914d34)
 
 ### Push Button LED Control with Arduino ###
 Using an Arduino, push and release a button to turn LED on and off.
-(video: https://www.youtube.com/watch?v=b2o0UiITnU8 width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=b2o0UiITnU8)
 (gist: https://gist.github.com/marchawkins/186e2594e18b64914d34)
 
 ### Control LED with Arduino and Light Sensor ###
 Using an arduino and a light sensor to turn an LED on and off.
-(video: https://www.youtube.com/watch?v=Z6x5y3_LpWE width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=Z6x5y3_LpWE)
 (gist: https://gist.github.com/marchawkins/34d5c384b50fbe222353)
 
 ### Arduino Push Button LED Brightness Control ###
 Using a push button control on an Arduino board to control an LED's brightness. Press the button to turn LED on. Hold it down to increase the LED's brightness until it reaches 100%. After reaching full brightness, the LED will return to 0% brightness and repeat.
-(video: https://www.youtube.com/watch?v=bqHauOCDcJg width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=bqHauOCDcJg)
 (gist: https://gist.github.com/marchawkins/b318d9fd9d16a9ad36d8)
 
 ### Pulsing LED with Arduino ###
 Using an Arduino to control an LED's brightness. In this video, the LED increases and decreases brightness programmatically - similar to an Apple devices "sleep" light indicator.
-(video: https://www.youtube.com/watch?v=YgEpV-icIw8 width: 100% height: 100%)
+(video: https://www.youtube.com/watch?v=YgEpV-icIw8)
 (gist: https://gist.github.com/marchawkins/b5b08ae886a7da1ad1e6)
 
 ----
