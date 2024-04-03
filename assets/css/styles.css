@@ -132,6 +132,10 @@ footer  {
     color: #000;
 }
 
+.pagination a:visited {
+    color: #efefef;
+}
+
 @media (min-width: 767px) {
     header {
         a {

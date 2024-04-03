@@ -3,14 +3,13 @@
 <main>
     <h1><?= $page->title() ?></h1>
     
-    <?php /* <nav class="filter">
-        <a href="<?php echo $page->url() ?>">All</a>
-        <?php foreach($filters as $filter): ?>
-        <a href="<?php echo $page->url() ?>?filter=<?php echo $filter ?>"><?php echo $filter ?></a>
-        <?php endforeach ?>
-    </nav> */ ?>
     <?php
-        $projects   = $page->children()->listed()->sortBy('title', 'asc')->paginate(24);
+        $projects = $page->children()->listed()->sortBy('title', 'asc')->paginate(24);
+
+        if($tag = param('tag')) {
+            $projects = $projects->filterBy('tags', $tag, ',');
+        }
+
         $pagination = $projects->pagination();
     ?>
 
@@ -30,4 +29,4 @@
     
 </main>
 
-<?php snippet('footer') ?>    
+<?php snippet('footer') ?>

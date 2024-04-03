@@ -123,7 +123,7 @@ a:target > img.cssbox_thumb + span.cssbox_full {
                     <dd>
                         <ul class="comma-list">
                         <?php foreach ($page->tags()->split() as $tag): ?>
-                            <li><?= $tag ?></li>
+                            <li><a href="<?= url('projects', ['params' => ['tag' => $tag]]) ?>" title="more <?= $tag ?> projects"><?= $tag ?></a></li>
                         <?php endforeach ?>
                         </ul>
                     </dd>
@@ -158,7 +158,10 @@ a:target > img.cssbox_thumb + span.cssbox_full {
                 </ul>
             </section>
         <?php endif ?>
-
+        
+        <nav class="pagination">
+            <a href="/projects/<?php if(isset($_GET['page_num'])):?>page:<?= $_GET['page_num'] ?><?php endif ?>" title="all projects">all projects</a>
+        </nav>
     </article>
 </main>
 
