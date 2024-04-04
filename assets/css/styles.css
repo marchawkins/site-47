@@ -28,6 +28,10 @@ article {
     
 }
 
+.show   {
+    display: block;
+}
+
 /* ----- 
     header & footer styles -----           */
 

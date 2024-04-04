@@ -100,35 +100,35 @@ a:target > img.cssbox_thumb + span.cssbox_full {
         <section class="text">
             <h1><?php echo $page->title() ?></h1>
        
-                <?php if($page->text()->isNotEmpty()): ?>
-                    <div class="project-text">
-                        <?php echo $page->text()->kirbytext() ?>
-                    </div>
+            <?php if($page->text()->isNotEmpty()): ?>
+                <div class="project-text">
+                    <?php echo $page->text()->kirbytext() ?>
+                </div>
+            <?php endif ?>
+
+            <h4>Project Details</h4>
+            <dl>
+                <?php if($page->year_start()->isNotEmpty()): ?>
+                <dt>Year</dt>
+                <dd><?= $page->year_start() ?><?php if($page->year_end()->isNotEmpty() && $page->year_end()->value()!=$page->year_start()->value()): ?> - <?= $page->year_end() ?><?php endif; ?></dd>
+                <?php endif ?>
+                
+                <?php if($page->link()->isNotEmpty()): ?>
+                <dt>Link</dt>
+                <dd><a href="<?= $page->link() ?>" title="view project"><?= $page->link() ?></a></dd>
                 <?php endif ?>
 
-                <h4>Project Details</h4>
-                <dl>
-                    <?php if($page->year_start()->isNotEmpty()): ?>
-                    <dt>Year</dt>
-                    <dd><?= $page->year_start() ?><?php if($page->year_end()->isNotEmpty() && $page->year_end()->value()!=$page->year_start()->value()): ?> - <?= $page->year_end() ?><?php endif; ?></dd>
-                    <?php endif ?>
-                    
-                    <?php if($page->link()->isNotEmpty()): ?>
-                    <dt>Link</dt>
-                    <dd><a href="<?= $page->link() ?>" title="view project"><?= $page->link() ?></a></dd>
-                    <?php endif ?>
-
-                    <?php if($page->tags()->isNotEmpty()): ?>
-                    <dt>Tags</dt>
-                    <dd>
-                        <ul class="comma-list">
-                        <?php foreach ($page->tags()->split() as $tag): ?>
-                            <li><a href="<?= url('projects', ['params' => ['tag' => $tag]]) ?>" title="more <?= $tag ?> projects"><?= $tag ?></a></li>
-                        <?php endforeach ?>
-                        </ul>
-                    </dd>
-                    <?php endif ?>
-                </dl>
+                <?php if($page->tags()->isNotEmpty()): ?>
+                <dt>Tags</dt>
+                <dd>
+                    <ul class="comma-list">
+                    <?php foreach ($page->tags()->split() as $tag): ?>
+                        <li><a href="<?= url('projects', ['params' => ['tag' => $tag]]) ?>" title="more <?= $tag ?> projects"><?= $tag ?></a></li>
+                    <?php endforeach ?>
+                    </ul>
+                </dd>
+                <?php endif ?>
+            </dl>
         </section>
         
         <?php if($page->full_gallery()->toBool() === true): ?>

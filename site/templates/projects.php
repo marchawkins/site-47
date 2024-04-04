@@ -1,30 +1,42 @@
 <?php snippet('header') ?>
 
-<main>
-    <h1><?= $page->title() ?></h1>
-    
+<main>    
     <?php
         $projects = $page->children()->listed()->sortBy('title', 'asc')->paginate(24);
-
-        if($tag = param('tag')) {
+        
+        if($tag = param('tag')):
             $projects = $projects->filterBy('tags', $tag, ',');
-        }
+        else:
+            $tag = false;
+        endif;
 
         $pagination = $projects->pagination();
     ?>
 
-    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "prevNextButtons": false, "pageDots": false }'>
-    <?php foreach($projects->shuffle() as $project): ?>
-        <div class="carousel-cell"><a href="<?= $project->url() ?>" title="<?= $project->title() ?>"><img src="<?= $project->file()->url() ?>" alt="<?= $project->title() ?> photo" height="300"/></a></div>
-    <?php endforeach ?>
-    </div><!-- .carousel -->
-    
     <article>
+        <h1><?= $page->title() ?></h1>
+        <?php if($tag): ?>
+            <h2>Tagged "<?= $tag ?>"</h2>
+        <?php endif; ?>
+        
         <div class="projects-wrapper">
-        <?php foreach($projects as $project): ?>
-            <div><a href="<?= $project->url() ?>"><?= $project->title() ?></a></div>
-        <?php endforeach ?>
-        </div>
+            <?php foreach($projects as $project): ?>
+                <div>
+                    <a class="project" href="<?= $project->url() ?>"><?php echo $project->image()->thumb([
+                    'width'   => 50,
+                    'height'  => 50,
+                    'crop'    => true,
+                    'quality' => 80
+                    ])->html() ?><span><?= $project->title() ?></span></a>
+                </div>
+            <?php endforeach ?>
+        </div><!-- .projects-wrapper -->
+
+        <?php if($tag): ?>
+            <nav class="pagination">
+                <a href="/projects/<?php if(isset($_GET['page_num'])):?>page:<?= $_GET['page_num'] ?><?php endif ?>" title="all projects">all projects</a>
+            </nav>
+        <?php endif; ?>
     </article>
     
 </main>
