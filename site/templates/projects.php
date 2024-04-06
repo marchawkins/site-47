@@ -22,12 +22,17 @@
         <div class="projects-wrapper">
             <?php foreach($projects as $project): ?>
                 <div>
-                    <a class="project" href="<?= $project->url() ?>"><?php echo $project->image()->thumb([
-                    'width'   => 50,
-                    'height'  => 50,
-                    'crop'    => true,
-                    'quality' => 80
-                    ])->html() ?><span><?= $project->title() ?></span></a>
+                    <a class="project" href="<?= $project->url() ?>">
+                    <?php
+                    if($project->images()->template('thumbnail-image')->first()):
+                        echo $project->images()->template('thumbnail-image')->first()->thumb([
+                            'width'   => 75,
+                            'height'  => 75,
+                            'crop'    => true,
+                            'quality' => 80
+                        ])->html();
+                    endif; ?>
+                    <span><?= $project->title() ?></span></a>
                 </div>
             <?php endforeach ?>
         </div><!-- .projects-wrapper -->
