@@ -115,7 +115,7 @@ a:target > img.cssbox_thumb + span.cssbox_full {
                 
                 <?php if($page->link()->isNotEmpty()): ?>
                 <dt>Link</dt>
-                <dd><a href="<?= $page->link() ?>" title="view project"><?= $page->link() ?></a></dd>
+                <dd><a href="<?= $page->link() ?>" title="view project">View &raquo;</a></dd>
                 <?php endif ?>
 
                 <?php if($page->tags()->isNotEmpty()): ?>
