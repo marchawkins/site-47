@@ -1,9 +1,0 @@
-Sort: 24
-
-----
-
-Uuid: imDszb3CvMDaSiga
-
-----
-
-Template: gallery-image
