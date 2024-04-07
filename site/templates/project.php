@@ -133,13 +133,13 @@ a:target > img.cssbox_thumb + span.cssbox_full {
         
         <?php if($page->full_gallery()->toBool() === true): ?>
             <?php
-                $galleryTotal   = $page->images()->count();
+                $galleryTotal   = $page->images()->template('gallery-image')->count();
                 $counter        = 1;
             ?>
             <section class="gallery cssbox">
                 <h4>Gallery</h4>
                 <ul>
-                    <?php foreach($page->images() as $image): ?>
+                    <?php foreach($page->images()->template('gallery-image') as $image): ?>
                         <?php $counter++ ?>
                     <li>
                         <!-- <?php echo $image->caption() ?> -->
