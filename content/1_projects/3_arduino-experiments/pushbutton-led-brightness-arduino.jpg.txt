@@ -1,9 +1,0 @@
-Sort: 8
-
-----
-
-Uuid: QKn3A0mXeu06BSUV
-
-----
-
-Template: gallery-image

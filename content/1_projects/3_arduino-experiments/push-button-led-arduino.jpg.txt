@@ -1,9 +1,0 @@
-Sort: 8
-
-----
-
-Uuid: 1ClikVn0ZiJkGhBF
-
-----
-
-Template: gallery-image

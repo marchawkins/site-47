@@ -1,9 +1,0 @@
-Sort: 8
-
-----
-
-Uuid: AZMwW95yr9xVIfWn
-
-----
-
-Template: gallery-image

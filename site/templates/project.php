@@ -142,9 +142,6 @@ a:target > img.cssbox_thumb + span.cssbox_full {
                     <?php foreach($page->images() as $image): ?>
                         <?php $counter++ ?>
                     <li>
-                        <!-- <a href="<?php echo $image->url() ?>" target="_blank" title="View larger">
-                            <img src="<?php echo $image->crop(300,300)->url() ?>" alt="<?php echo $image->alt() ?>"/>
-                        </a> -->
                         <!-- <?php echo $image->caption() ?> -->
                         <a id="image<?= $counter ?>" href="#image<?= $counter ?>"><img class="cssbox_thumb" src="<?php echo $image->crop(300,300)->url() ?>" />
                             <span class="cssbox_full"><img src="<?php echo $image->url() ?>" /></span>

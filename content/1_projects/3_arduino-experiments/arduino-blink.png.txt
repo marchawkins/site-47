@@ -1,9 +1,0 @@
-Sort: 8
-
-----
-
-Uuid: MkVkck57iE83CFno
-
-----
-
-Template: gallery-image

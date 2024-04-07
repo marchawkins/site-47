@@ -1,9 +1,0 @@
-Sort: 8
-
-----
-
-Uuid: vh3T3I2UojSDwuql
-
-----
-
-Template: gallery-image
