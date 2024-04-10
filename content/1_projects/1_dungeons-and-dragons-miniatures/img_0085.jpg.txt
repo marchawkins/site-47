@@ -1,0 +1,9 @@
+Sort: 41
+
+----
+
+Uuid: YSZW6Xy2jFbLk1ny
+
+----
+
+Template: gallery-image

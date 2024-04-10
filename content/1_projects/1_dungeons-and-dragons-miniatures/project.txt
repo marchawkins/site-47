@@ -1,0 +1,46 @@
+Title: D&D Miniatures
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Was finally able to find a group of friends to play D&D with, and we've been playing for almost 3 years (as of early 2024). Immediately after our first session, I got the itch to start painting miniatures for all our characters, which then snowballed into dozens and dozens of monsters, npc, accessories and more. Here are some shots of a good chunk of what I've painted so far. Hoping to continue posting more photos as I go, and someday paint all the ones I bought. But that will require me to stop buying more minis...
+
+----
+
+Year-start: 2021
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: D&D, painting
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: UzC1WNmralYoBQtN
