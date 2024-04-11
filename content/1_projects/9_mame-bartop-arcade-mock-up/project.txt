@@ -1,0 +1,46 @@
+Title: MAME Bartop Arcade Mock-up
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Creating a prototype (link: https://www.mamedev.org text: MAME) arcade joystick and buttons for an eventual bartop arcade machine. Thanks for the box, (link: https://www.lootcrate.com text: Loot Crate).
+
+----
+
+Year-start: 2015
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: mame, gaming, raspberry pi
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: xXsVlAuOCNIkvKn3
