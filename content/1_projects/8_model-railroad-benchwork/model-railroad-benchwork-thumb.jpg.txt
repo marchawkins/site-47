@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: udz9mtItXL2cqyHm
+
+----
+
+Template: thumbnail-image

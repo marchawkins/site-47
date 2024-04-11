@@ -1,0 +1,54 @@
+Title: First Scratchbuild Test
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text:
+
+(image: n-scale-scratchbuild-feature.jpg)
+
+I finally made the jump from reading about N-scale modeling and actually started building my first N-scale structure. I have no intention of ever using this in a layout, but I wanted to get a feel for the real size of these buildings. I've poured over hundreds of photos, but nothing could really compare to holding one in my hand. First impression - these things are TINY. You'll see from my photos just how small these are, and just how impressive some of the model builders in the hobby are.
+
+I haven't built any models in 10+ years, so I decided to start just using simple card stock (140lb white, with some 65lb for details). This is much cheaper than using styrene (plastic), especially since I knew this was going to be a throw-away piece. I went with a simple **Section House** created by (link: https://rrmodelcraftsman.com/n-scale-models-chris-brimley/ text: Chris Brimley) that I found on the awesome (now defunct) N Scale Limited website. A big factor in this decision was that Chris was kind enough to post scale elevations of the structure. He built his model out of basswood and other materials, but I'm just doing everything in card stock (and a little balsa) to get something together cheaply and quickly.
+
+Since this is such a simple structure and I'm only doing it as an exercise to hone my hand-eye coordination, I won't detail out every step. Below are some photos I've taken of my progress so far. I am fully aware that some of the details are out of scale (window frames), and I could've been much more careful in my construction. But again, this is just a test to see what an N-scale structure looks and feels like. I'll post more photos as I progress. I doubt I'll spend time painting this because I know the paint application will be significantly different on card stock versus plastic or wood. Anyway, here's where I am so far.
+
+----
+
+Year-start: 2010
+
+----
+
+Year-end: 2010
+
+----
+
+Link: 
+
+----
+
+Tags: n-scale, railroading, models, scratchbuild
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: CTD0o87IfO0FWmnd

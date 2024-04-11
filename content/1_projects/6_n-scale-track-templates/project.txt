@@ -1,0 +1,66 @@
+Title: N-scale Track Templates
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: false
+
+----
+
+Text:
+
+(image: 01.jpg)
+
+As I continued to research various track layouts, I wanted to physically see the track on the benchwork to get a better feel for the overall layout. Many of the track plans I found designed for a 2' x 4' layout seem to run almost to the edge of the benchwork, leaving little or no room for any surrounding scenery or track bed. Since I haven't completely settled on a track plan, I don't want to buy a bunch of track that I might not need. But, without the physical track, I can't accurately determine if the layout will comfortably fit on the benchwork.
+
+So, I figured I'd download some type of templates, print them out and see what fit. No dice. I couldn't find templates anywhere. I did see a couple from a few manufacturers that I could order, but I didn't really feel like waiting, paying for shipping, etc. I went to a local shop and picked up 1 package of each type of track for the layout I think I'd like to use. I scanned each piece and printed them out on slightly thicker than normal paper/card-stock. Just rigid enough to feel somewhat substantial, but not thick enough to gum up my inkjet.
+
+I haven't put them down on the benchwork yet, but in the meantime I thought I'd post them here for downloading by anyone else who might be looking for the same thing. I'm sure seasoned modelers have lots of spare track laying around, but for new-comers like me this might be helpful. For reference, this is **Atlas N-Code 80 track**. The image below are 300 dpi jpeg files. If you print them out at 100%, they should be the exact size of the real thing. I've posted the Atlas part number as part of the file name (note #2509 is a 'variety pack' that contains 3 different sizes of track). You can right-click to download/save the images.
+
+(image: atlas-2501.jpg)
+(image: atlas-2509-1_1-4in.jpg)
+(image: atlas-2509-2_1-2in.jpg)
+(image: atlas-2509-5_8in.jpg)
+(image: atlas-2510.jpg)
+(image: atlas-2511.jpg)
+(image: atlas-2516.jpg)
+(image: atlas-2520.jpg)
+(image: atlas-2536.jpg)
+(image: atlas-2750.jpg)
+(image: atlas-2751.jpg)
+
+----
+
+Year-start: 2010
+
+----
+
+Year-end: 2010
+
+----
+
+Link: 
+
+----
+
+Tags: models, n-scale, railroading
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: ylMAuE3BOb0Ryi2V
