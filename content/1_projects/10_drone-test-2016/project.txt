@@ -1,0 +1,65 @@
+Title: Drone Test 2016
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: false
+
+----
+
+Text:
+
+From the archives - testing out one of the first sub-$100 drones on the market from back in the day. At the time, this was surprisingly novel and the footage was pretty good for the state of inexpensive drone cameras at the time. But you can really see the camera limitations on the night video.
+
+My favorite part is the absolutely chaotic, crash-and-burn, shit show of an ending of almost all these videos. However, this drone still hangs in the shop and works.  
+
+Test 1:
+(video: https://www.youtube.com/watch?v=F8Tkd62iPh4)
+
+Test 2:
+(video: https://www.youtube.com/watch?v=0dwTtpazjU)
+
+Test 3: 
+(video: https://www.youtube.com/watch?v=gEze3QIfTDI)
+
+Test 4:
+(video: https://www.youtube.com/watch?v=ROhpWRqBXRI)
+
+Test 5:
+(video: https://www.youtube.com/watch?v=Fv_lwSS4VN4)
+
+----
+
+Year-start: 2016
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: drone, camera
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: Fe5h3obCuiPdb0XQ
