@@ -1,0 +1,46 @@
+Title: Home Office 2017
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Photos of my home office from 2017. I think I've got this room at about 99% capacity. Might be time to thin the herd.
+
+----
+
+Year-start: 2017
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: home, office, collectibles
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: qZNc8Q5ISuxkw2jf

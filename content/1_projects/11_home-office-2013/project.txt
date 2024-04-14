@@ -1,0 +1,46 @@
+Title: Home Office 2013
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Some photos of my home office, circa 2013. Pretty decent start, but it's come a long way since.
+
+----
+
+Year-start: 2013
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: office, collectibles, home
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: pk2uRt1I7GqsOVoz
