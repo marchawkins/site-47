@@ -19,6 +19,8 @@ sections:
     template: project
     text: "{{ page.title }}"
     status: published
+    sortBy: year_start
+    flip: true
     limit: 12
     image:
       ratio: 4/5

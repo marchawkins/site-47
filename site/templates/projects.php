@@ -2,7 +2,7 @@
 
 <main>    
     <?php
-        $projects = $page->children()->listed()->sortBy('title', 'asc')->paginate(24);
+        $projects = $page->children()->listed()->sortBy('year_start', 'desc')->paginate(24);
         
         if($tag = param('tag')):
             $projects = $projects->filterBy('tags', $tag, ',');
