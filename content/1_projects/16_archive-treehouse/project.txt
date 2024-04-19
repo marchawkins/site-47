@@ -1,0 +1,45 @@
+Title: Archive: Treehouse
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Had the good fortune to do some freelance work for the fine folks at Treehouse Interactive back in the day. I was tasked with coding and styling some really interesting and challenging designs. This was back when "pixel perfect" was the name of the game, so some of these layouts took days to get just right.  Some cool clients like Lifetime TV, too.
+
+----
+
+Year-start: 2004
+
+----
+
+Year-end: 2010
+
+----
+
+Link: 
+
+----
+
+Tags: work, code
+
+----
+
+Mymap:
+
+lat: 40.7127281
+lon: -74.0060152
+city: New York
+region: New York
+country: United States
+countryCode: us
+osm: 175905
+
+----
+
+Uuid: nuSwHmwPmpYGk9af

@@ -1,0 +1,45 @@
+Title: Archive: Acme Design
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Worked for a design shop outside Philadelphia in the early 2000s. Only about 5 of us, so I was the only "tech guy". Did a lot of flash work, as well as coding up online newsletters, websites, and my personal fav - a drag-and-drop slide editor in flash so the other people could make their own client presentations.
+
+----
+
+Year-start: 2002
+
+----
+
+Year-end: 2005
+
+----
+
+Link: 
+
+----
+
+Tags: work, code
+
+----
+
+Mymap:
+
+lat: 40.65265335
+lon: '-76.344973505172'
+city: Reilly Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 189228
+
+----
+
+Uuid: A3nC6xISSgixkEHt
