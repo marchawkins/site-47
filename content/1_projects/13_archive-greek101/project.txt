@@ -1,0 +1,45 @@
+Title: Archive: Greek101
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: An archive of various projects for a college screenprinting business, back in the early days of e-commerce websites, circa 1999-2000. Also some of the first HTML emails, which were super painful to create and test back then. Finally, a bunch of screen grabs from a line of freshman orientation CD-ROMs sent to incoming students at USC, Villanova, Northwestern and more. Those were a lot of fun, and I got to learn a ton about Macromedia Director (remember that? me neither.)
+
+----
+
+Year-start: 1999
+
+----
+
+Year-end: 2006
+
+----
+
+Link: 
+
+----
+
+Tags: work, design, code
+
+----
+
+Mymap:
+
+lat: 40.9312099
+lon: -73.8987469
+city: City of Yonkers
+region: New York
+country: United States
+countryCode: us
+osm: 174494
+
+----
+
+Uuid: TvuFgr2YwqxVkxgn

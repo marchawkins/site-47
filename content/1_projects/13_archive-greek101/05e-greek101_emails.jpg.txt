@@ -1,0 +1,9 @@
+Sort: 20
+
+----
+
+Uuid: VgDHcrUvwrcbEXne
+
+----
+
+Template: gallery-image

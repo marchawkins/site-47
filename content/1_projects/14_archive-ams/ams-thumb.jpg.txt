@@ -1,0 +1,9 @@
+Sort: 3
+
+----
+
+Uuid: KnUGyVQSd5qx3rSK
+
+----
+
+Template: thumbnail-image

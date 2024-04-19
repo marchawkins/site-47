@@ -1,0 +1,45 @@
+Title: Archive: AMS
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Spent a couple years at a design firm in Pittsburgh, Agnew Moyer Smith (AMS). Probably the job where I learned the most from the people around me. Some really talented people there, especially exciting since we were all learning how to create online spaces for companies and organizations of all kinds. Circa 2000-2002. Gallery is a collection of websites, flash animations, flash interfaces for physical installations. Worked on a lot of neat projects in those two years.
+
+----
+
+Year-start: 2000
+
+----
+
+Year-end: 2002
+
+----
+
+Link: 
+
+----
+
+Tags: work, design, code
+
+----
+
+Mymap:
+
+lat: 40.4416941
+lon: -79.9900861
+city: Pittsburgh
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188553
+
+----
+
+Uuid: 2US6ewo4WIgfbyjy
