@@ -1,0 +1,46 @@
+Title: Archive: Personal
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: A smattering of personal projects from the last 20 years. Some local websites, a home owners' association website, sites for friends, and some previous versions of this site. Enjoy the shoebox of screen caps.
+
+----
+
+Year-start: 2004
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: work, code, design
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: Lw8gkjwm2t1ryp6A
