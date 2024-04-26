@@ -1,0 +1,46 @@
+Title: Archive: Freelance
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: A random collection of about ten years of freelance work across various industries - real estate, travel, sales and marketing, and artist representatives. Mostly websites, with a little bit of flash work. A fair amount of design work on some of these projects, too.
+
+----
+
+Year-start: 1998
+
+----
+
+Year-end: 2008
+
+----
+
+Link: 
+
+----
+
+Tags: work, design, code
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: WL099eggkBdr8Szb
