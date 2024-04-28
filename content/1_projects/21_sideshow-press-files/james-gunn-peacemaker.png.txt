@@ -1,0 +1,9 @@
+Sort: 16
+
+----
+
+Uuid: I1xGyb3olKCGLfl3
+
+----
+
+Template: gallery-image

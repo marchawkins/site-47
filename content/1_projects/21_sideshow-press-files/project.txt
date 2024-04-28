@@ -1,0 +1,49 @@
+Title: Sideshow Press Files
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text:
+
+If I could go back and tell 12yr old me where I would be spending the bulk of my adult working life, I'm pretty sure I would've my old ass. No way. Back then I assumed I would be an architect, probably working in an office or cubicle somewhere. Fast-forward 15 years, and I found myself taking a job (a **remote** job, nonetheless) for a California-based collectibles company, (link: https://www.sideshow.com text: Sideshow). Pretty f'n cool.
+
+This post showcases just a handful of the dozens and dozens of social media posts and a smattering of other photos over the last 20 years: Clint Eastwood(Man with No Name, Preacher, Dirty Harry), Mark Hamill (Luke Skywalker and The Joker), Keanu Reeves (Jon Wick), Jason Mamoa (Aquaman), Laurence Fishburne (Matrix and Predators), Jon Bautista (Drax), Grogu on Monday Night Football (and NASA's control center), Fluffy, James Gunn (Peacemaker), Jon Favreau (The Mandalorian), Muvico Theater Display.
+
+----
+
+Year-start: 2005
+
+----
+
+Year-end: 2024
+
+----
+
+Link: 
+
+----
+
+Tags: work, sideshow
+
+----
+
+Mymap:
+
+lat: 34.1705609
+lon: -118.8375937
+city: Thousand Oaks
+region: California
+country: United States
+countryCode: us
+osm: 112603
+
+----
+
+Uuid: XH9Ek0RcJJ9fJIXB
