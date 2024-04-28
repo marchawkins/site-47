@@ -1,0 +1,45 @@
+Title: Archive: Flash
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Some early Flash and Director work back from when those were still a thing. Did some CD-ROMs showcasing technology being used at Penn State's School of Visual Arts. Also some experiments with more advanced ActionScript to re-create a couple of games - Breakout and Pong.
+
+----
+
+Year-start: 1998
+
+----
+
+Year-end: 2002
+
+----
+
+Link: 
+
+----
+
+Tags: code, design, flash
+
+----
+
+Mymap:
+
+lat: 40.7944504
+lon: -77.8616386
+city: State College
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188627
+
+----
+
+Uuid: s3N7R6kzaGlvitLZ

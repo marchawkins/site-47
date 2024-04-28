@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: vm6f3PTJBdnh73i2
+
+----
+
+Template: thumbnail-image

@@ -1,0 +1,45 @@
+Title: Sideshow: The First Ten
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Working on the same "corporate" website for 10 years (let alone, almost 20 at this point), may seem like it could get stale. But at (link: https://www.sideshow.com text: Sideshow), I'm fortunate enough to be a part of a great team of creative people - visually and technically - and we're never afraid to wipe the slate clean and start again. This is a fraction of the projects and pages created throughout my first ten years. Highlights include an "Experience" site featuring multimedia elements and pop culture news, various content pages and some screenshots of our first mobile site.
+
+----
+
+Year-start: 2005
+
+----
+
+Year-end: 2014
+
+----
+
+Link: https://www.sideshow.com
+
+----
+
+Tags: work, code, design, sideshow
+
+----
+
+Mymap:
+
+lat: 34.1705609
+lon: -118.8375937
+city: Thousand Oaks
+region: California
+country: United States
+countryCode: us
+osm: 112603
+
+----
+
+Uuid: M5ij5QOghpjD9ByV

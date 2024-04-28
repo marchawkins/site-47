@@ -21,7 +21,7 @@ sections:
     status: published
     sortBy: year_start
     flip: true
-    limit: 12
+    limit: 36
     image:
       ratio: 4/5
       cover: true
