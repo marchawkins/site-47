@@ -191,6 +191,15 @@ footer  {
     vertical-align: bottom;
 }
 
+.inline_gallery {
+    width: 100%; 
+}
+
+.inline_gallery figure {
+    display: inline-block;
+    margin: 0;
+}
+
 @media (max-aspect-ratio: 1/1) {
     .gallery li {
       height: 30vh;

@@ -32,14 +32,14 @@ Tags: D&D, painting
 
 Mymap:
 
-lat: 39.9003875
-lon: -75.6257656
-city: Pocopson Township
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
 region: Pennsylvania
 country: United States
 countryCode: us
-postcode: "19366"
-osm: 158574827
+postcode: "19383"
+osm: 187665
 
 ----
 
