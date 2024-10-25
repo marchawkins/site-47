@@ -1,0 +1,46 @@
+Title: Painting Tiamat
+
+----
+
+Featured-project: true
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Kicked my painting game up a notch with this beast. I hesitate to even call this a Dungeons and Dragons "miniature" due to the sheer size of this thing. At 14" tall and 28" across at the wings, and even after base coating it with some matte red spray paint, this took a ton of paint. Although I painted it for a friend, and it won't end up in my office, still super happy with the way it turned out. Clocked in close to 30 hours from priming to the finished product. I actually wouldn't mind painting one again and keeping it for myself.
+
+----
+
+Year-start: 2024
+
+----
+
+Year-end: 2024
+
+----
+
+Link: 
+
+----
+
+Tags: dungeons and dragons, miniatures, painting
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: OFCDTQt0dKwueAhx
