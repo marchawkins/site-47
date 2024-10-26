@@ -22,7 +22,7 @@
         <div class="projects-wrapper">
             <?php foreach($projects as $project): ?>
                 <div>
-                    <a class="project" href="<?= $project->url() ?>">
+                    <a class="project" href="<?= $project->url() ?>" title="<?= $project->title() ?>">
                     <?php
                     if($project->images()->template('thumbnail-image')->first()):
                         echo $project->images()->template('thumbnail-image')->first()->thumb([
