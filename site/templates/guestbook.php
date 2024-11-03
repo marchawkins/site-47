@@ -103,12 +103,6 @@
                     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
                     $message = "Name: $name\nEmail: $email\nMessage: $message";
-
-                    if (mail($to, $subject, $message, $headers)) {
-                        echo '<p>Email sent successfully.</p>';
-                    } else {
-                        echo '<p>Email sending failed.</p>';
-                    }
                 }
 
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') :

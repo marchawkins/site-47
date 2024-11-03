@@ -15,6 +15,9 @@ Icon
 
 .lock
 
+# Ignore guestbook entries
+/content/4_guestbook/guestbook_entries/
+
 # Editors
 # (sensitive workspace files)
 # ---------------------------
