@@ -39,30 +39,51 @@
 
 <main>
     <article>
+    <h1>Guestbook</h1>
+        <div id="content">
         <section>
-            <h1>Guestbook</h1>
+            
             <form id="guestbookForm" method="post" action="">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required/>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required/>
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" rows="5" name="message" required></textarea>
                 </div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Leave Message"/>
             </form>
             
             <script type="text/javascript">
-                document.getElementById('guestbookForm').addEventListener('submit', function(event) {
-                    var name = document.getElementById('name').value;
-                    var email = document.getElementById('email').value;
-                    var message = document.getElementById('message').value;
+                const MAX_SUBMISSIONS = 5;
+                const SUBMISSION_INTERVAL = 3600 * 1000; // 1 hour in milliseconds
+                const STORAGE_KEY = 'guestbookSubmissions';
 
+                function getSubmissionCount() {
+                    let count = localStorage.getItem(STORAGE_KEY);
+                    return count ? JSON.parse(count) : { submissions: 0, lastSubmissionTime: 0 };
+                }
+
+                function setSubmissionCount(count) {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(count));
+                }
+
+                document.getElementById('guestbookForm').addEventListener('submit', function(event) {
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    const { submissions, lastSubmissionTime } = getSubmissionCount();
+                    if (submissions >= MAX_SUBMISSIONS && Date.now() - lastSubmissionTime < SUBMISSION_INTERVAL) {
+                        alert("You have reached your submission limit for the day.");
+                        return;
+                    }
+                    
                     if (!name || !email || !message) {
                         alert('All fields are required.');
                         event.preventDefault();
@@ -73,13 +94,32 @@
                 });
             </script>
 
-            <?php if ($_SERVER['REQUEST_METHOD'] === 'POST') :
-                $name = htmlspecialchars($_POST['name']);
-                $email = htmlspecialchars($_POST['email']);
-                $message = htmlspecialchars($_POST['message']);
-                saveGuestbookEntry($name, $email, $message);
-                echo "<p>Thank you, $name, for your message. It will be reviewed before going live.</p>";
-            endif; ?>
+            <?php
+                function sendEmail($name, $email, $message) {
+                    $to = 'marchawkins@gmail.com';
+                    $subject = 'New Guestbook Entry';
+                    $headers = "From: no-reply@marchawkins.com\r\n";
+                    $headers .= "Reply-To: no-reply@marchawkins.com\r\n";
+                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+                    $message = "Name: $name\nEmail: $email\nMessage: $message";
+
+                    if (mail($to, $subject, $message, $headers)) {
+                        echo '<p>Email sent successfully.</p>';
+                    } else {
+                        echo '<p>Email sending failed.</p>';
+                    }
+                }
+
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') :
+                    $name = htmlspecialchars($_POST['name']);
+                    $email = htmlspecialchars($_POST['email']);
+                    $message = htmlspecialchars($_POST['message']);
+                    saveGuestbookEntry($name, $email, $message);
+                    sendEmail($name, $email, $message); // Send email with the new entry
+                    echo "<p id='response'>Thank you for your message. It will be reviewed before going live.</p>";
+                endif;
+            ?>
         </section>
 
         <?php
@@ -107,17 +147,24 @@
                         <?php 
                         $date = DateTime::createFromFormat('Y-m-d_H-i-s', $entry['timestamp'], new DateTimeZone('America/New_York'));
                         $formattedDate = $date->format('l, F j, Y g:i A');
+                        if(isset($entry['email']) & !empty($entry['email'])):
+                            $gravatarUrl = 'https://www.gravatar.com/avatar/' . md5(strtolower(trim($entry['email']))) . '?s=80&d=mm';
+                        else:
+                            $gravatarUrl = 'https://www.gravatar.com/avatar/?s=80&d=mm';
+                        endif
                         ?>
-                        <div class="entry">
-                            <p>
-                                <strong><?php echo htmlspecialchars($entry['name']); ?></strong> (<?php echo $formattedDate; ?>): 
+                        <div class="entry-card">
+                            <img src="<?php echo $gravatarUrl ?>" alt="<?php echo $entry['name'] ?>'s gravatar" class="gravatar"/>
+                            <div class="entry-content">
+                                <strong><?php echo htmlspecialchars($entry['name']); ?></strong> <span class="time"><?php echo $formattedDate; ?></span><br/> 
                                 <?php echo htmlspecialchars($entry['message']); ?>
-                            </p>
-                        </div><!-- .entry -->
+                            </div>
+                        </div><!-- .entry-card -->
                     <?php endforeach; ?>
                 </div><!-- .entries -->
             </section>
         <?php endif; ?>
+        </div><!-- #content -->
     </article>
 </main>
 
