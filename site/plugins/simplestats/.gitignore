@@ -1,0 +1,80 @@
+# OS files
+.DS_Store
+
+# npm modules
+/node_modules
+
+# Parcel cache folder
+.cache
+
+# Composer files
+#/vendor
+
+# Locks
+package-lock.json
+composer.lock
+
+# Ignore dev packages (only commit production files to github)
+/vendor/cweagans/*
+
+# files of Composer dependencies that are not needed for the plugin
+/vendor/**/.*
+/vendor/**/*.json
+!/vendor/**/referers.json
+/vendor/**/*.txt
+/vendor/**/*.md
+#/vendor/**/*.yml
+/vendor/**/*.yaml
+/vendor/**/*.xml
+/vendor/**/*.dist
+/vendor/**/readme.php
+!/vendor/**/LICENSE
+/vendor/**/COPYING
+!vendor/**/VERSION
+/vendor/**/docs/*
+/vendor/**/example/*
+/vendor/**/examples/*
+/vendor/**/test/*
+/vendor/**/tests/*
+/vendor/**/php4/*
+/vendor/getkirby/composer-installer
+
+# Manually added composer vendors
+/vendor/**/*.py
+/vendor/**/Vagrantfile
+#/vendor/**/data/*
+/vendor/**/bin/*
+
+# License file fixes
+!/vendor/*/*/MIT-LICENSE.txt
+!/vendor/**/LICENSE.md
+!/vendor/**/LICENSE.txt
+
+# browserparser
+!/vendor/whichbrowser/parser/src/Data/*
+!/vendor/whichbrowser/parser/data/*
+
+# referer-parser Fixes
+/vendor/snowplow/referer-parser/*/*
+!/vendor/snowplow/referer-parser/php/src/Snowplow/RefererParser/*
+!/vendor/snowplow/referer-parser/php/*
+!/vendor/snowplow/referer-parser/php/*/*.php
+!/vendor/snowplow/referer-parser/php/data/*
+/vendor/snowplow/referer-parser/php/*.DS_Store
+/vendor/snowplow/referer-parser/php/**/*.DS_Store
+/vendor/snowplow/referer-parser/php/*.dist
+/vendor/snowplow/referer-parser/php/*.xml
+/vendor/snowplow/referer-parser/php/*.md
+
+
+
+# User data
+.sqlite
+
+# Plugin files
+.samples
+
+# Tests
+.php_cs.cache
+.phpunit.result.cache
+tests

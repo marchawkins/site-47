@@ -96,13 +96,19 @@
 
             <?php
                 function sendEmail($name, $email, $message) {
-                    $to = 'marchawkins@gmail.com';
+                    $to = 'marc@marchawkins.com';
                     $subject = 'New Guestbook Entry';
                     $headers = "From: no-reply@marchawkins.com\r\n";
                     $headers .= "Reply-To: no-reply@marchawkins.com\r\n";
                     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
                     $message = "Name: $name\nEmail: $email\nMessage: $message";
+
+                    // if (mail($to, $subject, $message, $headers)) {
+                    //     echo '<p>Email sent successfully.</p>';
+                    // } else {
+                    //     echo '<p>Email sending failed.</p>';
+                    // }
                 }
 
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') :
