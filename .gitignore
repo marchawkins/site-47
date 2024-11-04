@@ -51,3 +51,4 @@ Icon
 # ---------------
 
 /site/config/.license
+site/logs/simplestats.sqlite
