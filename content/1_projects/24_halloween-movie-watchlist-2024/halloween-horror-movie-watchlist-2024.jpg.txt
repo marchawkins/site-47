@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: EOaH3GkWA4BonZWE
+
+----
+
+Template: thumbnail-image
