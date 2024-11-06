@@ -17,7 +17,7 @@ Icon
 
 # Ignore guestbook entries
 /content/4_guestbook/guestbook_entries/
-/content/guestbook-entries/
+#/content/guestbook-entries/*
 
 # Editors
 # (sensitive workspace files)
