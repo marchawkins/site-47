@@ -22,7 +22,7 @@ h2  {
 .projects-wrapper div {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: .25rem;
 }
 
 .projects-wrapper a {
@@ -40,8 +40,8 @@ h2  {
 }
 
 .projects-wrapper img {
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
     margin-right: .5rem;
 }
 

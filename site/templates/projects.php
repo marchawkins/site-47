@@ -26,8 +26,8 @@
                     <?php
                     if($project->images()->template('thumbnail-image')->first()):
                         echo $project->images()->template('thumbnail-image')->first()->thumb([
-                            'width'   => 75,
-                            'height'  => 75,
+                            'width'   => 150,
+                            'height'  => 150,
                             'crop'    => true,
                             'quality' => 80
                         ])->html();

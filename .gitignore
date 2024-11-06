@@ -17,6 +17,7 @@ Icon
 
 # Ignore guestbook entries
 /content/4_guestbook/guestbook_entries/
+/content/guestbook-entries/
 
 # Editors
 # (sensitive workspace files)
@@ -51,4 +52,6 @@ Icon
 # ---------------
 
 /site/config/.license
+/site/logs/simplestats.sqlite
+/site/logs
 site/logs/simplestats.sqlite

@@ -1,0 +1,5 @@
+titles: Frontend file uploads
+
+accept:
+  mime: image/*
+  maxsize: 3000000 # size in byte = 3 MB
