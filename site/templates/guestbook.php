@@ -1,23 +1,22 @@
 <?php snippet('header') ?>
 
-<?php if ($success): ?>
-    <div class="alert success">
-        <p><?= $success ?></p>
-    </div>
-<?php else: ?>
-    <?php if (empty($alerts) === false): ?>
-        <ul>
-            <?php foreach ($alerts as $alert): ?>
-                <li><?= $alert ?></li>
-            <?php endforeach ?>
-        </ul>
-    <?php endif ?>
-
 <main>
     <article>
     <h1>Guestbook</h1>
         <div id="content">
-            <section>  
+            <section>
+            <?php if ($success): ?>
+                <div class="alert success">
+                    <p><?= $success ?></p>
+                </div>
+            <?php else: ?>
+                <?php if (empty($alerts) === false): ?>
+                    <ul>
+                        <?php foreach ($alerts as $alert): ?>
+                            <li><?= $alert ?></li>
+                        <?php endforeach ?>
+                    </ul>
+                <?php endif ?>
                 <form id="guestbookForm" method="post" enctype="multipart/form-data" action="">
                     <div class="honeypot" style="position: absolute; left: -9999px;">
                         <label for="website">Website <abbr title="required">*</abbr></label>
@@ -43,6 +42,7 @@
                     <input type="submit" name="submit" value="Leave Message"/>
                 </form>
             </section>
+        <?php endif ?>
 
         <?php
         $directoryPath = 'content/4_guestbook/guestbook_entries/';
@@ -72,6 +72,7 @@
                             $date = DateTime::createFromFormat('Y-m-d_H-i-s', $entry['timestamp'], new DateTimeZone('America/New_York'));
                             $formattedDate = $date->format('l, F j, Y g:i A');
                             if (isset($entry['images']) && !empty($entry['images'])) {
+                                // there will only be one image, so pull first item in array
                                 $entryImage = htmlspecialchars($entry['images'][0]);
                             } else if(isset($entry['email']) & !empty($entry['email'])) {
                                 $entryImage = 'https://www.gravatar.com/avatar/' . md5(strtolower(trim($entry['email']))) . '?s=80&d=mm';
@@ -93,6 +94,5 @@
         </div><!-- #content -->
     </article>
 </main>
-<?php endif ?>
 
 <?php snippet('footer') ?>

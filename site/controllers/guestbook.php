@@ -9,6 +9,11 @@ return function ($kirby, $page) {
 
   if ($kirby->request()->is('post') === true && get('submit')) {
 
+    // function to validate user input
+    function validateInput($data) {
+      return htmlspecialchars(stripslashes(trim($data)));
+    }
+    
     // check the honeypot
     if (empty(get('website')) === false) {
       go($page->url());
@@ -16,9 +21,9 @@ return function ($kirby, $page) {
     }
 
     // handle form input
-    $name = $kirby->request()->get('name');
-    $email = $kirby->request()->get('email');
-    $message = $kirby->request()->get('message');
+    $name = validateInput($kirby->request()->get('name'));
+    $email = validateInput($kirby->request()->get('email'));
+    $message = validateInput($kirby->request()->get('message'));
     $entry = [
       'name' => $name,
       'message' => $message,
@@ -31,8 +36,9 @@ return function ($kirby, $page) {
 
 
     // handle uploads
-    if($uploads = $kirby->request()->files()->get('file')) {
-
+    $uploads = $kirby->request()->files()->get('file');
+    if($uploads[0]['name']!='') {
+      
       // we only want 1 file
       if (count($uploads) > 1) {
         $alerts['exceedMax'] = 'You may only upload 1 file.';
@@ -72,7 +78,7 @@ return function ($kirby, $page) {
             ]
           ]);
           $fullImagePath = $file->url();
-          $success = 'Your file upload was successful';
+          $success = 'Photo uploaded.';
           array_push($entry['images'],$fullImagePath);
         } catch (Exception $e) {
           $alerts[$upload['name']] = $e->getMessage();
@@ -82,8 +88,9 @@ return function ($kirby, $page) {
 
     $fileName = $directoryPath . 'entry_' . $entry['timestamp'] . '.txt'; // Unique file name based on timestamp
     $entryJson = json_encode($entry, JSON_PRETTY_PRINT); // Convert entry to JSON
-    file_put_contents($fileName, $entryJson); // Save entry to a new file
-
+    if(file_put_contents($fileName, $entryJson)) { // Save entry to a new file
+      $success = 'Thank you for your message. It will be reviewed before going live.';
+    }
   }
 
   return compact('alerts', 'success');
