@@ -1,6 +1,6 @@
 /* guestbook page styles */
 
-article a   {
+article a {
     color: #000;
     font-weight: bold;
 }
@@ -29,20 +29,21 @@ h2 {
     margin-bottom: 5px;
 }
 
-#guestbookForm input[type="text"],
-#guestbookForm input[type="email"],
-#guestbookForm textarea {
+#kommentform input[type="text"],
+#kommentform input[type="email"],
+#kommentform input[type="url"],
+#kommentform textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
     font-size: 100%;
 }
 
-#guestbookForm textarea {
+#kommentform textarea {
     border: 1px solid #ccc;
 }
 
-#guestbookForm input[type="submit"] {
+#kommentform input[type="submit"] {
     background-color: #000;
     color: #fff;
     font-weight: bold;
@@ -53,27 +54,53 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#response {
+#kommentform .form-feedback.moderation-note {
+    margin-top: 1rem;
     padding: .5rem;
     background: #efefef;
+    color: #000;
     text-align: center;
 }
 
-.entries {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+#kommentsWebmentions .list-comments {
+    margin: 0;
+    padding: 0;
 }
 
-.entry-card {
-    border: 1px solid #ccc;
-    padding: 10px;
+#kommentsWebmentions .list-comments .single-komment, #kommentsWebmentions .list-replies .single-komment {
+    border-bottom: 1px solid #ccc;
+    padding: .5rem;
     margin-bottom: 10px;
-    border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
+    grid-row-gap: 0px;
+    grid-template-columns: 0 40px;
 }
 
+.type-of, .verified-badge    {
+    display: none;
+}
+
+.author-action {
+    font-size: 65%;
+    color: #333;
+    text-transform: uppercase;
+}
+
+#kommentsWebmentions .komment-text {
+    padding: 0;
+}
+
+#kommentsWebmentions .reply {
+    font-size: 65%;
+    color: #333;
+    text-transform: uppercase;
+}
+
+#kommentsWebmentions .reply a {
+    text-decoration: none;
+}
+
+/*
 .gravatar {
     width: 40px;
     height: 40px;
@@ -97,3 +124,4 @@ h2 {
     color: #666;
     text-transform: uppercase;
 }
+*/
