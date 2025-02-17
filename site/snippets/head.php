@@ -11,6 +11,9 @@
         <?= css('assets/css/flickity.css'); ?>
         <?= js('assets/js/flickity.pkgd.min.js'); ?>
     <?php endif ?>
+    <?php if($page->title()=='Guestbook'): ?>
+        <?php echo css(['/media/plugins/mauricerenck/komments/komments.css']); ?>
+    <?php endif ?>
     <?= css('@auto'); ?>
     <?= css($page->files()->filterBy('extension', 'css')->pluck('url')) ?>
     <?= js($page->files()->filterBy('extension', 'js')->pluck('url')) ?>

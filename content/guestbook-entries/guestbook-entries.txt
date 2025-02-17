@@ -1,9 +1,0 @@
-Title: Guestbook Entries
-
-----
-
-Text: 
-
-----
-
-Uuid: oPFx2Sh5RKiaWh8H

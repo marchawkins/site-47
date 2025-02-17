@@ -2,4 +2,16 @@ Title: Guestbook
 
 ----
 
+Text: Thanks for stopping by. Use the form below to drop me a message.
+
+----
+
+Kommentsenabledonpage: true
+
+----
+
+Kommentsinbox: 
+
+----
+
 Uuid: y7bWDWnTA7gyA4q3
