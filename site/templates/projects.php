@@ -20,8 +20,10 @@
         <?php endif; ?>
         
         <div class="projects-wrapper">
+            <ul>
             <?php foreach($projects as $project): ?>
-                <div>
+                <li><a class="project" href="<?= $project->url() ?>" title="<?= $project->title() ?>"><span><?= $project->title() ?></span></a></li>
+                <?php /* <div>
                     <a class="project" href="<?= $project->url() ?>" title="<?= $project->title() ?>">
                     <?php
                     if($project->images()->template('thumbnail-image')->first()):
@@ -33,8 +35,9 @@
                         ])->html();
                     endif; ?>
                     <span><?= $project->title() ?></span></a>
-                </div>
+                </div> */ ?>
             <?php endforeach ?>
+            </ul>
         </div><!-- .projects-wrapper -->
 
         <?php if($tag): ?>
