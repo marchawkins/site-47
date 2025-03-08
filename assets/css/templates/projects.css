@@ -30,6 +30,7 @@ h2  {
     display: block;
     color: #000;
     background: #efefef;
+    transition: background-color 0.5s ease; /* Transition for background color */
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -47,40 +48,8 @@ h2  {
     }
 }
 
-/*
-.projects-wrapper {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
+@media (min-width: 1280px) {
+    .projects-wrapper ul {
+        grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns on desktop */
+    }
 }
-
-.projects-wrapper div {
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-}
-
-.projects-wrapper a {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    color: #000;
-    font-weight: bold;
-    background: #efefef;
-    text-decoration: none;
-}
-
-.projects-wrapper a:hover {
-    background: #ccc;
-}
-
-.projects-wrapper img {
-    width: 150px;
-    height: 150px;
-    margin-right: .5rem;
-}
-
-.projects-wrapper span {
-    word-wrap: break-word;
-}
-*/

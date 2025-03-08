@@ -10,6 +10,8 @@ columns:
           text:
             type: textarea
             size: huge
+          tags:
+            type: tags
   sidebar:
     width: 1/3
     sections:

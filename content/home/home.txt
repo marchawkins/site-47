@@ -1,5 +1,13 @@
 Title: Home
+
 ----
+
 Text: Welcome to my kickin' website.
+
 ----
+
+Tags: marc hawkins, design, development, internet, ecommerce, video games, dungeons and dragons
+
+----
+
 Uuid: UCkNytHp0mJlLv49
