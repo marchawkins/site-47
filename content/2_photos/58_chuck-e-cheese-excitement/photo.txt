@@ -1,0 +1,34 @@
+Title: Chuck e cheese Excitement
+
+----
+
+Text: I can assure you this ride is not as exciting as it looks in the photo.
+
+----
+
+Date-taken: 2014-11-02
+
+----
+
+People: carter
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: hEzrdhsCflYhlOoT

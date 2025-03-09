@@ -1,0 +1,33 @@
+Title: Brooks meets great-grammy
+
+----
+
+Text: Brooks meeting Great-Grammy Kate for the first time.
+
+----
+
+Date-taken: 2014-11-12
+
+----
+
+People: brooks, grammy kate
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 41.20484
+lon: -76.7870991
+city: Muncy
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188749
+
+----
+
+Uuid: 9SIqUVNmYJCUM1zU

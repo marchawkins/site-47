@@ -1,0 +1,34 @@
+Title: Thanksgiving 2014
+
+----
+
+Text: Celebrating Thanksgiving at Nana and Grandpa's house. Brooks' first!
+
+----
+
+Date-taken: 2014-11-27
+
+----
+
+People: maddie, brooks, megan, carter, grammy
+
+----
+
+Tags: thanksgiving
+
+----
+
+Mymap:
+
+lat: 40.0201
+lon: -76.1335653
+city: Leacock Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17529"
+osm: 158647220
+
+----
+
+Uuid: 2asKuDF1M19bDrh9
