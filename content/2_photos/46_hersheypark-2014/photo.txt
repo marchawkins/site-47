@@ -1,0 +1,33 @@
+Title: Hersheypark 2014
+
+----
+
+Text: Family trip to (link: https://www.hersheypark.com text: Hersheypark)!
+
+----
+
+Date-taken: 2014-09-21
+
+----
+
+People: maddie, megan, carter, brooks
+
+----
+
+Tags: Hersheypark
+
+----
+
+Mymap:
+
+lat: '40.2850285'
+lon: '-76.653466223197'
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: wH4k4m7A7I8Zx2NN

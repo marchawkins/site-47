@@ -9,6 +9,8 @@
         array_push($metaTags,$page->title());
         if($page->year_start()->isNotEmpty()):
             array_push($metaTags,$page->year_start());
+        elseif($page->date_taken()):
+            array_push($metaTags,$page->date_taken()->toDate('F, Y'));
         endif;
         if($page->tags()->isNotEmpty()):
             $tagsArray = $page->tags()->split();

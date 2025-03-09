@@ -9,7 +9,9 @@
         <?php if($page->text()): ?>
             <p><?php echo $page->text()->kirbytext() ?></p>
         <?php endif ?>
-        
+        <?php if($page->date_taken()): ?>
+            <p><small><?php echo $page->date_taken()->toDate('F Y') ?></small></p>
+        <?php endif ?>
         <?php if($photos = $page->files()): ?>
             <div id="photos">
             <?php foreach($photos as $photo): ?>
