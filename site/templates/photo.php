@@ -6,12 +6,13 @@
 <main>
     <article>
         <h1><?php echo $page->title() ?></h1>
-        <?php if($page->text()): ?>
-            <p><?php echo $page->text()->kirbytext() ?></p>
-        <?php endif ?>
         <?php if($page->date_taken()): ?>
             <p><small><?php echo $page->date_taken()->toDate('F Y') ?></small></p>
         <?php endif ?>
+        <?php if($page->text()): ?>
+            <?php echo $page->text()->kirbytext() ?>
+        <?php endif ?>
+       
         <?php if($photos = $page->files()): ?>
             <div id="photos">
             <?php foreach($photos as $photo): ?>

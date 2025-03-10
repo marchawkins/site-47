@@ -2,11 +2,17 @@ Title: Maddie's 9th Birthday
 
 ----
 
-Text: Maddie's 9th birthday party with friends at (link: https://www.skyzone.com text: Sky Zone) trampoline park.
+Text:
+
+Maddie's 9th birthday party with friends at (link: https://www.skyzone.com text: Sky Zone) trampoline park.
+
+(video: https://youtu.be/mIVh9j1ySdo class: youtube)
+(video: https://youtu.be/DOGHYMir-S4 class: youtube)
+(video: https://youtu.be/O_q3bexHU24 class: youtube)
 
 ----
 
-date_taken: 2014-02-12
+Date-taken: 2014-02-12
 
 ----
 

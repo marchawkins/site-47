@@ -2,7 +2,11 @@ Title: Brooks First Cereal
 
 ----
 
-Text: Brooks' first time trying cereal. Looks like a strong "meh".
+Text:
+
+Brooks' first time trying cereal. Looks like a strong "meh".
+
+(video: https://youtu.be/vEJWRmyjqeA class: youtube)
 
 ----
 

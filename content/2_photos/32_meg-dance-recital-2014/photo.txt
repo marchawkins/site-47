@@ -2,11 +2,15 @@ Title: Meg's Dance Recital 2014
 
 ----
 
-Text: Meg makes her dance recital debut with the (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy).
+Text:
+
+Meg makes her dance recital debut with the (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy).
+
+(video: https://youtu.be/DhKqI0sGozw class: youtube)
 
 ----
 
-date_taken: 2014-06-15
+Date-taken: 2014-06-15
 
 ----
 

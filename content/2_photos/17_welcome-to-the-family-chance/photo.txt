@@ -2,11 +2,15 @@ Title: Welcome to the family, Chance
 
 ----
 
-Text: Maddie and Megan checking out their new cousin, Chance.
+Text:
+
+Maddie and Megan checking out their new cousin, Chance.
+
+(video:https://youtu.be/ILxKvuDtPRM class: youtube)
 
 ----
 
-date_taken: 2013-10-29
+Date-taken: 2013-10-29
 
 ----
 
