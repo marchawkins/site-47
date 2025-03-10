@@ -6,11 +6,11 @@ Text: Congratulations to my nephew, Zac, and his new wife Miquela. Great time ha
 
 ----
 
-date_taken: 2014-09-20
+Date-taken: 2014-09-20
 
 ----
 
-People: zac, miquela, maddie
+People: zac, miquela, maddie, marc, danielle, carter, megan, brooks
 
 ----
 

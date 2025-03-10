@@ -6,11 +6,11 @@ Text: Brooks has arrived! Weighing in at a healthy 7.2lbs. Momma and baby are do
 
 ----
 
-date_taken: 2014-08-23
+Date-taken: 2014-08-23
 
 ----
 
-People: brooks
+People: brooks, danielle, maddie, clark
 
 ----
 

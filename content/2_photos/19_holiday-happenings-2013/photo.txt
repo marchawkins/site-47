@@ -6,15 +6,15 @@ Text: A random selection of holiday activities throughout December, including: f
 
 ----
 
-date_taken: 2013-12-01
+Date-taken: 2013-12-01
 
 ----
 
-People: carter, megan
+People: carter, megan, maddie, danielle, gary, sandy
 
 ----
 
-Tags: christmas, concert
+Tags: christmas, concert, snow, santa
 
 ----
 

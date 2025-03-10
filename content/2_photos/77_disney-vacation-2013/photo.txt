@@ -1,0 +1,33 @@
+Title: Disney Vacation 2013
+
+----
+
+Text: Surprised the kids with their first trip to Disney World, and, coincidentally, their first time on an airplane. Photos don't do this place justice. Just a great trip - exhausting, but a great time had by all. Stayed at the Beach Club Resort and hit all the parks this time around. A video of us telling the kids the morning we left, and a second of them dancing at Disney Springs.
+
+----
+
+Date-taken: 2013-09-14
+
+----
+
+People: marc, danielle, maddie, carter, megan
+
+----
+
+Tags: disney, vacation
+
+----
+
+Mymap:
+
+lat: 28.5421109
+lon: -81.3790304
+city: Orlando
+region: Florida
+country: United States
+countryCode: us
+osm: 1128379
+
+----
+
+Uuid: Ckuu0upV5EHzmMKA

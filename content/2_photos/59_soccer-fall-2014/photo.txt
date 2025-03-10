@@ -10,7 +10,7 @@ Date-taken: 2014-11-07
 
 ----
 
-People: maddie, carter, megan
+People: maddie, carter, megan, marc
 
 ----
 
@@ -21,7 +21,7 @@ Tags: soccer
 Mymap:
 
 lat: 40.0519885
-lon: '-75.645305796929'
+lon: "-75.645305796929"
 city: Uwchlan Township
 region: Pennsylvania
 country: United States

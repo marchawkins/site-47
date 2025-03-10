@@ -6,11 +6,11 @@ Text: Having some fun at the annual Exton Carnival.
 
 ----
 
-date_taken: 2014-05-17
+Date-taken: 2014-05-17
 
 ----
 
-People: megan
+People: megan, carter, maddie, valerie, marc
 
 ----
 

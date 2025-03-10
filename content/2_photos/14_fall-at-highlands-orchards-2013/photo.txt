@@ -6,11 +6,11 @@ Text: Annual family trip to kick off Fall at (link: https://highlandorchards.net
 
 ----
 
-date_taken: 2013-10-06
+Date-taken: 2013-10-06
 
 ----
 
-People: carter
+People: carter, megan, maddie, marc, danielle
 
 ----
 
