@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: 7DxDeNXCL25AL3UM
+
+----
+
+Template: gallery-image

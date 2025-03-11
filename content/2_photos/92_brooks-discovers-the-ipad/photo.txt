@@ -1,0 +1,38 @@
+Title: Brooks Discovers the iPad
+
+----
+
+Text:
+
+Maddie shows Brooks an iPad for the first time. Mind = blown. He would never be the same.
+
+(video: https://youtu.be/vPaDDkEWbHU class: youtube)
+
+----
+
+Date-taken: 2015-03-31
+
+----
+
+People: maddie, brooks
+
+----
+
+Tags: ipad
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: pt9i0RcrLxmFkrLp

@@ -1,0 +1,33 @@
+Title: Exton Carnival 2015
+
+----
+
+Text: Who does love a good old carnival - Fried all the things? Check. Rides that might kill you? Check. 400lb carnies? Check.
+
+----
+
+Date-taken: 2015-05-15
+
+----
+
+People: maddie, megan, carter
+
+----
+
+Tags: carnival
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: pZrIqk2V9mH8krQO

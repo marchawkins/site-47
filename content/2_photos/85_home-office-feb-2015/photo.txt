@@ -1,0 +1,34 @@
+Title: Home Office - Feb 2015
+
+----
+
+Text: My blue period. iMac with two monitors.
+
+----
+
+Date-taken: 2015-02-13
+
+----
+
+People: 
+
+----
+
+Tags: office, sideshow, collectibles
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: Vf2w77AiFRePFhxn

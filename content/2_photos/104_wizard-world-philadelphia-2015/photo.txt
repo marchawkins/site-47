@@ -1,0 +1,33 @@
+Title: Wizard World Philadelphia 2015
+
+----
+
+Text: Took Maddie (and Danielle) to her first con, Wizard World Philadelphia. Lots of great cosplayers, toys, collectibles and finished the day with dinner at the Hard Rock Cafe. An awesome day!
+
+----
+
+Date-taken: 2015-05-09
+
+----
+
+People: maddie, megan, danielle, marc
+
+----
+
+Tags: convention, sideshow, collectibles
+
+----
+
+Mymap:
+
+lat: 39.9527237
+lon: -75.1635262
+city: Philadelphia
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188022
+
+----
+
+Uuid: yZJyN6Wn7P339Lmv

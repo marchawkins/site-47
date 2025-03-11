@@ -1,0 +1,33 @@
+Title: Me and Meg at the Mall
+
+----
+
+Text: Me and Meg grabbing lunch at the Mall food court.
+
+----
+
+Date-taken: 2015-05-07
+
+----
+
+People: megan
+
+----
+
+Tags: mall, lunch
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: dSKaT0bkXntbxGPk

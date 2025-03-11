@@ -1,0 +1,39 @@
+Title: Maddie and Carter's Music Recital
+
+----
+
+Text:
+
+Big weekend in our house - Maddie and Carter performed in their music recital from (link: https://valottastudios.com text: Valotta Studios). Proud of these two!
+
+(video: https://youtu.be/1NNtU6DDUFM class: youtube)
+(video: https://youtu.be/ATuagK3z37k class: youtube)
+
+----
+
+Date-taken: 2015-03-28
+
+----
+
+People: maddie, carter, brooks, megan
+
+----
+
+Tags: recital, music, drums, piano
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: nKRR6txY4mRTF1Ns

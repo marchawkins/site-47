@@ -1,0 +1,38 @@
+Title: Maddies 10th Birthday
+
+----
+
+Text:
+
+Maddie's 10th birthday with her friends at a painting party. Also - big birthday present was a full drum set. What were we thinking...
+
+(video: https://youtu.be/HTYInzUychU class: youtube)
+
+----
+
+Date-taken: 2015-02-12
+
+----
+
+People: maddie
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: h1jRvGXQOGgmOUMu
