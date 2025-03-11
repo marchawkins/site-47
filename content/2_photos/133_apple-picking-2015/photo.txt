@@ -1,0 +1,34 @@
+Title: Apple Picking 2015
+
+----
+
+Text: Annual apple picking at (link: https://highlandorchards.net text: Highland Orchards)!
+
+----
+
+Date-taken: 2015-09-20
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: apples, fall
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: LwpGff3HSqxMTN1p

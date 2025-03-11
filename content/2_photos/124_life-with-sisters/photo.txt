@@ -1,0 +1,34 @@
+Title: Life with Sisters
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2015-08-13
+
+----
+
+People: brooks
+
+----
+
+Tags: sisters
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: l8XE8gaQID8ftyXR

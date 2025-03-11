@@ -1,0 +1,38 @@
+Title: Ocean City, NJ 2015
+
+----
+
+Text:
+
+Annual family vacation to Ocean City, NJ. Lots of fun, sun and great food. Even brought along everyone's favorite cousin, Alexandra, to help wrangle all the kids.
+
+(video: https://youtu.be/4u6yOdrjgpY class: youtube)
+(video: https://youtu.be/RRmdsBacVLs class: youtube)
+
+----
+
+Date-taken: 2015-06-21
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, alexandra
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: 1JKJNsIukOhZ9w1T

@@ -1,0 +1,39 @@
+Title: Strike First. Strike Hard.
+
+----
+
+Text:
+
+Maddie, Carter and Megan went to a karate-themed birthday party this weekend.
+
+(video: https://youtu.be/RJzUzeQtXJs class: youtube)
+(video: https://youtu.be/-OvcC9pi0Mo class: youtube)
+(video: https://youtu.be/6kUoZipDrdw class: youtube)
+
+----
+
+Date-taken: 2015-07-26
+
+----
+
+People: maddie, carter, megan
+
+----
+
+Tags: birthday, karate
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: BiLEMTplVSH37Tew

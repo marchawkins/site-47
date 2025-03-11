@@ -1,0 +1,39 @@
+Title: Brooks's First Birthday
+
+----
+
+Text:
+
+Brooks's first birthday, complete with a magician!
+
+(video: https://youtu.be/lJdgeSCzHAA class: youtube)
+(video: https://youtube.com/shorts/HdG4HcKsfMc class: youtube)
+
+----
+
+Date-taken: 2015-08-22
+
+----
+
+People: brooks, valerie, natalie, deb, alexandra, aunt lori, andrew, danielle, megan
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: 2OWrShREduyDOBpq

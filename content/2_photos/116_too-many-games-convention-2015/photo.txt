@@ -1,0 +1,34 @@
+Title: Too Many Games Convention 2015
+
+----
+
+Text: Took Carter to his first convention - (link: https://toomanygames.com text: Too Many Games). Lots of good stuff, and a surprising number of cosplayers.
+
+----
+
+Date-taken: 2015-06-26
+
+----
+
+People: carter
+
+----
+
+Tags: convention, video games, scorpion, mario, mortal kombat, nintendo
+
+----
+
+Mymap:
+
+lat: 40.1317722
+lon: -75.4596319
+city: Upper Providence Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19456"
+osm: 158632530
+
+----
+
+Uuid: h6GKVLmENtW4MqDA

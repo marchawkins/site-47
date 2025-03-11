@@ -1,0 +1,39 @@
+Title: Ninja Warriors
+
+----
+
+Text:
+
+Three kids enter. One kid leaves.
+
+(video: https://youtu.be/eC1zs3GWJyw class: youtube)
+(video: https://youtu.be/8FOZty309QA class: YouTube)
+(video: https://youtu.be/-aCMEhB-PQs class: youtube)
+
+----
+
+Date-taken: 2015-06-20
+
+----
+
+People: carter, maddie, megan
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: luMk3WjgBwaie4E8

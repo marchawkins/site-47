@@ -1,0 +1,38 @@
+Title: Meg Dance Recital 2015
+
+----
+
+Text:
+
+Megan's 2015 Dance Recital featuring dancers from (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy).
+
+(video: https://youtu.be/2INUcfg3KTI class: youtube)
+(video: https://youtu.be/c5gs2wn1dhc class: youtube)
+
+----
+
+Date-taken: 2015-06-13
+
+----
+
+People: megan, brooks, carter, maddie
+
+----
+
+Tags: dance, recital
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: MmbQnBrfoBFvEI2K

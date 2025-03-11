@@ -1,0 +1,33 @@
+Title: Starbucks for Everybody!
+
+----
+
+Text: They call this Monday.
+
+----
+
+Date-taken: 2015-09-28
+
+----
+
+People: maddie, carter, megan
+
+----
+
+Tags: starbucks, target
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: kG8rjxTJmhDvSigs

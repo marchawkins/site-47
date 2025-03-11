@@ -1,0 +1,33 @@
+Title: An Oves Family Tradition
+
+----
+
+Text: Fresh out of the oven and into my belly. (link: http://www.ovesrestaurant.com/ text: Oves Restaurant - Ocean City, NJ)
+
+----
+
+Date-taken: 2015-06-25
+
+----
+
+People: 
+
+----
+
+Tags: vacation, donuts
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: XbJlpLidZwtlzA7g

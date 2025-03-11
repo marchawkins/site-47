@@ -1,0 +1,33 @@
+Title: Jurassic Target
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2015-06-20
+
+----
+
+People: carter, megan
+
+----
+
+Tags: target, dinosaur
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: nDdko9OS8BnIe1CH
