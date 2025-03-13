@@ -1,0 +1,33 @@
+Title: Greenberg Bat Mitzvah 1 of 3
+
+----
+
+Text: Congratulations, Aby! And a photo of the kids we happily left at home with the sitter.
+
+----
+
+Date-taken: 2015-11-21
+
+----
+
+People: danielle, marc, larry, kelly, maddie, megan, carter, brooks
+
+----
+
+Tags: bat mitzvah
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: BfS5KEOJhWYGFRZC

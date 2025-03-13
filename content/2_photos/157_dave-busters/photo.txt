@@ -1,0 +1,34 @@
+Title: Dave & Busters
+
+----
+
+Text: A little post-Christmas trip to Dave & Busters to stretch our legs after handing around the house for a few days.
+
+----
+
+Date-taken: 2015-12-26
+
+----
+
+People: maddie, megan, carter, valerie
+
+----
+
+Tags: video games
+
+----
+
+Mymap:
+
+lat: 40.1220543
+lon: -75.2165658
+city: Whitemarsh Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19444"
+osm: 3076320
+
+----
+
+Uuid: GyYRSmto1O8kjSpB

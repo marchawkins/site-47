@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: d5I8rffi7UePHtfP
+
+----
+
+Template: gallery-image

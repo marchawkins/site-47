@@ -1,0 +1,39 @@
+Title: Makota Pumpkinfest 2015
+
+----
+
+Text:
+
+Took the kids to the annual Pumpkinfest put on by (link: http://www.makotoway.com text: Makoto Martial Arts Studio). We always have a great time at this event - pie eating contest, chili cook-off, magicians, face painting, free beer, pumpkin catapults, tug-of-war and more. Did I mention the free beer?
+
+(video: https://youtu.be/tTdYCPDKoeM class: youtube)
+(video: https://youtu.be/XQ1xxWxxOoE class: youtube)
+
+----
+
+Date-taken: 2015-11-07
+
+----
+
+People: maddie, megan, carter
+
+----
+
+Tags: pumpkinfest, karate
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: TC8OuqGYZ1nM6WZw

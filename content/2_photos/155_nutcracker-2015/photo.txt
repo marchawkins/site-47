@@ -1,0 +1,33 @@
+Title: Nutcracker 2015
+
+----
+
+Text: Annual presentation of Chester Valley Dance Academy's performance of The Nutcracker. Great job, Meg!
+
+----
+
+Date-taken: 2015-12-19
+
+----
+
+People: megan, carter
+
+----
+
+Tags: nutcracker, recital, santa
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: 1RUjsbUjm9w46C7Q

@@ -1,0 +1,41 @@
+Title: Grandpa's 70th Birthday in NYC
+
+----
+
+Text:
+
+Spent the weekend in New York City celebrating Grandpa's 70th birthday. The whole family went to Radio City to see the Christmas show with the Rockettes, ate cheesecake at Junior's, ice skated at Rockefeller Center and much more. A packed weekend full of some of his favorite things. Such a great weekend. Happy birthday, Dad.
+
+(video: https://youtu.be/bEIL9fn0Epw class: youtube)
+(video: https://youtu.be/tsr11MIO99M class: youtube)
+(video: https://youtu.be/AwVEb2BKHLk class: youtube)
+(video: https://youtu.be/GqBxHB-IxO8 class: youtube)
+(video: https://youtu.be/6e6-Xxu6kx8 class: youtube)
+
+----
+
+Date-taken: 2015-11-13
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, gary, sandy
+
+----
+
+Tags: birthday, rockettes, lego, nintendo, junior's
+
+----
+
+Mymap:
+
+lat: 40.7127281
+lon: -74.0060152
+city: New York
+region: New York
+country: United States
+countryCode: us
+osm: 175905
+
+----
+
+Uuid: 1wze8sPO5RBIAkTN

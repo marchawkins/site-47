@@ -1,0 +1,33 @@
+Title: Twins' 7th Birthday Continues
+
+----
+
+Text: The twins 7th birthday partying continues with family fun at Chocolate World!
+
+----
+
+Date-taken: 2015-10-10
+
+----
+
+People: carter, megan, grammy, maddie, brooks, uncle johnny
+
+----
+
+Tags: birthday, Hersheypark
+
+----
+
+Mymap:
+
+lat: "40.2850285"
+lon: "-76.653466223197"
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: 7eg8MGMBSa8ie5s4

@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: pIKoViqeVT5dsOpF
+
+----
+
+Template: gallery-image

@@ -1,0 +1,9 @@
+Sort: 6
+
+----
+
+Uuid: bKrZ2WBDfpHtcpa2
+
+----
+
+Template: gallery-image

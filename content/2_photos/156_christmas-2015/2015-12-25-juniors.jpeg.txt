@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: 88EYAvCXrbqbQc3m
+
+----
+
+Template: gallery-image
