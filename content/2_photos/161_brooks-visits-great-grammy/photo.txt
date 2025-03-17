@@ -1,0 +1,33 @@
+Title: Brooks Visits Great-Grammy
+
+----
+
+Text: Brooks makes his first visit to Great-Grammy Kate.
+
+----
+
+Date-taken: 2016-01-21
+
+----
+
+People: brooks, great-grammy
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 41.2495431
+lon: -76.9267035
+city: Montoursville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188748
+
+----
+
+Uuid: 1KFArPM87jRVdMs7

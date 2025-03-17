@@ -1,0 +1,37 @@
+Title: Ocean City, NJ 2016
+
+----
+
+Text:
+
+Annual trip to Ocean City, NJ. Great week of sunny weather and tasty, fattening beach food. Even Uncle Nate dropped by to see us. Until next time, OCNJ.
+
+(video: https://youtu.be/ks9Qk47-OKg class: youtube)
+
+----
+
+Date-taken: 2016-06-24
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, nate
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: 0dGxh1QTQZqjHl79

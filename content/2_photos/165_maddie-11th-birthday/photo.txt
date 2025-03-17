@@ -1,0 +1,38 @@
+Title: Maddie's 11th Birthday
+
+----
+
+Text:
+
+Celebrating Maddie's 11th birthday with friends and family at Power Play ice skating rink. Wrapped up the day with some Pie Face back at home.
+
+(video: https://youtu.be/XCdnlhdfFPE class: youtube)
+(video: https://youtu.be/N7TsjQFjoqM class: youtube)
+
+----
+
+Date-taken: 2016-02-12
+
+----
+
+People: maddie, megan, danielle, uncle johnny, valerie, carter
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: 9PyacwjfMWzvaDyu

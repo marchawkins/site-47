@@ -1,0 +1,34 @@
+Title: Karate Belts - Level Up
+
+----
+
+Text: All three kids level up in karate. Nice work, guys!
+
+----
+
+Date-taken: 2016-01-20
+
+----
+
+People: maddie, carter, megan
+
+----
+
+Tags: karate
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: b7bbVVdjfTeCmxeC

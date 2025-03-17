@@ -1,0 +1,33 @@
+Title: Happy 2016
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2016-01-01
+
+----
+
+People: brooks
+
+----
+
+Tags: new years
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: 13M7wXCxWBRBHog5

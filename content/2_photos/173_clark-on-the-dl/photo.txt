@@ -1,0 +1,33 @@
+Title: Clark on the DL
+
+----
+
+Text: Posted without comment. You poor bastard.
+
+----
+
+Date-taken: 2016-03-25
+
+----
+
+People: clark
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: NH5OOuf3W41CgQw2

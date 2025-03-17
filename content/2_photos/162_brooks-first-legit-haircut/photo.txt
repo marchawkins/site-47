@@ -1,0 +1,33 @@
+Title: Brooks First Legit Haircut
+
+----
+
+Text: Even a lollipop bribe couldn't stop the tears at Brooks's first haircut at Snip-itz. So long, mullet!
+
+----
+
+Date-taken: 2016-01-22
+
+----
+
+People: brooks
+
+----
+
+Tags: haircut
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: hkNUaU5ndWorxaFj

@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: ZCKxl4ppJlhOUFK3
+
+----
+
+Template: gallery-image

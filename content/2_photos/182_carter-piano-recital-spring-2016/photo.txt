@@ -1,0 +1,38 @@
+Title: Carter's Piano Recital Spring 2016
+
+----
+
+Text:
+
+Carter's piano recital at Valotta Studios.
+
+(video: https://youtu.be/ShG6LGoCpPY class: youtube)
+
+----
+
+Date-taken: 2016-05-14
+
+----
+
+People: carter, brooks
+
+----
+
+Tags: recital, piano
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: vefBjP48fyTkgiGi

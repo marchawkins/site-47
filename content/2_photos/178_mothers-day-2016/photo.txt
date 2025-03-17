@@ -1,0 +1,33 @@
+Title: Mothers Day 2016
+
+----
+
+Text: Celebrating Mothers' Day with a dinner at Buca di Beppo.
+
+----
+
+Date-taken: 2016-05-08
+
+----
+
+People: danielle, sandy, maddie, megan, carter, brooks
+
+----
+
+Tags: mothers day
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: GQmGSZ11s9jyZGza

@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: HlYRmOEIoBG52LS9
+
+----
+
+Template: gallery-image

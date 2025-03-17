@@ -1,0 +1,33 @@
+Title: Philly Comic-Con 2016
+
+----
+
+Text: Got to take Maddie to a con where she did her first cosplay as Rey from The Force Awakens. People were stopping to take photos **with her**. She was super excited. Even the waiter at Hard Rock commented on her outfit. Such a great day. Love ya, kid!
+
+----
+
+Date-taken: 2016-06-04
+
+----
+
+People: maddie
+
+----
+
+Tags: star wars, convention, rey, cosplay
+
+----
+
+Mymap:
+
+lat: 39.9527237
+lon: -75.1635262
+city: Philadelphia
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188022
+
+----
+
+Uuid: I0ZqgSednnu9jfFa

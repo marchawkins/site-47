@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: x5QJLPKGWnWMZFWO
+
+----
+
+Template: gallery-image

@@ -1,0 +1,41 @@
+Title: Sky Zone Trip
+
+----
+
+Text:
+
+Meg was invited to a birthday party, so we took the whole crew to Sky Zone. Everybody jumped their brains out.
+
+(video: https://youtu.be/md4omk40EMU class: youtube)
+(video: https://youtu.be/WLJ2EEGZeIc class: youtube)
+(video: https://youtu.be/ctr0mGf-zl8 class: youtube)
+(video: https://youtu.be/kUFNPg5-CxE class: youtube)
+
+----
+
+Date-taken: 2016-04-29
+
+----
+
+People: carter, maddie, megan
+
+----
+
+Tags: trampoline
+
+----
+
+Mymap:
+
+lat: 40.09476245
+lon: '-75.385133356342'
+city: Upper Merion Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19406"
+osm: 187769
+
+----
+
+Uuid: BKRYFqC2VtjVXG48

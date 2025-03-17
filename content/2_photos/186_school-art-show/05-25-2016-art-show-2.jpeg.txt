@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: BlKgT1CR6rV6WXCL
+
+----
+
+Template: gallery-image

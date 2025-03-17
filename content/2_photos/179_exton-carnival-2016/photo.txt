@@ -1,0 +1,33 @@
+Title: Exton Carnival 2016
+
+----
+
+Text: Annual trip to the Exton carnival.
+
+----
+
+Date-taken: 2016-05-11
+
+----
+
+People: maddie, megan, carter
+
+----
+
+Tags: carnival
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: Ay69lWEC4ErExdhU

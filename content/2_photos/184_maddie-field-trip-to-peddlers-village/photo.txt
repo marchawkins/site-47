@@ -1,0 +1,33 @@
+Title: Maddie's Field Trip to Peddler's Village
+
+----
+
+Text: Maddie's first overnight field trip to (link: https://peddlersvillage.com text: Peddler's Village)
+
+----
+
+Date-taken: 2016-05-18
+
+----
+
+People: maddie
+
+----
+
+Tags: school, field trip
+
+----
+
+Mymap:
+
+lat: 40.3165463
+lon: '-75.046919294405'
+city: Buckingham Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 3506001
+
+----
+
+Uuid: AUDfxOLhuupIxSX7

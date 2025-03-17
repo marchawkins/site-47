@@ -1,0 +1,38 @@
+Title: Hersheypark Summer 2016
+
+----
+
+Text:
+
+Family trip to Hersheypark. Got some fun videos of the Flume and Super Duper Looper. Hot as $%#, so the water park area felt fantastic.
+
+(video: https://youtu.be/1Uyx6RC3yag class: youtube)
+(video: https://youtu.be/zqlRCfMyZYA class: youtube)
+
+----
+
+Date-taken: 2016-06-13
+
+----
+
+People: maddie, megan, carter, brooks
+
+----
+
+Tags: hersheypark, vacation
+
+----
+
+Mymap:
+
+lat: '40.2850285'
+lon: '-76.653466223197'
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: blH8Ss75jHQGwW8P

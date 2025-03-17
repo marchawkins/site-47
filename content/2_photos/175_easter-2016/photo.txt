@@ -1,0 +1,39 @@
+Title: Easter 2016
+
+----
+
+Text:
+
+Lots of Easter fun, with a few tantrums thrown in for good measure.
+
+(video: https://youtu.be/HkmXqNPfC6E class: youtube)
+(video: https://youtu.be/dyFcF89E5Jk class: youtube)
+
+----
+
+Date-taken: 2016-03-27
+
+----
+
+People: maddie, megan, carter, brooks, danielle, gary, uncle mike
+
+----
+
+Tags: easter
+
+----
+
+Mymap:
+
+lat: 40.0201
+lon: -76.1335653
+city: Leacock Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17529"
+osm: 158647220
+
+----
+
+Uuid: 6QrwEsIRgrQ3GRlj
