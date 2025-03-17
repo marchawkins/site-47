@@ -1,0 +1,33 @@
+Title: Gotta Catch'em All
+
+----
+
+Text: So THAT'S where they're hiding.
+
+----
+
+Date-taken: 2016-07-16
+
+----
+
+People: danielle
+
+----
+
+Tags: pokemon
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: 2u42EbV13jmNVLzr

@@ -1,0 +1,39 @@
+Title: Disney Trip 2016
+
+----
+
+Text:
+
+Surprised the kids with a trip to Disney World! I think the photos and videos speak for themselves. We all had an absolutely fantastic time!
+
+(video: https://youtu.be/NRq_IBLBh0M class: youtube)
+(video: https://youtube.com/shorts/np-syqtq1gw?feature=share class: youtube)
+(video: https://youtu.be/Q33UnFMbyOY class: youtube)
+
+----
+
+Date-taken: 2016-10-22
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: vacation, disney
+
+----
+
+Mymap:
+
+lat: 28.5421109
+lon: -81.3790304
+city: Orlando
+region: Florida
+country: United States
+countryCode: us
+osm: 1128379
+
+----
+
+Uuid: cAAs4fD4JDE26azE

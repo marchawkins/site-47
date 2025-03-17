@@ -1,0 +1,33 @@
+Title: Welcome Sterling!
+
+----
+
+Text: Welcome to the family, Sterling.
+
+----
+
+Date-taken: 2016-09-10
+
+----
+
+People: maddie, sterling
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.2663107
+lon: -76.8861122
+city: Harrisburg
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188218
+
+----
+
+Uuid: bKqqnibBIWczcIx0

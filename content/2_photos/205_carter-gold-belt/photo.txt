@@ -1,0 +1,38 @@
+Title: Carter Gold Belt
+
+----
+
+Text:
+
+Carter graduated from Yellow Belt to Gold Belt. Nice work, buddy!
+
+(video: https://youtu.be/UqAOhfIh7k4 class: youtube)
+
+----
+
+Date-taken: 2016-08-31
+
+----
+
+People: carter
+
+----
+
+Tags: karate
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: i5OOnM996C2CWuuM

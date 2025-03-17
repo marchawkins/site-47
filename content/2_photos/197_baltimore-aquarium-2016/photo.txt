@@ -1,0 +1,33 @@
+Title: Baltimore Aquarium 2016
+
+----
+
+Text: Family trip to Baltimore's Inner Harbor to see the aquarium and dinner at The Hard Rock Cafe. We usually hit one of those whenever we see one so that Maddie can pick up some city-specific drum sticks ;-) Carter also got to see his favorite animal (turtles) up close.
+
+----
+
+Date-taken: 2016-07-08
+
+----
+
+People: maddie, megan, carter, brooks
+
+----
+
+Tags: vacaation, aquarium
+
+----
+
+Mymap:
+
+lat: 39.2908816
+lon: -76.610759
+city: Baltimore
+region: Maryland
+country: United States
+countryCode: us
+osm: 133345
+
+----
+
+Uuid: d4EDnz8DCS67DI6P

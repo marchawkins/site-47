@@ -1,0 +1,9 @@
+Sort: 10
+
+----
+
+Uuid: smUyTb335lAh8eL2
+
+----
+
+Template: gallery-image

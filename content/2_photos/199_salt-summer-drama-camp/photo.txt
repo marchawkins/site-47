@@ -1,0 +1,34 @@
+Title: SALT Summer Drama Camp
+
+----
+
+Text: Signed the kids up for summer camp at (link: https://www.saltpa.com text: SALT Performing Arts). The week wrapped up with a performance in front of a full house. I've never seen these kids perform (speak, sing and dance) in front of a crowd like this. Proud parents!
+
+----
+
+Date-taken: 2016-07-29
+
+----
+
+People: maddie, megan, carter
+
+----
+
+Tags: camp, drama
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: 95WEW3xB8kJkBRAY

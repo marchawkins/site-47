@@ -1,0 +1,34 @@
+Title: Apple Picking 2016
+
+----
+
+Text: Annual trip to (link: https://highlandorchards.net text: Highland Orchards) for family apple picking. Getting ready for Mom's famous (and delicious) apple pie.
+
+----
+
+Date-taken: 2016-09-17
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: apples
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: BAQ2POJIIlgbg14p

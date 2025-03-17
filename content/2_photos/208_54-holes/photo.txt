@@ -1,0 +1,33 @@
+Title: 54 Holes
+
+----
+
+Text: Sounds like a bargain. Sign me up.
+
+----
+
+Date-taken: 2016-09-15
+
+----
+
+People: 
+
+----
+
+Tags: meme, mall
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: HrF4qveNVCWPCdbA

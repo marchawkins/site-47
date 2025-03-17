@@ -1,0 +1,33 @@
+Title: Ocean City, NJ 2016 pt2
+
+----
+
+Text: Quick day trip to Ocean City, NJ for fun in the sun. And the required dose of (link: https://mancospizza.com text: Manco & Manco).
+
+----
+
+Date-taken: 2016-08-07
+
+----
+
+People: maddie, megan, carter, valerie
+
+----
+
+Tags: beach, vacation
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: Spz5ZtjnNQBPvGJK

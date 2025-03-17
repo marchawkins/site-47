@@ -1,0 +1,43 @@
+Title: Twins 8th Birthday
+
+----
+
+Text:
+
+Celebrating the twins 8th birthday with family, complete with a Chocolate Piñata bomb.
+
+(video: https://youtu.be/K0rjWln_5Ek class: youtube)
+(video: https://youtu.be/FJLq3GN5mpY class: youtube)
+(video: https://youtu.be/J6fWRRV9Hhc class: youtube)
+(video: https://youtu.be/HKs_hvcT52U class: youtube)
+(video: https://youtu.be/4YJHeBatLTI class: youtube)
+(video: https://youtu.be/b0gElefw4uw class: youtube)
+
+----
+
+Date-taken: 2016-10-02
+
+----
+
+People: danielle, megan, carter, maddie, brooks
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: uDrdoM5r8zbFZYOW
