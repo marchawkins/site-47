@@ -1,0 +1,50 @@
+Title: X-mas 2016 Performances
+
+----
+
+Text:
+
+Combining all these into one mega-post. Kids performed in all kinds of recitals and shows for school and (link: https://valottastudios.com text: Valotta Studios) this Christmas.
+
+Maddie performed in the (link: https://saltpa.com text: SALT Performing Arts) Christmas Show.
+
+Brooks's first Christmas Concert at preschool.  
+(video: https://youtu.be/ikNHeATYmVA class: youtube)
+(video: https://youtu.be/ziicGawTSlc class: youtube)
+
+Maddie's Winter Band Concert at school.
+(video: https://youtu.be/ZBJ8pzaC2jg class: youtube)
+
+Maddie's Christmas Drum Performance at Valotta Studios.
+(video: https://youtu.be/3Y5zDAW4tE0 class: youtube)
+
+Carter's Christmas Pajama Day at school.
+
+----
+
+Date-taken: 2016-12-23
+
+----
+
+People: maddie, carter, brooks
+
+----
+
+Tags: christmas, recital, drums
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: B8yht4QUYQgxGKhh

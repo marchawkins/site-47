@@ -1,0 +1,33 @@
+Title: Meg Nutcracker 2016
+
+----
+
+Text: The annual Nutcracker performance performed by the (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy). Meg was in two numbers this year. Way to go, Meg!
+
+----
+
+Date-taken: 2016-12-03
+
+----
+
+People: megan
+
+----
+
+Tags: recital, dance, nutcracker
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: tnFFvlwRKqLAjuGo

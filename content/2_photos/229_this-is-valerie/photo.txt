@@ -1,24 +1,24 @@
-Title: Brooks and Dad
+Title: This is Valerie
 
 ----
 
 Text:
 
-Not his first word, but one of my favorites.
+Oh, Valerie. We love you.
 
-(video: https://youtu.be/WHiaf0TB610 class: youtube)
-
-----
-
-Date-taken: 2016-10-18
+(video: https://youtu.be/g5sJN7DJL2c class: youtube)
 
 ----
 
-People: brooks, marc
+Date-taken: 2016-11-22
 
 ----
 
-Tags: 
+People: valerie, maddie
+
+----
+
+Tags: dancing
 
 ----
 
@@ -35,4 +35,4 @@ osm: 158616213
 
 ----
 
-Uuid: aCDD2TqkWpScLiZl
+Uuid: bBjFkdUsnIOOBgeB

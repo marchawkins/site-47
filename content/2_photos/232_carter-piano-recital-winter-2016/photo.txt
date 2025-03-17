@@ -1,0 +1,38 @@
+Title: Carter's Piano Recital Winter 2016
+
+----
+
+Text:
+
+I swear we live at (link: https://valottastudios.com text: Valotta Studios). Carter performing piano at the Winter recital. Nice job, kid! Forgive the VHS quality of this. Danielle was behind the camera.
+
+(video: https://youtu.be/efdXcxnh_is class: youtube)
+
+----
+
+Date-taken: 2016-12-09
+
+----
+
+People: carter
+
+----
+
+Tags: recital, piano
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: Zy1DNeBis6xVy6Ow

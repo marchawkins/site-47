@@ -1,0 +1,38 @@
+Title: Pie Eating Contest
+
+----
+
+Text:
+
+Carter decided to step up and compete in the pumpkin pie eating contest at (link: http://www.makotoway.com text: Makota's) annual Pumpkinfest. Didn't win, but man did he have fun.
+
+(video: https://youtu.be/1N8jJnk89Tc class: youtube)
+
+----
+
+Date-taken: 2016-11-06
+
+----
+
+People: carter
+
+----
+
+Tags: karate, pie eating
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: DUgrlnQlE5hbdGfN

@@ -1,0 +1,38 @@
+Title: Halloween 2016
+
+----
+
+Text:
+
+Great night for trick-or-treating. Lots of friends got together and raided the neighborhood. This was also Brooks's first time going "alone" with the big kids.
+
+(video: https://youtu.be/I7DM2ECBo9Y class: youtube)
+
+----
+
+Date-taken: 2016-10-31
+
+----
+
+People: maddie, megan, carter, brooks, valerie, paige, lily, johnny
+
+----
+
+Tags: halloween, star wars
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: QZd7k9vuMyJP9INF

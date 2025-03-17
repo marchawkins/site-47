@@ -1,24 +1,20 @@
-Title: Brooks and Dad
+Title: Two Peas in a Pod
 
 ----
 
-Text:
-
-Not his first word, but one of my favorites.
-
-(video: https://youtu.be/WHiaf0TB610 class: youtube)
+Text: 99% of the time these two love each other. This is one of those times. Couple of cuties.
 
 ----
 
-Date-taken: 2016-10-18
+Date-taken: 2016-11-03
 
 ----
 
-People: brooks, marc
+People: megan, brooks
 
 ----
 
-Tags: 
+Tags: reading
 
 ----
 
@@ -35,4 +31,4 @@ osm: 158616213
 
 ----
 
-Uuid: aCDD2TqkWpScLiZl
+Uuid: gx0mq9vzwvTtqjem

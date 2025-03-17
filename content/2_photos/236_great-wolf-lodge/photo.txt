@@ -1,0 +1,33 @@
+Title: Great Wolf Lodge
+
+----
+
+Text: Took our first trip to (link: https://www.greatwolf.com text: Great Wolf Lodge) in the Poconos. Picturesque trip with snow cover mountains. Kids LOVED this place.
+
+----
+
+Date-taken: 2016-12-29
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: vacation
+
+----
+
+Mymap:
+
+lat: 41.17686355
+lon: '-75.455316289404'
+city: Coolbaugh Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 8062859
+
+----
+
+Uuid: nh5ulvpsej7WlvX6

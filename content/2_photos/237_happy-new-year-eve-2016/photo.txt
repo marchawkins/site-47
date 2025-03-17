@@ -1,0 +1,37 @@
+Title: Happy New Year's Eve 2016
+
+----
+
+Text:
+
+Celebrating New Year's (early) at Chicago Uno. Fortunately, they do a countdown at 6pm so all the kids get to experience it.
+
+(video: https://youtu.be/vrqS2zuSFhg class: youtube)
+
+----
+
+Date-taken: 2016-12-31
+
+----
+
+People: valerie, maddie, megan
+
+----
+
+Tags: new years
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: "-75.629045561906"
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: HTyS1sXldK07hZPW
