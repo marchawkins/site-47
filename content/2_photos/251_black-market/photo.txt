@@ -1,0 +1,33 @@
+Title: Black Market
+
+----
+
+Text: Always nice to go to a con and see such affordable "premium" Sideshow prints. I'm callin' the cops, you bootleggers.
+
+----
+
+Date-taken: 2017-04-07
+
+----
+
+People: 
+
+----
+
+Tags: sideshow, convention
+
+----
+
+Mymap:
+
+lat: 39.9527237
+lon: -75.1635262
+city: Philadelphia
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188022
+
+----
+
+Uuid: eNihgHq6RSsmhkJu

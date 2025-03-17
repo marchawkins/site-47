@@ -1,0 +1,40 @@
+Title: Music Recitals Spring 2017
+
+----
+
+Text:
+
+Maddie (drums) and Carter's (piano) spring recital at (link: http://valottastudios.com text: Valotta Studios).
+
+(video: https://youtube.com/shorts/4FKRi9Dz30Q class: youtube)
+(video: https://youtu.be/vDySTnESPTk class: youtube)
+(video: https://youtu.be/16VFgzF7d2E class: youtube)
+
+----
+
+Date-taken: 2017-05-20
+
+----
+
+People: maddie, carter
+
+----
+
+Tags: recital, piano, drums
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: iIBlRuMcmBYFGQds

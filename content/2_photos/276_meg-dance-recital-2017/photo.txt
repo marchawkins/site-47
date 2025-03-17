@@ -1,0 +1,33 @@
+Title: Meg Dance Recital 2017
+
+----
+
+Text: Meg's annual Chester Valley Dance Academy recital. This kid was everywhere - ballet, jazz and Irish. Awesome job, Meg!
+
+----
+
+Date-taken: 2017-06-17
+
+----
+
+People: megan
+
+----
+
+Tags: recital, dance
+
+----
+
+Mymap:
+
+lat: 40.1842688
+lon: -75.5379639
+city: Royersford
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 187663
+
+----
+
+Uuid: wLYXzkQOYq46bBp9

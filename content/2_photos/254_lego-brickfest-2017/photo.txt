@@ -1,0 +1,34 @@
+Title: Lego Brickfest 2017
+
+----
+
+Text: (video: https://youtu.be/roHVF2u4Wwk class: youtube)
+
+----
+
+Date-taken: 2017-04-23
+
+----
+
+People: maddie, carter, megan
+
+----
+
+Tags: lego, convention
+
+----
+
+Mymap:
+
+lat: 40.1317722
+lon: -75.4596319
+city: Upper Providence Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19456"
+osm: 158632530
+
+----
+
+Uuid: BsqP7J2CfN1N6DZK

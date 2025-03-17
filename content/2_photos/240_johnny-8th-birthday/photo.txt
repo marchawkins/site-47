@@ -1,0 +1,33 @@
+Title: Johnny's 8th Birthday
+
+----
+
+Text: Celebrating Carter's buddy, Johnny's 8th birthday with some bowling.
+
+----
+
+Date-taken: 2017-01-21
+
+----
+
+People: carter, johnny
+
+----
+
+Tags: birthday, bowling
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: HPEhFzAoU7CBchgm

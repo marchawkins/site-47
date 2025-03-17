@@ -1,0 +1,33 @@
+Title: Trip to the Mall
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2017-01-17
+
+----
+
+People: brooks
+
+----
+
+Tags: mall
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: zfkTxxKIEkHljXVK

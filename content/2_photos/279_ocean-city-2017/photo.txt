@@ -1,0 +1,33 @@
+Title: Ocean City 2017
+
+----
+
+Text: Annual family vacation to Ocean City, NJ.
+
+----
+
+Date-taken: 2017-06-25
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: beach, vacation
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: v2ZkUHVkCZc0XauX

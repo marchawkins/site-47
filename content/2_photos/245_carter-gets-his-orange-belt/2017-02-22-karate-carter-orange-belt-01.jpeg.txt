@@ -1,0 +1,9 @@
+Sort: 9
+
+----
+
+Uuid: aU1mHr1zWCHcsi2r
+
+----
+
+Template: gallery-image

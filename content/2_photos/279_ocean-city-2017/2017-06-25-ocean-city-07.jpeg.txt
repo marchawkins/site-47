@@ -1,0 +1,9 @@
+Sort: 21
+
+----
+
+Uuid: b8wbcXvFipbWkdv4
+
+----
+
+Template: gallery-image

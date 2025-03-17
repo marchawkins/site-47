@@ -1,0 +1,44 @@
+Title: SALT Performance
+
+----
+
+Text:
+
+Maddie and Carter performed in series of small skits at (link: https://www.saltpa.com text: SALT Performing Arts). They had a blast - so proud!
+
+(video: https://youtu.be/gF7DmTMnUyU class: youtube)
+(video: https://youtu.be/kkA7Oox2hb4 class: youtube)
+(video: https://youtu.be/_SCIYp-x4Ig class: youtube)
+(video: https://youtu.be/IdGhIk540rc class: youtube)
+(video: https://youtu.be/-VyGtMcjIYg class: youtube)
+(video: https://youtu.be/rxpczM7smag class: youtube)
+(video: https://youtu.be/49sHjIEr1yk class: youtube)
+
+----
+
+Date-taken: 2017-05-18
+
+----
+
+People: maddie, carter
+
+----
+
+Tags: recital
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: TezyGczSYn481aRR

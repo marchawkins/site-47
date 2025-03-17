@@ -1,0 +1,33 @@
+Title: Kids Winter 2017
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2017-01-30
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: y8F5fYgWJbgw1dyc

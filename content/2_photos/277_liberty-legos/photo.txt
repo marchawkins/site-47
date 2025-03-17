@@ -1,0 +1,33 @@
+Title: Liberty Legos
+
+----
+
+Text: As seen at the Philadelphia International Airport.
+
+----
+
+Date-taken: 2017-06-19
+
+----
+
+People: 
+
+----
+
+Tags: lego
+
+----
+
+Mymap:
+
+lat: 39.9527237
+lon: -75.1635262
+city: Philadelphia
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188022
+
+----
+
+Uuid: VsQNilL3KjXilC80

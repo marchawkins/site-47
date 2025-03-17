@@ -1,0 +1,33 @@
+Title: Sideshow Restroom
+
+----
+
+Text: Odd shot, but couldn't pass up capturing this mural in the (link: https://www.sideshow.com text: Sideshow) restroom.
+
+----
+
+Date-taken: 2017-06-20
+
+----
+
+People: 
+
+----
+
+Tags: sideshow, work
+
+----
+
+Mymap:
+
+lat: 34.1705609
+lon: -118.8375937
+city: Thousand Oaks
+region: California
+country: United States
+countryCode: us
+osm: 112603
+
+----
+
+Uuid: W25ppbod5OzOOIBX

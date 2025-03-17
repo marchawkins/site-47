@@ -1,0 +1,34 @@
+Title: Stem Convention 2017
+
+----
+
+Text: Took the kids to a STEM convention. Tons of hands-on activities. Lots of fun. Highly recommended.
+
+----
+
+Date-taken: 2017-06-10
+
+----
+
+People: maddie, carter, megan
+
+----
+
+Tags: convention, STEM
+
+----
+
+Mymap:
+
+lat: 40.1317722
+lon: -75.4596319
+city: Upper Providence Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19456"
+osm: 158632530
+
+----
+
+Uuid: rmYKbLzWTcJ92y8w

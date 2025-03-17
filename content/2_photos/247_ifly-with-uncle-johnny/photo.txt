@@ -1,0 +1,45 @@
+Title: iFly with Uncle Johnny
+
+----
+
+Text:
+
+Kids took Uncle Johnny to (link: https://www.iflyworld.com text: iFly) for some indoor skydiving fun!
+
+(video: https://youtu.be/XAU39KBNvIc class: youtube)
+(video: https://youtu.be/KBKVDQdsa8A class: youtube)
+(video: https://youtu.be/tSY0IEgzZCA class: youtube)
+(video: https://youtu.be/p3_KM8JwojQ class: youtube)
+(video: https://youtu.be/7O6M12r60k8 class: youtube)
+(video: https://youtu.be/EIoVw3eaUyE class: youtube)
+(video: https://youtu.be/uOjgrukqJ-k class: youtube)
+(video: https://youtu.be/PIazKSTNFBI class: youtube)
+
+----
+
+Date-taken: 2017-03-01
+
+----
+
+People: uncle johnny, maddie, carter, megan, brooks
+
+----
+
+Tags: skydiving
+
+----
+
+Mymap:
+
+lat: 40.09476245
+lon: '-75.385133356342'
+city: Upper Merion Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19406"
+osm: 187769
+
+----
+
+Uuid: Lef6JlE8eN2TrGlm

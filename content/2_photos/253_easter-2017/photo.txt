@@ -1,0 +1,34 @@
+Title: Easter 2017
+
+----
+
+Text: (video: https://youtu.be/O1FHZZfvva4 class: youtube)
+
+----
+
+Date-taken: 2017-04-16
+
+----
+
+People: danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: easter
+
+----
+
+Mymap:
+
+lat: 40.0201
+lon: -76.1335653
+city: Leacock Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17529"
+osm: 158647220
+
+----
+
+Uuid: jrwm5A7JDruGQFZg

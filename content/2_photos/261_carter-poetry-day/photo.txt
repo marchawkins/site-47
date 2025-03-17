@@ -1,0 +1,40 @@
+Title: Carter's Poetry Day
+
+----
+
+Text:
+
+Carter had poetry day at school. Nice job, buddy!
+
+(video: https://youtu.be/YQunMXDUCic class: youtube)
+(video: https://youtu.be/AKyeM2Oxqk8 class: youtube)
+(video: https://youtu.be/pWfnrFfpCfo class: youtube)
+
+----
+
+Date-taken: 2017-05-11
+
+----
+
+People: carter
+
+----
+
+Tags: school, poetry
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: A47xJ4FFmFPPkJEP

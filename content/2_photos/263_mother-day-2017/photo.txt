@@ -1,0 +1,34 @@
+Title: Mother's Day 2017
+
+----
+
+Text: Celebrating the best moms on Mother's Day.
+
+----
+
+Date-taken: 2017-05-14
+
+----
+
+People: maddie, carter, megan, brooks, danielle, sandy, grammy
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: qWxdI7eWA5cdOAcQ

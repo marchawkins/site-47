@@ -1,0 +1,33 @@
+Title: Out on the town
+
+----
+
+Text: Momma all dolled up and lookin' GOOD.
+
+----
+
+Date-taken: 2017-05-31
+
+----
+
+People: danielle
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: 3Es9FCw5QhI4PEpX

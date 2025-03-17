@@ -1,0 +1,38 @@
+Title: Infestation
+
+----
+
+Text:
+
+Me and (link: https://www.youtube.com/watch?v=g6nLp_Vne44 text: Frank) are on the same page. Little bastard.
+
+(video: https://youtu.be/4mS39nxV16U class: youtube)
+
+----
+
+Date-taken: 2017-04-24
+
+----
+
+People: 
+
+----
+
+Tags: squirrels
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: qVnlRdhX4Z8XazA7
