@@ -1,0 +1,38 @@
+Title: Christmas 2017
+
+----
+
+Text:
+
+Merry Christmas from our family, including Taylor Swift, to yours. Note - the cardboard cutout was used to give Maddie tickets to her first "real" concert.
+
+(video: https://youtu.be/O54kEQImbqo class: youtube)
+
+----
+
+Date-taken: 2017-12-25
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: christmas, taylor swift
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: mrJJCMwAaesXAJWW

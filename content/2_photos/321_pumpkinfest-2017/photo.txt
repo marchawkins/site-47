@@ -1,0 +1,39 @@
+Title: Pumpkinfest 2017
+
+----
+
+Text:
+
+The annual (link: http://makotoway.com text: Makota) Pumpkinfest - pie eating contest, pumpkin chucking, pie throwing, games and more!
+
+(video: https://youtu.be/oF-8AthtrrM class: youtube)
+(video: https://youtu.be/nIjteuM_Hkw class: youtube)
+
+----
+
+Date-taken: 2017-11-05
+
+----
+
+People: carter
+
+----
+
+Tags: karate, fall, pumpkins, makota
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: f2kipbjl6JtEPqZH

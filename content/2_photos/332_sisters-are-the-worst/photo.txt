@@ -1,0 +1,33 @@
+Title: Sisters are the WORST
+
+----
+
+Text: Poor guy had no idea...
+
+----
+
+Date-taken: 2017-12-12
+
+----
+
+People: carter
+
+----
+
+Tags: sisters
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: mYMlE5f1gSIb1R7d

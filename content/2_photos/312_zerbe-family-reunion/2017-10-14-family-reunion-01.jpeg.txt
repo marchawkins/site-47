@@ -1,0 +1,9 @@
+Sort: 7
+
+----
+
+Uuid: gZYhoGu7paZu5bkh
+
+----
+
+Template: gallery-image

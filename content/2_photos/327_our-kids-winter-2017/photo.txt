@@ -1,0 +1,34 @@
+Title: Our Kids - Winter 2017
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2017-11-19
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: christmas, winter
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: JiR9IEQNtWO1Do4x

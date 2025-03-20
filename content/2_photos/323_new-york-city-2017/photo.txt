@@ -1,0 +1,33 @@
+Title: New York City 2017
+
+----
+
+Text: Took the kids into New York City for the weekend to check out Christmas in the Big Apple. We hit up the Lego store, Junior's, Times Square, Midtown Comics, Rockefeller Center and more. Busy couple of days!
+
+----
+
+Date-taken: 2017-11-12
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: lego, sideshow, collectibles, comics, ice skating
+
+----
+
+Mymap:
+
+lat: 40.7127281
+lon: -74.0060152
+city: New York
+region: New York
+country: United States
+countryCode: us
+osm: 175905
+
+----
+
+Uuid: wabBXb1cCDo1E5ei

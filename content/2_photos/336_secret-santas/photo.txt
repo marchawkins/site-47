@@ -1,0 +1,34 @@
+Title: Secret Santas
+
+----
+
+Text: All the kids (7!) got together and did a big Secret Santa gift exchange. They (we) all had a blast!
+
+----
+
+Date-taken: 2017-12-24
+
+----
+
+People: maddie, megan, carter, brooks, izzy, effie, layla
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 39.8743762
+lon: -75.7177672
+city: East Marlborough Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19348"
+osm: 158596727
+
+----
+
+Uuid: LIUeKxB60m5DBjUS

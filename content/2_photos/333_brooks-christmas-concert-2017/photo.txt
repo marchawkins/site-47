@@ -1,0 +1,40 @@
+Title: Brooks Christmas Concert 2017
+
+----
+
+Text:
+
+Brooks' Christmas Concert at pre-school. He was a little "deer in the headlights", but sang along and no tears!
+
+(video: https://youtu.be/RD3A0ysFF7g class: youtube)
+(video: https://youtu.be/hq0nvDm1JtI class: youtube)
+(video: https://youtu.be/xsX2JKhSUkc class: youtube)
+
+----
+
+Date-taken: 2017-12-13
+
+----
+
+People: brooks
+
+----
+
+Tags: school, recital, christmas
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: mzjM8S1t7SnUbpIY

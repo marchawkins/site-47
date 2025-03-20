@@ -1,0 +1,33 @@
+Title: The Real Batman
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2017-10-15
+
+----
+
+People: brooks
+
+----
+
+Tags: batman
+
+----
+
+Mymap:
+
+lat: '40.2850285'
+lon: '-76.653466223197'
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: CvtkW28qDJY9preo

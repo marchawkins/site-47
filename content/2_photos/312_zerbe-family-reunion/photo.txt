@@ -1,0 +1,33 @@
+Title: Zerbe Family Reunion
+
+----
+
+Text: The whole crew (as of Oct 2017) assembled for the Zerbe Family Reunion.
+
+----
+
+Date-taken: 2017-10-14
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: reunion
+
+----
+
+Mymap:
+
+lat: 40.2859255
+lon: -75.9843804
+city: Mohnton
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188484
+
+----
+
+Uuid: Avw4hBFB6IpH9YDL

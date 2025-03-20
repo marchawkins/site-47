@@ -1,0 +1,34 @@
+Title: Turkey Trot 2017
+
+----
+
+Text: Convinced Maddie to join me on her first (my second) (link: https://runsignup.com/Race/PA/Downingtown/ChesterCountyTurkeyTrot text: Chester County Turkey Trot). It was freezing, but we had a blast! I even let her beat me... by like 10 seconds, at least.
+
+----
+
+Date-taken: 2017-11-23
+
+----
+
+People: maddie, marc
+
+----
+
+Tags: running, thanksgiving
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: OsjzRTjibeLWr4aW

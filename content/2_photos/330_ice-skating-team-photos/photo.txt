@@ -1,0 +1,33 @@
+Title: Ice Skating Team Photos
+
+----
+
+Text: Meg's team and individual photo for the Exton Edge Synchronized Skating Team.
+
+----
+
+Date-taken: 2017-12-11
+
+----
+
+People: megan
+
+----
+
+Tags: ice skating
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: JH7kPI0coF3UAzIl

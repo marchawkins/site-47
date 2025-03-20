@@ -1,0 +1,33 @@
+Title: Winter Band Concert 2017
+
+----
+
+Text: Maddie performed percussion in the Middle School Band Concert this past Monday. Rocked it!
+
+----
+
+Date-taken: 2017-12-11
+
+----
+
+People: maddie
+
+----
+
+Tags: recital, school, drums
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: 8Uh9CFndNFGIM5Wy

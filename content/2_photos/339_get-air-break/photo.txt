@@ -1,0 +1,41 @@
+Title: Get Air Break
+
+----
+
+Text:
+
+Took the kids to (link: https://getairsports.com/ text: Get Air) to get them out of the house during Christmas break. They had a great time, but Brooks wasn't convinced - but he turned it around at the end.
+
+(video: https://youtu.be/GE8XvXVSS9g class: youtube)
+(video: https://youtu.be/Crki-cL5JUs class: youtube)
+(video: https://youtu.be/Vxm1m9XDr08 class: youtube)
+(video: https://youtu.be/J8E7ZcbYnQc class: youtube)
+
+----
+
+Date-taken: 2017-12-27
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 40.09476245
+lon: '-75.385133356342'
+city: Upper Merion Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19406"
+osm: 187769
+
+----
+
+Uuid: FGnEq1OBoR4Pm0Ik

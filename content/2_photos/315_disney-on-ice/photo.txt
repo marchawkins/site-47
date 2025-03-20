@@ -1,0 +1,33 @@
+Title: Disney on Ice
+
+----
+
+Text: Took the kids to see Disney on Ice in Hershey.
+
+----
+
+Date-taken: 2017-10-21
+
+----
+
+People: brooks, danielle
+
+----
+
+Tags: disney, ice skating
+
+----
+
+Mymap:
+
+lat: '40.2850285'
+lon: '-76.653466223197'
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: eOZzRkRd7WJql9TR
