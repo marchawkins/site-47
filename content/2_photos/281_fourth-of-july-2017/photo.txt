@@ -1,0 +1,34 @@
+Title: Fourth of July 2017
+
+----
+
+Text: Downingtown Good Neighbor Day and fireworks to celebrate the 4th of July.
+
+----
+
+Date-taken: 2017-07-04
+
+----
+
+People: maddie, carter, megan, brooks, valerie
+
+----
+
+Tags: july 4th
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: RBDgb0xalkTQP7BO

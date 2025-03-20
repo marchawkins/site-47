@@ -1,0 +1,40 @@
+Title: Carter Gets a Green Belt
+
+----
+
+Text:
+
+Carter graduated from orange to green belt today!
+
+(video: https://youtu.be/uZkNXcjhxG0 class: youtube)
+(video: https://youtu.be/E_3DjiQuFc4 class: youtube)
+(video: https://youtu.be/ufrOjv0u4C4 class: youtube)
+
+----
+
+Date-taken: 2017-09-23
+
+----
+
+People: carter
+
+----
+
+Tags: karate, Makota
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: s6TY1KvslXwTV61h

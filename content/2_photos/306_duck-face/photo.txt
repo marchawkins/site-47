@@ -1,0 +1,34 @@
+Title: Duck Face
+
+----
+
+Text: Love these clowns, duck face and all.
+
+----
+
+Date-taken: 2017-10-11
+
+----
+
+People: jen, andrew
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.09476245
+lon: '-75.385133356342'
+city: Upper Merion Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19406"
+osm: 187769
+
+----
+
+Uuid: t82soh79kWqdyZG9

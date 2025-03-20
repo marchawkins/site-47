@@ -1,0 +1,40 @@
+Title: Summer Dance Camp
+
+----
+
+Text:
+
+Meg's Summer Dance Camp at the (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy).
+
+(video: https://youtu.be/mFP1r5SbBuc class: youtube)
+(video: https://youtu.be/7UEq4uufV5k class: youtube)
+(video: https://youtu.be/2H6VZ3lxrLo class: youtube)
+
+----
+
+Date-taken: 2017-07-13
+
+----
+
+People: megan
+
+----
+
+Tags: dance, camp
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: 6DbCd7Q9mRpL89py

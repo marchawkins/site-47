@@ -1,0 +1,37 @@
+Title: Megan & Carter 9th Birthday
+
+----
+
+Text:
+
+Celebrating Carter and Megan's 9th birthday with bowling and video games at Round 1. Followed by a cake at home with family.
+
+(video: https://youtu.be/OTDyiU8nET8 class: youtube)
+
+----
+
+Date-taken: 2017-10-02
+
+----
+
+People: carter, megan, maddie, danielle, brooks
+
+----
+
+Tags: birthday, bowling
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: HSRB8T6kWdAVoMEc

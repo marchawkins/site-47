@@ -1,0 +1,34 @@
+Title: Lego Falcon
+
+----
+
+Text: Saw this at the local Lego Store and fell in love with it. However, the price tag and sheer amount of space this would take up gave me pause. Thing probably weighs a ton, too, so suspending it from the ceiling would be risky.
+
+----
+
+Date-taken: 2017-09-04
+
+----
+
+People: 
+
+----
+
+Tags: lego, star wars, collectibles
+
+----
+
+Mymap:
+
+lat: 40.09476245
+lon: '-75.385133356342'
+city: Upper Merion Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19406"
+osm: 187769
+
+----
+
+Uuid: dNcRi4f46tsm6hWG

@@ -1,0 +1,34 @@
+Title: Raid the Arcade Mix
+
+----
+
+Text: I love the "virtual soundtrack" of Ernest Cline's new book (link: https://www.amazon.com/Armada-novel-author-Ready-Player/dp/0804137277/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1658726766&sr=8-2 text: Armada). Anyone growing up in the 80s will know every one of these tracks. Love they threw in an image of an old Maxell cassette wrapper with the tracks in the book. Even with all its shortcomings, I still miss these days of analog audio. I encourage anyone to re-create this playlist on their music streaming service of choice and give it a listen.
+
+----
+
+Date-taken: 2017-08-28
+
+----
+
+People: 
+
+----
+
+Tags: book, ernest cline, armada
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: aKMoiw7Y2DTpBcSo

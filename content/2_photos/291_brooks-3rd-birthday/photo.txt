@@ -1,0 +1,39 @@
+Title: Brooks 3rd Birthday
+
+----
+
+Text:
+
+Celebrating Brooks' third birthday with family and friends - and Batman.
+
+(video: https://youtu.be/qyG_a37Cwrw class: youtube)
+(video: https://youtu.be/yfNviGuS9Xc class: youtube)
+
+----
+
+Date-taken: 2017-08-23
+
+----
+
+People: danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: slWrGds2AJE432tI

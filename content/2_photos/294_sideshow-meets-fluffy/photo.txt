@@ -1,0 +1,37 @@
+Title: Sideshow Meets Fluffy
+
+----
+
+Text:
+
+Had the pleasure of joining a couple of the Sideshow crew in seeing Fluffy on tour in Bethlehem, PA. Fluffy's a big collector, and Sideshow is working on some cool projects with him. Even got to meet his pet chihuahua.
+
+Update - check out the (link: https://www.sideshow.com/collectibles/fluffy-inc-gabriel-fluffy-iglesias-unruly-industries-700033 text: Sideshow Fluffy figure)!
+
+----
+
+Date-taken: 2017-08-31
+
+----
+
+People: chris, ian, marc
+
+----
+
+Tags: work, sideshow, collectibles
+
+----
+
+Mymap:
+
+lat: 40.6178915
+lon: -75.3786521
+city: Bethlehem
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188220
+
+----
+
+Uuid: KvbPnPCtZPeWaR0j

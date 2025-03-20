@@ -1,0 +1,39 @@
+Title: Kimberton Fair 2017
+
+----
+
+Text:
+
+Annual trip to the Kimberton Fair for rides, food and homemade donuts.
+
+(video: https://youtu.be/BCLfW4qLppU class: youtube)
+(video: https://youtu.be/84Z8H1uKXyg class: youtube)
+
+----
+
+Date-taken: 2017-07-26
+
+----
+
+People: maddie, megan, carter, brooks
+
+----
+
+Tags: carnival
+
+----
+
+Mymap:
+
+lat: 40.1306588
+lon: -75.5721388
+city: East Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19442"
+osm: 157586671
+
+----
+
+Uuid: aMT5b1hFbR2QZ4Mc

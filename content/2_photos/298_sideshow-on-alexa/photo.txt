@@ -1,0 +1,38 @@
+Title: Sideshow on Alexa
+
+----
+
+Text:
+
+Prototyping an Alexa skill for work at (link: https://www.sideshow.com text: Sideshow).
+
+(video: https://youtu.be/mUd6HQEz204 class: youtube)
+
+----
+
+Date-taken: 2017-09-15
+
+----
+
+People: 
+
+----
+
+Tags: sideshow, work
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: rsqPEl2shRWE6EM3
