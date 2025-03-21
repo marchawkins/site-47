@@ -1,0 +1,33 @@
+Title: Gingerbread Houses
+
+----
+
+Text: The whole crew got together to build gingerbread houses. A few actually made it home before they started getting devoured.
+
+----
+
+Date-taken: 2018-12-15
+
+----
+
+People: maddie, carter, megan, brooks, effie
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 39.8467414
+lon: -75.7116997
+city: Kennett Square
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 8417968
+
+----
+
+Uuid: zjdOJZpyuZJz2HWM

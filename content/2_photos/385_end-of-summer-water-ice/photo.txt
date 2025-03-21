@@ -1,0 +1,34 @@
+Title: End of Summer Water Ice
+
+----
+
+Text: Closing out summer with one last trip to Rita's with friends.
+
+----
+
+Date-taken: 2018-09-02
+
+----
+
+People: maddie, carter, megan, brooks, effie, izzy
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: WmnwPSVB0t44Aw98

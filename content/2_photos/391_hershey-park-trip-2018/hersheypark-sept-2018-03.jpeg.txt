@@ -1,0 +1,9 @@
+Sort: 6
+
+----
+
+Uuid: VXruteGX3k965xHU
+
+----
+
+Template: gallery-image

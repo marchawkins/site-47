@@ -1,0 +1,43 @@
+Title: Outer Banks, NC Vacation 2018
+
+----
+
+Text:
+
+First of hopefully many trips with friends to the Kitty Hawk, NC. So I don't forget all the great places we ate, suggested by my buddy <a href="https://twitter.com/lgreenberg" title="Larry on twitter">Larry</a>. We affectionately called this "Larry's List" the whole trip:
+
+- <a href="http://www.captnfranks.com/" title="Captain Franks">Captain Franks</a>
+- <a href="http://duckdonuts.com/" title="Duck Donuts">Duck Donuts</a>
+- <a href="http://www.blackpelican.com/" title="The Black Pelican">The Black Pelican</a>
+- <a href="http://www.barefootbernies.com/" title="Barefoot Bernies">Barefoot Bernies</a>
+- <a href="http://stackemhigh.com/" title="Stack 'Em High">Stack 'Em High</a>
+- <a href="http://www.mamakwans.com/" title="Mama Kwans">Mama Kwans</a>
+- <a href="http://www.killdevilsfrozencustard.com/" title="Kill Devil Custard">Kill Devil Custard</a>
+
+----
+
+Date-taken: 2018-08-18
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, jen, andrew, effie, izzy
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 36.0664318
+lon: -75.6935448
+city: Kitty Hawk
+region: North Carolina
+country: United States
+countryCode: us
+osm: 177502
+
+----
+
+Uuid: 1GK2KS4oi5w9E2Z7

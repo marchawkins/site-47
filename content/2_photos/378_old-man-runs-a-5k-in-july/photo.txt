@@ -1,0 +1,34 @@
+Title: Old Man Runs a 5k in July
+
+----
+
+Text: For some jackass reason, I decided to run in the 40th annual (link: https://goodneighborday.com text: Downingtown Good Neighbor Day 5k). As shown in the photo, Pennsylvania's good old (link: https://www.wunderground.com/history/daily/KOQN/date/2018-7-4?req_city=Downingtown&req_state=PA&req_statename=Pennsylvania&reqdb.zip=19335&reqdb.magic=1&reqdb.wmo=99999 text: July heat and humidity) took its toll, but I survived. Barely.
+
+----
+
+Date-taken: 2018-07-04
+
+----
+
+People: marc
+
+----
+
+Tags: running, july 4th
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: 1TjDi0VE2XhuQKgv

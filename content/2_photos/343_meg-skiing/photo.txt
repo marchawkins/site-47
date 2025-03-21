@@ -1,0 +1,37 @@
+Title: Meg Skiing
+
+----
+
+Text:
+
+Meg went skiing (with friend Tori) for the first time at (link: https://www.bcmountainresort.com text: Bear Creek Resort) and loved it!
+
+(video: https://youtu.be/iMS_BZbyZb0 class: youtube)
+
+----
+
+Date-taken: 2018-01-07
+
+----
+
+People: megan, tori
+
+----
+
+Tags: skiing, winter
+
+----
+
+Mymap:
+
+lat: 40.52835725
+lon: '-75.595080950601'
+city: Lower Macungie Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 9426592
+
+----
+
+Uuid: gIut7nKNr9vTI0G3

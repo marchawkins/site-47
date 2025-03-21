@@ -1,0 +1,40 @@
+Title: Twins are 10!
+
+----
+
+Text:
+
+Happy 10th birthday to Carter and Megan! Had a party at (link: https://www.urbanair.com text: Urban Air) - with a little American Gladiator action thrown in for good measure.
+
+(video: https://youtu.be/S4z2Fbd4PG0 class: youtube)
+(video: https://youtu.be/rbNl-tuojJE class: youtube)
+(video: https://youtu.be/ohAZCzhaXd4 class: youtube)
+
+----
+
+Date-taken: 2018-09-29
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: 8F79BJHUqOEFfhci

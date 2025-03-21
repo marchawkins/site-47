@@ -1,0 +1,33 @@
+Title: Adventure Aquarium 2018
+
+----
+
+Text: A visit to the (link: https://www.adventureaquarium.com text: Adventure Aquarium) in Camden, NJ, with friends on a summer Friday.
+
+----
+
+Date-taken: 2018-07-13
+
+----
+
+People: carter, brooks, jen, izzy, effie
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 39.9448402
+lon: -75.1198911
+city: Camden
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170683
+
+----
+
+Uuid: tLZM9qBcxWY8fjfJ

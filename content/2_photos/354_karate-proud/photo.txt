@@ -1,0 +1,34 @@
+Title: Karate Proud
+
+----
+
+Text: Gotta say this note from Carter's karate teacher brought a tear to our eyes. Couldn't be more proud of the young man this kid is becoming. Nice job, Carter!
+
+----
+
+Date-taken: 2018-03-09
+
+----
+
+People: carter
+
+----
+
+Tags: karate, makota
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: saJUYhr49PIu3JFA

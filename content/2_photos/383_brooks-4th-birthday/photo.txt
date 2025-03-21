@@ -1,0 +1,40 @@
+Title: Brooks's 4th Birthday
+
+----
+
+Text:
+
+**B:** "Dad, am I four?"
+
+**Me:** "Yes. Yes, you are."
+
+**B:** "I did it!"
+
+----
+
+Date-taken: 2018-08-23
+
+----
+
+People: brooks, clark
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: T8fYxwhQbq2fQpBh

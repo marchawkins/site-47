@@ -1,0 +1,37 @@
+Title: Mermaid Spotted
+
+----
+
+Text:
+
+So apparently mermaid tails are a thing now. Meg was relentless so we finally got her one. Here she is trying it out in a pool.
+
+(video: https://youtu.be/BP_7LXOcZDE class: youtube)
+
+----
+
+Date-taken: 2018-06-10
+
+----
+
+People: megan, tori, carter
+
+----
+
+Tags: swimming
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: QUpaHojz5qfFd8eo

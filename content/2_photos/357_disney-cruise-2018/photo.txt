@@ -1,0 +1,33 @@
+Title: Disney Cruise 2018
+
+----
+
+Text: Family had an awesome time on our first Disney Cruise to the Bahamas. Perfect weather. Great food. Fantastic trip!
+
+----
+
+Date-taken: 2018-03-25
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: vacation, disney, cruise
+
+----
+
+Mymap:
+
+lat: '28.392028682331'
+lon: '-80.604301289693'
+city: Brevard County
+region: Florida
+country: United States
+countryCode: us
+postcode: "32920"
+
+----
+
+Uuid: mFJalGTidHEwGQzP

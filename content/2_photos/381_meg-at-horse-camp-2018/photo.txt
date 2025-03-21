@@ -1,0 +1,33 @@
+Title: Meg at Horse Camp 2018
+
+----
+
+Text: Megan at horse camp at (link: https://www.facebook.com/plainbrooke/ text: Plainbrooke Farms).
+
+----
+
+Date-taken: 2018-08-03
+
+----
+
+People: megan
+
+----
+
+Tags: horse, camp, summer
+
+----
+
+Mymap:
+
+lat: 40.1229113
+lon: '-75.646101232739'
+city: West Vincent Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 3049189
+
+----
+
+Uuid: ZkEYu5waiSamczYB

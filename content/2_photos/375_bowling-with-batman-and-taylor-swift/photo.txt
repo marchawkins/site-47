@@ -1,0 +1,34 @@
+Title: Bowling with Batman and Taylor Swift
+
+----
+
+Text: Just a typical Wednesday night, bowling with Batman and Taylor Swift. No biggie.
+
+----
+
+Date-taken: 2018-06-13
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: bowling
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: 81JqssPF2zUe0OZQ

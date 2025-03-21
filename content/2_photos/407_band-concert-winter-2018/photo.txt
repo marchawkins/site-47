@@ -1,0 +1,34 @@
+Title: Band Concert Winter 2018
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2018-12-11
+
+----
+
+People: maddie
+
+----
+
+Tags: recital, drums, school
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: pqmUZXS9XoOpNNxn

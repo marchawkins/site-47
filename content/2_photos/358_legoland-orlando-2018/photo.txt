@@ -1,0 +1,33 @@
+Title: Legoland Orlando 2018
+
+----
+
+Text: Finished up our Florida vacation with a stop at Legoland in Orlando.
+
+----
+
+Date-taken: 2018-03-29
+
+----
+
+People: maddie, carter, megan, brooks, marc, danielle
+
+----
+
+Tags: vacation, lego
+
+----
+
+Mymap:
+
+lat: 28.5421109
+lon: -81.3790304
+city: Orlando
+region: Florida
+country: United States
+countryCode: us
+osm: 1128379
+
+----
+
+Uuid: mzxQ7GHmCCrpH8ml

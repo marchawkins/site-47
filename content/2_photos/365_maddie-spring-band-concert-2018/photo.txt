@@ -1,0 +1,34 @@
+Title: Maddie's Spring Band Concert 2018
+
+----
+
+Text: Front and center, rocking the drums at the school band concert.
+
+----
+
+Date-taken: 2018-05-08
+
+----
+
+People: maddie
+
+----
+
+Tags: recital, drums, school
+
+----
+
+Mymap:
+
+lat: 40.0519885
+lon: '-75.645305796929'
+city: Uwchlan Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19341"
+osm: 188126
+
+----
+
+Uuid: w3bXubdgS4V30jBP

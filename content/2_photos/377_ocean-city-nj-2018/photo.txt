@@ -1,0 +1,49 @@
+Title: Ocean City, NJ 2018
+
+----
+
+Text:
+
+Annual pilgrimage to Ocean City, NJ, for a week of "school's out" celebration. Hit up the usual hot spots: 
+- (link: https://mancospizza.com/ text: Manco & Manco Pizza)
+- (link: https://www.thecrabtrap.com/ text: The Crab Trap)
+- (link: http://www.oceancafeocnj.com/ text: Ocean Cafe)
+- (link: https://oceancity.clancysrestaurantgroup.com/ text: Clancy's by the Sea)
+- (link: http://unclebillspancakehouse.com/ text: Uncle Bill's Pancake House)
+- (link: https://www.fudgekitchens.com/ text: Fudge Kitchen)
+- (link: https://shrivers.com/ text: Shrivers)
+- (link: https://www.facebook.com/fpocnj/ text: Fractured Prune)
+- (link: http://www.alohasoftserve.com/ text: Aloha Soft Serve)
+- (link: https://oceancityfun.com text: Playland's Castaway Cove)
+- (link: http://www.gillians.com/ text: Gillian's Wonderland Pier)
+- (link: https://www.piratevoyages.com/ text: Pirate Voyages)
+- (link: https://www.oceancityvacation.com/details/mike-s-toys-collectibles.html text: Mike's Toys and Collectibles)
+- (link: http://beachclubhotel.com/ text: Beach Club Resorts)
+
+----
+
+Date-taken: 2018-06-17
+
+----
+
+People: 
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: Fz9QuJ9PG5Rgd8og

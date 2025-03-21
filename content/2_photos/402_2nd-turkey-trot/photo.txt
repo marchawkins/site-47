@@ -1,0 +1,34 @@
+Title: 2nd Turkey Trot
+
+----
+
+Text: Ran in my second (link: https://runsignup.com/Race/PA/Downingtown/ChesterCountyTurkeyTrot text: Chester County Turkey Trot) and made it across the finish line.
+
+----
+
+Date-taken: 2018-11-22
+
+----
+
+People: marc
+
+----
+
+Tags: running
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: t2DnZ5SRhLFOLUnu

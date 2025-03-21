@@ -1,0 +1,9 @@
+Sort: 28
+
+----
+
+Uuid: 6emOFBAK1wao9ZmY
+
+----
+
+Template: gallery-image

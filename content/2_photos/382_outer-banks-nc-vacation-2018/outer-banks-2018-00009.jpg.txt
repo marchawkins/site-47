@@ -1,0 +1,9 @@
+Sort: 28
+
+----
+
+Uuid: p0zMXyvsnq8cxInn
+
+----
+
+Template: gallery-image

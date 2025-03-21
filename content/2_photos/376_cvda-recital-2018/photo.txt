@@ -1,0 +1,33 @@
+Title: CVDA Recital 2018
+
+----
+
+Text: Megan and Maddie perform several routines in the (link: https://chestervalleydanceacademy.com text: Chester Valley Dance Academy) Recital.
+
+----
+
+Date-taken: 2018-06-16
+
+----
+
+People: megan, maddie, danielle
+
+----
+
+Tags: dance, recital
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: iHYsqX6ZAe0J9za9

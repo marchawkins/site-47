@@ -1,0 +1,34 @@
+Title: Pumpkin Pickin' 2018
+
+----
+
+Text: Another year, another trip to (link: https://highlandorchards.net text: Highland Orchards) for pumpkin picking.
+
+----
+
+Date-taken: 2018-10-10
+
+----
+
+People: brooks
+
+----
+
+Tags: pumpkins, fall
+
+----
+
+Mymap:
+
+lat: 39.9602669
+lon: '-75.714055380774'
+city: West Bradford Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19308"
+osm: 3049979
+
+----
+
+Uuid: LnMK6LvSqIZbhDzF

@@ -1,0 +1,33 @@
+Title: Taylor Swift 2018 Concert
+
+----
+
+Text: Maddie's first concert: Taylor Swift - Reputation Tour at Lincoln Financial Field in Philadelphia, with Danielle and Jen.
+
+----
+
+Date-taken: 2018-07-14
+
+----
+
+People: maddie, danielle, jen
+
+----
+
+Tags: concert, taylor swift
+
+----
+
+Mymap:
+
+lat: 39.9527237
+lon: -75.1635262
+city: Philadelphia
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188022
+
+----
+
+Uuid: KKBCLRQJc6oE28P4
