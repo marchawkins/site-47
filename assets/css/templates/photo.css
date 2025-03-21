@@ -10,6 +10,10 @@ article h1, article p {
     text-align: center;
 }
 
+#photos {
+    text-align: center;
+}
+
 #photos img {
     max-width: 100%;
     margin-bottom: 1rem;
