@@ -1,0 +1,9 @@
+Sort: 6
+
+----
+
+Uuid: 6RJXIIQw3629G8Us
+
+----
+
+Template: gallery-image

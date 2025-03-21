@@ -1,0 +1,38 @@
+Title: Christmas 2018
+
+----
+
+Text:
+
+Merry Christmas!
+
+(video: https://youtu.be/1eSfGW5Ti8I class: youtube)
+
+----
+
+Date-taken: 2018-12-25
+
+----
+
+People: maddie, carter, megan, brooks, clark
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: v8N7yUCfVAN5kqgE

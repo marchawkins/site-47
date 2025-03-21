@@ -1,0 +1,33 @@
+Title: Trip to the Mall 2018
+
+----
+
+Text: Took the kids to the mall and the movies for a little holiday break during Christmas vacation.
+
+----
+
+Date-taken: 2018-12-31
+
+----
+
+People: danielle, maddie, carter, megan, brooks
+
+----
+
+Tags: christmas, arcade, movies
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: ema1OD0akqHnVkPt
