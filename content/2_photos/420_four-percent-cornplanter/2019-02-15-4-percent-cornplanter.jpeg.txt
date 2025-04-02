@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: zgb2wfCWKhoMxh9z
+
+----
+
+Template: gallery-image

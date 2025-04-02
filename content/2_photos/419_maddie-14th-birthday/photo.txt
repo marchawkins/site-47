@@ -1,0 +1,39 @@
+Title: Maddie's 14th Birthday
+
+----
+
+Text:
+
+Celebrating Maddie's 14th birthday with The Office themed cake.
+
+(video: https://youtu.be/UaY_q3kUJII class:youtube)
+(video: https://youtu.be/u55aB2gD3Ms class: youtube)
+
+----
+
+Date-taken: 2019-02-12
+
+----
+
+People: maddie, danielle, grammy, alexandra, carter, brooks, megan
+
+----
+
+Tags: brithday
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: g0NMtH4jQhLRmjl8
