@@ -1,0 +1,34 @@
+Title: Kimberton Fair 2019
+
+----
+
+Text: I'm going to need to see your license and registration, please.
+
+----
+
+Date-taken: 2019-07-27
+
+----
+
+People: brooks
+
+----
+
+Tags: carnival
+
+----
+
+Mymap:
+
+lat: 40.1306588
+lon: -75.5721388
+city: East Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19442"
+osm: 157586671
+
+----
+
+Uuid: N2eKVPSb21Pie50s

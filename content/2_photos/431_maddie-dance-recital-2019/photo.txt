@@ -1,0 +1,33 @@
+Title: Maddie's Dance Recital 2019
+
+----
+
+Text: Maddie changed it up and did hip-hop for her dance recital this year.
+
+----
+
+Date-taken: 2019-06-14
+
+----
+
+People: maddie, megan
+
+----
+
+Tags: dance, recital
+
+----
+
+Mymap:
+
+lat: 40.1303822
+lon: -75.5149128
+city: Phoenixville
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188733
+
+----
+
+Uuid: vImJ3j4vmL0meNkp

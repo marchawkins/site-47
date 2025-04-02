@@ -1,0 +1,38 @@
+Title: Kobe
+
+----
+
+Text:
+
+Carter competes in his school basketball shootout. Never shot a basket in his life. Kid has guts. Love it.
+
+(video: https://youtu.be/9SqyE2mrU1A class: youtube)
+
+----
+
+Date-taken: 2019-03-25
+
+----
+
+People: carter
+
+----
+
+Tags: school, basketball
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: 2OvQkD3xsG94QJ66

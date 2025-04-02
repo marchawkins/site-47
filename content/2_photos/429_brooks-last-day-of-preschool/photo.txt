@@ -1,0 +1,39 @@
+Title: Brooks' Last Day of Preschool
+
+----
+
+Text:
+
+That's a wrap on our preschool journeys. Next up - kindergarten!
+
+(video: https://youtu.be/5UIJlPpeNRM class: youtube)
+(video: https://youtu.be/Mh-MwcEQi9E class: youtube)
+
+----
+
+Date-taken: 2019-05-23
+
+----
+
+People: brooks
+
+----
+
+Tags: school
+
+----
+
+Mymap:
+
+lat: 40.0951038
+lon: -75.6168681
+city: West Pikeland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19425"
+osm: 158616213
+
+----
+
+Uuid: 7pzasJ3s21xMPsjT
