@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: CxPEK7GGmlSc6xUB
+
+----
+
+Template: gallery-image

@@ -1,0 +1,33 @@
+Title: Ocean City 2019
+
+----
+
+Text: Couldn't let summer end without sneaking one more trip to Ocean City, NJ.
+
+----
+
+Date-taken: 2019-09-07
+
+----
+
+People: maddie, carter, megan, brooks, valerie
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: i30PiDWpLLvTjf1X

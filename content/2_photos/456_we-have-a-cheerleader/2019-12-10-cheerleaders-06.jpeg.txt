@@ -1,0 +1,9 @@
+Sort: 8
+
+----
+
+Uuid: zWp2oh74esNeOdba
+
+----
+
+Template: gallery-image

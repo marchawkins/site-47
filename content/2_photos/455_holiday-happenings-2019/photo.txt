@@ -1,0 +1,39 @@
+Title: Holiday Happenings 2019
+
+----
+
+Text:
+
+A holiday season filled with breakfasts with Santa, recitals, Christmas parades, and a trip to Longwood Gardens. 
+
+(video: https://youtu.be/suLiMnfzdHA class: youtube)
+(video: https://youtu.be/NH3h2chQcWo class: youtube)
+
+----
+
+Date-taken: 2019-12-06
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, jen, effie, izzy
+
+----
+
+Tags: christmas, longwood
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: Meo0yNZrFd91v2sB

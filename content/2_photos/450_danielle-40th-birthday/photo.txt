@@ -1,0 +1,34 @@
+Title: Danielle's 40th Birthday
+
+----
+
+Text: Celebrating Danielle's 40th birthday (and Grandpa's birthday, too).
+
+----
+
+Date-taken: 2019-10-17
+
+----
+
+People: danielle, maddie, carter, megan, brooks, jen
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: bULhFDTwWCQo6WJT

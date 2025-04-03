@@ -1,0 +1,33 @@
+Title: Outer Banks 2019
+
+----
+
+Text: Second annual trip to the Outer Banks with our favorite family, the Chongs! Shout out to Andrew for taking the kids fishing. They loved it.
+
+----
+
+Date-taken: 2019-08-11
+
+----
+
+People: maddie, megan, carter, brooks, jen, andrew, effie, izzy
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 36.0664318
+lon: -75.6935448
+city: Kitty Hawk
+region: North Carolina
+country: United States
+countryCode: us
+osm: 177502
+
+----
+
+Uuid: gwHLL7wIzLSTG1QW

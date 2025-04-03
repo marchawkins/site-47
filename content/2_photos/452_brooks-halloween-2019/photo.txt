@@ -1,0 +1,34 @@
+Title: Brooks Halloween 2019
+
+----
+
+Text: It's a-me, Brooks.
+
+----
+
+Date-taken: 2019-10-31
+
+----
+
+People: brooks
+
+----
+
+Tags: halloween, mario, school
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: KqZl0nr7yzrUoIw5

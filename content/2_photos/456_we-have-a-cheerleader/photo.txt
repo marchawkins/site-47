@@ -1,0 +1,34 @@
+Title: We have a cheerleader
+
+----
+
+Text: From tennis to cheerleading, this kid is soaking up the high school experience. So much fun with a great group of girls! Side note - the elf costume was for a pancake breakfast fundraiser :-)
+
+----
+
+Date-taken: 2019-12-10
+
+----
+
+People: maddie, kiera, abby, kristin
+
+----
+
+Tags: cheerleader, school, basketball
+
+----
+
+Mymap:
+
+lat: 40.907282
+lon: -77.8755588
+city: Unionville
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "16835"
+osm: 188626
+
+----
+
+Uuid: fAVvZEO55DFIU4v8

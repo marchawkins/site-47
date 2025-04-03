@@ -1,0 +1,39 @@
+Title: Brooks Playing Soccer
+
+----
+
+Text:
+
+Brooks decided to give soccer a try this Fall.
+
+(video: https://youtu.be/P_yPIUFqDxg class: youtube)
+(video: https://youtu.be/OUlPDc1cXzM class: youtube)
+
+----
+
+Date-taken: 2019-09-15
+
+----
+
+People: brooks
+
+----
+
+Tags: soccer
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: o0sjqlobxiIj8qXr

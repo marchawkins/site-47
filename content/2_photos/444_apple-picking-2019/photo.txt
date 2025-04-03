@@ -1,0 +1,34 @@
+Title: Apple Picking 2019
+
+----
+
+Text: Picking apples for pies(?). Let's hope so, anyway.
+
+----
+
+Date-taken: 2019-09-27
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: apples, fall
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: iQdagXJXdxiBEivP

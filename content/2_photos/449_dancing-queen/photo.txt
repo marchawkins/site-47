@@ -1,0 +1,33 @@
+Title: Dancing Queen
+
+----
+
+Text: Meg and a friend rocking out at Round 1.
+
+----
+
+Date-taken: 2019-10-13
+
+----
+
+People: megan
+
+----
+
+Tags: video games
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: mxLXtPeBnqFk1527

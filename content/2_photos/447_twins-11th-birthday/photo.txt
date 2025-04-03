@@ -1,0 +1,38 @@
+Title: Twins 11th Birthday
+
+----
+
+Text:
+
+Happy 11th birthday, x2. Complete with a ride on the saddle at Texas Roadhouse. 
+
+(video: https://youtu.be/r0q2Td0EWFo class: youtube)
+
+----
+
+Date-taken: 2019-09-28
+
+----
+
+People: carter, megan, brooks
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 39.919698
+lon: -75.4904323
+city: Thornbury Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19342"
+osm: 158371509
+
+----
+
+Uuid: DYsHPhgomEwCYBrS

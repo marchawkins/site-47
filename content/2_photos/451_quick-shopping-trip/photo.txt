@@ -1,0 +1,34 @@
+Title: Quick Shopping Trip
+
+----
+
+Text: Kids spending their last dimes at the mall.
+
+----
+
+Date-taken: 2019-10-26
+
+----
+
+People: maddie, carter, brooks
+
+----
+
+Tags: shopping
+
+----
+
+Mymap:
+
+lat: 39.6651122
+lon: -75.6599297
+city: New Castle County
+region: Delaware
+country: United States
+countryCode: us
+postcode: "19702"
+osm: 158388288
+
+----
+
+Uuid: lb3JvXiRBAU6rhnm

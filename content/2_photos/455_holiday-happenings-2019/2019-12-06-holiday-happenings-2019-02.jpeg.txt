@@ -1,0 +1,9 @@
+Sort: 19
+
+----
+
+Uuid: 6iaFcSPwhcPL2dze
+
+----
+
+Template: gallery-image

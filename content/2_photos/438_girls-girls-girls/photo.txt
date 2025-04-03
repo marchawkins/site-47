@@ -1,0 +1,34 @@
+Title: Girls Girls Girls
+
+----
+
+Text: Partying one last time before school starts.
+
+----
+
+Date-taken: 2019-08-25
+
+----
+
+People: danielle, maddie, jen
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 39.8743762
+lon: -75.7177672
+city: East Marlborough Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19348"
+osm: 158596727
+
+----
+
+Uuid: AuT7oJQfVVChMUFn

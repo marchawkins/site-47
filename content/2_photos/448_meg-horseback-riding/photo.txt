@@ -1,0 +1,39 @@
+Title: Meg Horseback Riding
+
+----
+
+Text:
+
+Meg absolutely loves this. She smiles the entire time.
+
+(video: https://youtu.be/dbuvlDCMC0Y class: youtube)
+(video: https://youtu.be/TKEd2lasKlU class: youtube)
+(video: https://youtube.com/shorts/4hyIBjCe-5E class: youtube)
+
+----
+
+Date-taken: 2019-10-07
+
+----
+
+People: megan
+
+----
+
+Tags: horses
+
+----
+
+Mymap:
+
+lat: 40.0299755
+lon: '-75.629045561906'
+city: West Whiteland Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188127
+
+----
+
+Uuid: NzQMZY2G41vdFP1f

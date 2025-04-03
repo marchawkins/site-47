@@ -1,0 +1,34 @@
+Title: New School, Who Dis
+
+----
+
+Text: Kids are ready to start their new school year, in a new school. Ninth grade, double fifth grade and kindergarten. Let's goooo!
+
+----
+
+Date-taken: 2019-08-26
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: school
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: idKNHOCAQpvMEme8

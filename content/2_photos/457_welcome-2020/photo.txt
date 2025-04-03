@@ -1,0 +1,34 @@
+Title: Welcome 2020!
+
+----
+
+Text: Ringing in the new year - happy 2020!
+
+----
+
+Date-taken: 2019-12-31
+
+----
+
+People: effie, megan, izzy, brooks, carter
+
+----
+
+Tags: new years
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: diuaIgK2ykiQCGSh

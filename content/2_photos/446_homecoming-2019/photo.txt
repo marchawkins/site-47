@@ -1,0 +1,34 @@
+Title: Homecoming 2019
+
+----
+
+Text: Ok, the new school is great and all, but what happened here. Not ready for this quite yet.
+
+----
+
+Date-taken: 2019-09-28
+
+----
+
+People: maddie, marc, danielle, gary, sandy, brooks, izzy, grammy
+
+----
+
+Tags: school, homecoming
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: O4BFGaIHLyPZhgdD
