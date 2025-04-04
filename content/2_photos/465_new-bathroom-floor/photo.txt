@@ -1,0 +1,34 @@
+Title: New Bathroom Floor
+
+----
+
+Text: I initially thought this pattern was a bit much, but she was right again.
+
+----
+
+Date-taken: 2020-03-03
+
+----
+
+People: 
+
+----
+
+Tags: house
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: b1MnY1FrqY5h3Cyc

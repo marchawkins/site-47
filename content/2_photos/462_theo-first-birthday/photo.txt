@@ -1,0 +1,37 @@
+Title: Theo's First Birthday
+
+----
+
+Text:
+
+Happy first birthday to my great-nephew, Theo! Oh, and one more cake for Maddie...
+
+(video: https://youtu.be/eFg2Ii8eWtI class: youtube)
+
+----
+
+Date-taken: 2020-02-15
+
+----
+
+People: maddie, theo, uncle johnny
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: "40.2850285"
+lon: "-76.653466223197"
+city: Derry Township
+region: Pennsylvania
+country: United States
+countryCode: us
+osm: 188234
+
+----
+
+Uuid: QNuICqvHrqEKxxBE

@@ -1,0 +1,34 @@
+Title: Nana and Grandpa's 50th Anniversary
+
+----
+
+Text: Had to do a drive-by celebration because of lockdown, but we couldn't let this milestone go unnoticed. Happy anniversary, you lovebirds.
+
+----
+
+Date-taken: 2020-05-02
+
+----
+
+People: gary, sandy
+
+----
+
+Tags: anniversary
+
+----
+
+Mymap:
+
+lat: 40.0201
+lon: -76.1335653
+city: Leacock Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17529"
+osm: 158647220
+
+----
+
+Uuid: uYw6MzgX2RiLKXmF

@@ -1,0 +1,34 @@
+Title: Timberrrrrr
+
+----
+
+Text: Recent storm took down one of the big trees in our backyard. Was literally a couple feet from smashing our deck. My good buddy Andrew to the rescue. We had this sucker cut up in an afternoon.
+
+----
+
+Date-taken: 2020-03-08
+
+----
+
+People: andrew
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: 4jJwxqrGGSIqQukW

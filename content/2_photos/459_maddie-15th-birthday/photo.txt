@@ -1,0 +1,40 @@
+Title: Maddie's 15th Birthday
+
+----
+
+Text:
+
+A variety of celebrations in typical fashion for Maddie's birthday. Happy birthday, kid!
+
+(video: https://youtu.be/OKShx535Q6E class: youtube)
+(video: https://youtu.be/DRgIBFAnn6g class: youtube)
+(video: https://youtu.be/A-gqXNb4puE class: youtube)
+
+----
+
+Date-taken: 2020-02-01
+
+----
+
+People: maddie, danielle, carter, megan, brooks, kiera, abby, jess, jen, effie, izzy
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: ravRput8emMoMWQc

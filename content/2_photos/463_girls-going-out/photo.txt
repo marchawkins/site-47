@@ -1,0 +1,34 @@
+Title: Girls Going Out
+
+----
+
+Text: I honestly can't remember where they were going, but they looked good anyway.
+
+----
+
+Date-taken: 2020-02-16
+
+----
+
+People: maddie, danielle
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: x6UAz5jzxs2GZ3C6

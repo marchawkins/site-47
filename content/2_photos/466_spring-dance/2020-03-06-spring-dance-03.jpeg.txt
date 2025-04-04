@@ -1,0 +1,9 @@
+Sort: 6
+
+----
+
+Uuid: f2KAJ6tFWYRR8DNP
+
+----
+
+Template: gallery-image

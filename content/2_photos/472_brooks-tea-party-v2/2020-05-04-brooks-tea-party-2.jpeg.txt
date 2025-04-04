@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Uuid: 3Boam5pwzHGQCJwC
+
+----
+
+Template: gallery-image

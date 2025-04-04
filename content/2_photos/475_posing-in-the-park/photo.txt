@@ -1,0 +1,34 @@
+Title: Posing in the Park
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2020-06-25
+
+----
+
+People: maddie
+
+----
+
+Tags: park
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: lk1omzWZplWknmdE

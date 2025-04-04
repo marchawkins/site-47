@@ -1,0 +1,43 @@
+Title: School from Home
+
+----
+
+Text:
+
+Giving this "school from home" thing a shot. It's tough, but we're making it through. I think. As you can see we nailed spelling.
+
+(video: https://youtu.be/MQ0Kc33aKUU class: youtube)
+(video: https://youtu.be/lQ_eUzaj430 class: youtube)
+(video: https://youtu.be/-ool27lwI8k class: youtube)
+(video: https://youtu.be/g6ciwDVKBYk class: youtube)
+(video: https://youtube.com/shorts/WYtjngg5uf8 class: youtube)
+(video: https://youtube.com/shorts/M_mtJJSd1rM class: youtube)
+
+----
+
+Date-taken: 2020-03-08
+
+----
+
+People: brooks
+
+----
+
+Tags: school
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: 3CU4oa7eqPsUf1RM

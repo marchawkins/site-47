@@ -1,0 +1,34 @@
+Title: Carter's Chess Tournament
+
+----
+
+Text: Carter joined the Chess Club at school and played in his first tournament this weekend. It was fun, but man are these kids serious. Grandpa and I were there to cheer him on - in silence, obviously.
+
+----
+
+Date-taken: 2020-02-15
+
+----
+
+People: carter
+
+----
+
+Tags: school, chess
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: SBuNvippqwistcAb

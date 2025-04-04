@@ -1,0 +1,34 @@
+Title: These Two...
+
+----
+
+Text: I could make a book of photos of these two drinking fancy drinks out of big straws. Don't even ask me about the telephone booth.
+
+----
+
+Date-taken: 2020-02-22
+
+----
+
+People: danielle, jen
+
+----
+
+Tags: straws
+
+----
+
+Mymap:
+
+lat: 39.872027
+lon: -75.5914213
+city: Chadds Ford Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19317"
+osm: 158566518
+
+----
+
+Uuid: vATfS6JqBwrvdb43
