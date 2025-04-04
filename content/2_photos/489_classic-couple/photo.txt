@@ -1,0 +1,34 @@
+Title: Classic Couple
+
+----
+
+Text: Straight out of a John Hughes movie - football player boyfriend, cheerleader girlfriend. Also, get a haircut, punk.
+
+----
+
+Date-taken: 2020-09-02
+
+----
+
+People: maddie, charlie
+
+----
+
+Tags: 
+
+----
+
+Mymap:
+
+lat: 40.907282
+lon: -77.8755588
+city: Unionville
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "16835"
+osm: 188626
+
+----
+
+Uuid: ZQyzm8CwCQqNLijF

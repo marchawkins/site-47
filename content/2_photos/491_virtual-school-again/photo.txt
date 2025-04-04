@@ -1,0 +1,38 @@
+Title: Virtual School Again
+
+----
+
+Text:
+
+So I guess we're starting this school year virtually. This is going to be fun.
+
+(video: https://youtu.be/9scVBfzE6Aw class: youtube)
+
+----
+
+Date-taken: 2020-09-08
+
+----
+
+People: brooks, carter, megan, maddie
+
+----
+
+Tags: school
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: K99QeaHh0AkMRVEu

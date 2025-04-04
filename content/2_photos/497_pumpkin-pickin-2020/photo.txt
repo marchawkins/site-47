@@ -1,0 +1,34 @@
+Title: Pumpkin Pickin 2020
+
+----
+
+Text: Please don't judge all of us on the behavior of one of us.
+
+----
+
+Date-taken: 2020-10-18
+
+----
+
+People: maddie, carter, megan, brooks
+
+----
+
+Tags: fall, pumpkins
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: uqdp9gaYAlXKGIWQ

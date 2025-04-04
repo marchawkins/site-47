@@ -1,0 +1,34 @@
+Title: Code Ninja
+
+----
+
+Text: Congratulations to Carter, our Code Ninja.
+
+----
+
+Date-taken: 2020-09-19
+
+----
+
+People: carter
+
+----
+
+Tags: code
+
+----
+
+Mymap:
+
+lat: 40.0064958
+lon: -75.7032742
+city: Downingtown
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19335"
+osm: 188711
+
+----
+
+Uuid: jLcRKZEV5VtZJgh4

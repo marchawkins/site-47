@@ -1,0 +1,40 @@
+Title: Twins 12th Birthday
+
+----
+
+Text:
+
+Happy 12th birthday, Carter and Megan! Also, Andrew and I tried the one chip challenge. I failed miserably.
+
+(video: https://youtu.be/HU1ApPOwgrg class: youtube)
+(video: https://youtu.be/2aBJ2Ixtkr0 class: youtube)
+(video: https://youtu.be/HrbCDy5WJZM class: youtube)
+
+----
+
+Date-taken: 2020-10-01
+
+----
+
+People: carter, megan, chance, sterling, theo, gary, sandy, marc, andrew, monroe
+
+----
+
+Tags: birthday
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: ZB5Mlk19zxGcq1aw

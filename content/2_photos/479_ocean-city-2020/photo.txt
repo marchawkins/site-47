@@ -1,0 +1,33 @@
+Title: Ocean City 2020
+
+----
+
+Text: Annual trip to Ocean City. Felt good to finally get out of the house for a few days.
+
+----
+
+Date-taken: 2020-07-13
+
+----
+
+People: maddie, keira, marc, danielle, carter, megan, brooks
+
+----
+
+Tags: vacation, beach
+
+----
+
+Mymap:
+
+lat: 39.2776156
+lon: -74.5746001
+city: Ocean City
+region: New Jersey
+country: United States
+countryCode: us
+osm: 170430
+
+----
+
+Uuid: kPvMw898sGsYvTU2

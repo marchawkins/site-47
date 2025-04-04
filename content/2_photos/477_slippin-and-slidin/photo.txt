@@ -1,0 +1,38 @@
+Title: Slippin' and Slidin'
+
+----
+
+Text:
+
+Obviously a little more slipping than sliding...
+
+(video: https://youtu.be/sNYEOXhIcJQ class: youtube)
+
+----
+
+Date-taken: 2020-07-09
+
+----
+
+People: carter, maddie
+
+----
+
+Tags: july 4th
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: KuCndVqkNJCeLWLG

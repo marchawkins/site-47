@@ -1,0 +1,38 @@
+Title: Fly, Fly Away
+
+----
+
+Text:
+
+Just in time for Christmas, a bird got in the house. Video of us finally getting him out below. Good grief, what an ordeal.
+
+(video: https://youtu.be/bgtZ9nE9MVg class: youtube)
+
+----
+
+Date-taken: 2020-12-18
+
+----
+
+People: marc, danielle
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: W0PBHnKP1EEZ4IBr

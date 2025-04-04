@@ -1,0 +1,34 @@
+Title: Sideshow on the Small Screen
+
+----
+
+Text: Sideshow gets a shoutout on Monday Night Football. Pretty damn cool to see.
+
+----
+
+Date-taken: 2020-10-26
+
+----
+
+People: 
+
+----
+
+Tags: sideshow, work, office
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: x115UqDKFiPPPD8z

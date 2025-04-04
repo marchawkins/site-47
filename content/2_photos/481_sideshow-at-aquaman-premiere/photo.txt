@@ -1,0 +1,34 @@
+Title: Sideshow at Aquaman Premiere
+
+----
+
+Text: Fun fact - I built the iPad web app to enter the contest. Pretty cool.
+
+----
+
+Date-taken: 2020-07-16
+
+----
+
+People: 
+
+----
+
+Tags: sideshow, work
+
+----
+
+Mymap:
+
+lat: 34.0980031
+lon: -118.329523
+city: Los Angeles
+region: California
+country: United States
+countryCode: us
+postcode: "90028"
+osm: 1830231415
+
+----
+
+Uuid: 87AzVKgBP8g4Jkw0

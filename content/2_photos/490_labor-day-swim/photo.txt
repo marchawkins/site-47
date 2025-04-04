@@ -1,0 +1,38 @@
+Title: Labor Day Swim
+
+----
+
+Text:
+
+Not quite ready to give up Summer, so one last swim this season with the Chongs.
+
+(video: https://youtu.be/EvB2qTJJEaw class: youtube)
+
+----
+
+Date-taken: 2020-09-04
+
+----
+
+People: brooks, maddie, izzy, andrew, effie
+
+----
+
+Tags: summer, swimming
+
+----
+
+Mymap:
+
+lat: 39.8743762
+lon: -75.7177672
+city: East Marlborough Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19348"
+osm: 158596727
+
+----
+
+Uuid: bHLxhBLoYAfxuG6h

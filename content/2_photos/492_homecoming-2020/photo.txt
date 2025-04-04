@@ -1,0 +1,34 @@
+Title: Homecoming 2020
+
+----
+
+Text: 
+
+----
+
+Date-taken: 2020-09-08
+
+----
+
+People: maddie, keira, jess, claire
+
+----
+
+Tags: school, dance
+
+----
+
+Mymap:
+
+lat: 40.907282
+lon: -77.8755588
+city: Unionville
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "16835"
+osm: 188626
+
+----
+
+Uuid: TGiS4TwXMm9qk4Jx

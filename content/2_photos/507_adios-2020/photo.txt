@@ -1,0 +1,38 @@
+Title: Adios, 2020
+
+----
+
+Text:
+
+In a fitting end to this shitball of a year, the kids got to smash a chocolate cupcake piñata(?). Good riddance, 2020.
+
+(video: https://youtu.be/Mwi7bzzbIfY class: youtube)
+
+----
+
+Date-taken: 2020-12-31
+
+----
+
+People: carter, megan, brooks, effie, izzy
+
+----
+
+Tags: new years
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: fxlnolLdgJD1f77s

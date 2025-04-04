@@ -1,0 +1,34 @@
+Title: New Skin, New Laptop
+
+----
+
+Text: Fastest way to make an old laptop feel new again. Picked up a new Conan skin/decal for my MacBook. I think it's more powerful now (obviously).
+
+----
+
+Date-taken: 2020-11-27
+
+----
+
+People: conan
+
+----
+
+Tags: laptop, office
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: tIOdvp1RGjNQ3q9a

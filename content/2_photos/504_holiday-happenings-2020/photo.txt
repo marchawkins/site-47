@@ -1,0 +1,42 @@
+Title: Holiday Happenings 2020
+
+----
+
+Text:
+
+Another holiday season filled with baking cookies, Santa on a firetruck, making anatomically accurate gingerbread men and houses, christmas trees, christmas portraits and more. And finally snow in December! Merry Christmas, everybody.
+
+(video: https://youtu.be/GG2U6AYhmzM class: youtube)
+(video: https://youtu.be/538Kt0j4ELU class: youtube)
+(video: https://youtu.be/ikWWxPUJORI class: youtube)
+(video: https://youtube.com/shorts/sA2Y87yowpI class: youtube)
+(video: https://youtube.com/shorts/iweoqDYnD68 class: youtube)
+
+----
+
+Date-taken: 2020-12-01
+
+----
+
+People: marc, danielle, maddie, carter, megan, brooks, sandy, charlie
+
+----
+
+Tags: christmas
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: MClnMRl5aJ6kOi24

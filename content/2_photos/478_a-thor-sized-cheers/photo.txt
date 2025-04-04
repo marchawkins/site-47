@@ -1,0 +1,33 @@
+Title: A Thor-sized Cheers
+
+----
+
+Text: Cheers, friends.
+
+----
+
+Date-taken: 2020-07-12
+
+----
+
+People: brooks
+
+----
+
+Tags: beer
+
+----
+
+Mymap:
+
+lat: 39.7459468
+lon: -75.546589
+city: Wilmington
+region: Delaware
+country: United States
+countryCode: us
+osm: 369472
+
+----
+
+Uuid: aXTt5k4bwksXaGN7

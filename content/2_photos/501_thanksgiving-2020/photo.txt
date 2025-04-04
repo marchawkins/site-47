@@ -1,0 +1,34 @@
+Title: Thanksgiving 2020
+
+----
+
+Text: Nana just doin' what she does. So good.
+
+----
+
+Date-taken: 2020-11-26
+
+----
+
+People: danielle, maddie, carter, megan, brooks, gary, sandy
+
+----
+
+Tags: thanksgiving
+
+----
+
+Mymap:
+
+lat: 40.0201
+lon: -76.1335653
+city: Leacock Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "17529"
+osm: 158647220
+
+----
+
+Uuid: Z57tRMOyKfag0Ps7

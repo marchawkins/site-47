@@ -1,0 +1,39 @@
+Title: Brooks' Sixth Birthday
+
+----
+
+Text:
+
+Celebrating Brooks' sixth birthday, complete with a water slide, ice cream truck and a visit from Spider-man!
+
+(video: https://youtu.be/8QMEWzYMVUo class: youtube)
+(video: https://youtu.be/oppKLNhKxxg class: youtube)
+
+----
+
+Date-taken: 2020-08-22
+
+----
+
+People: brooks, chance, maddie
+
+----
+
+Tags: birthday, spider-man
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: 8vULAhJJpYXONQ4H
