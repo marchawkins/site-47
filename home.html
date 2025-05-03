@@ -1,370 +1,550 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Links</title>
-    <style>
-        /* CRT Terminal Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        @font-face {
-            font-family: 'VT323';
-            src: url('https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJU.woff2') format('woff2');
-            font-display: swap;
-        }
-        
-        body {
-            font-family: 'VT323', 'Courier New', monospace;
-            line-height: 1.4;
-            background-color: #000;
-            color: #33ff33;
-            padding: 20px;
-            text-shadow: 0 0 5px rgba(51, 255, 51, 0.7);
-            position: relative;
-            overflow-x: hidden;
-        }
-        
-        /* CRT scan lines effect */
-        body::before {
-            content: "";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                rgba(18, 16, 16, 0) 50%, 
-                rgba(0, 0, 0, 0.25) 50%
-            );
-            background-size: 100% 4px;
-            z-index: 2;
-            pointer-events: none;
-            opacity: 0.15;
-        }
-        
-        /* CRT screen effect */
-        body::after {
-            content: "";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(
-                ellipse at center,
-                rgba(0, 40, 0, 0.2) 0%,
-                rgba(0, 40, 0, 0.4) 90%,
-                rgba(0, 40, 0, 0.9) 100%
-            );
-            z-index: 1;
-            pointer-events: none;
-        }
-        
-        .container {
-            width: 95%;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 3;
-        }
-        
-        header {
-            border-bottom: 1px solid #33ff33;
-            padding: 10px 0 20px;
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            font-size: 2rem;
-            font-weight: normal;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        
-        h1::before {
-            content: "[ ";
-        }
-        
-        h1::after {
-            content: " ]";
-        }
-        
-        .terminal-prompt::before {
-            content: "> ";
-        }
-        
-        .columns {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-        
-        @media (min-width: 768px) {
-            .columns {
-                grid-template-columns: repeat(3, 1fr);
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terminal Links</title>
+        <style>
+            /* CRT Terminal Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
-        }
-        
-        .column {
-            border: 1px solid #33ff33;
-            padding: 20px;
-            position: relative;
-            background-color: #001a00; /* Darker background for columns */
-        }
-        
-        .column::before {
-            content: "";
-            position: absolute;
-            top: -1px;
-            left: -1px;
-            right: -1px;
-            height: 25px;
-            background-color: #33ff33;
-            z-index: -1;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #000;
-            background-color: #33ff33;
-            padding: 2px 10px;
-            margin: -20px -20px 20px -20px;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
-        
-        ul {
-            list-style-type: none;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        a {
-            display: block;
-            color: #33ff33;
-            text-decoration: none;
-            transition: all 0.2s;
-            position: relative;
-        }
-        
-        a:hover {
-            color: #ffffff;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-            background-color: #34ff3282;
-        }
-        
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #33ff33;
-            text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-        
-        .boot-sequence {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            color: #33ff33;
-            z-index: 10;
-            padding: 50px;
-            overflow: hidden;
-            animation: bootup 1s forwards;
-            pointer-events: none;
-        }
-        
-        @keyframes bootup {
-            0% { opacity: 1; }
-            80% { opacity: 1; }
-            100% { opacity: 0; visibility: hidden; }
-        }
-        
-        .boot-text {
-            white-space: pre;
-            font-family: monospace;
-            animation: type 2s steps(60, end);
-        }
-        
-        @keyframes type {
-            from { height: 0; }
-            to { height: 100%; }
-        }
-    </style>
-</head>
-<body>
-    <div class="boot-sequence">
-        <div class="boot-text">
-TERMINAL OS v1.0.3
-Copyright (c) 1985-1989
 
-Initializing system...
-Loading modules...
-Memory check: OK
-Display adapter: CRT-3000
-Resolution: 80x25
-Color mode: GREEN
+            @font-face {
+                font-family: "VT323";
+                src: url("https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJU.woff2")
+                    format("woff2");
+                font-display: swap;
+            }
 
-SYSTEM READY
-        </div>
-    </div>
+            body {
+                font-family: "VT323", "Courier New", monospace;
+                line-height: 1.4;
+                background-color: #000;
+                color: #33ff33;
+                padding: 20px;
+                text-shadow: 0 0 5px rgba(51, 255, 51, 0.7);
+                position: relative;
+                overflow-x: hidden;
+            }
 
-    <header>
-        <div class="container">
-            <h1>hello, world</h1>
-            <p class="terminal-prompt">Access granted to link database</p>
-        </div>
-    </header>
-    
-    <main>
-        <div class="container">
-            <div class="columns">
-                <!-- Column 1 -->
-                <div class="column">
-                    <h2>WORK</h2>
-                    <ul>
-                        <li><a href="https://www.sideshow.com" target="_blank">sideshow.exe</a></li>
-                        <li><a href="https://docs.sideshow.com" target="_blank">sideshow.docs</a></li>
-                        <li><a href="https://outlook.office.com/mail/" target="_blank">outlook</a></li>
-                        <li><a href="https://sideshowinc.sharepoint.com/sites/Marketing/SitePages/Calendars.aspx?xsdata=MDV8MDF8fDcyOGE1Njk4M2MzNzQ4MGYxNTgyMDhkYjY4ZmNkZTdkfDFmZTgwOWQzNmRlZjQ5OTQ5Yjk2NmYxOTIwM2RmNDA3fDB8MHw2MzgyMTkyMDc0NzY4NDM5MDZ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPamRpTkdFMU9EVXlabUZqWlRSaU1EQTRZekpqTVdRMFlqUTBZbVU0TUdVelFIUm9jbVZoWkM1Mk1pOXRaWE56WVdkbGN5OHhOamcyTXpJek9UUTNNek01fDQ1ZWMxODYzNzQ1YTQzYjExNTgyMDhkYjY4ZmNkZTdkfDVkNTliNmMyZjQ2MDRjOWU4NjJmNWQzMzEzOTU1ZDJi&sdata=Y21VZnRKNG5CWnlYTHJjSFp1ZktmMlpBaC9pcFdOY0ZxUThJMmlTN2xJaz0%3D&ovuser=1fe809d3-6def-4994-9b96-6f19203df407%2Cmarc.hawkins%40sideshow.com&OR=Teams-HL&CT=1686323952625&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyOC8yMzA1MDEwMDQyMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">staff_calendar</a></li>
-                        <li><a href="https://sideshowinc.sharepoint.com/sites/EmployeePortal" target="_blank">employee_portal</a></li>
-                        <li><a href="https://app.us1.exponea.com/login" target="_blank">bloomreach engage</a></li>
-                        <li><a href="https://tools.bloomreach.com" target="_blank">bloomreach discovery</a></li>
-                        <li><a href="https://gitlab.sideshow.com" target="_blank">gitlab</a></li>
-                    </ul>
-                    <br/>
-                    <h2>3D</h2>
-                    <ul>
-                        <li><a href="https://www.thingiverse.com" target="_blank">thingiverse</a></li>
-                        <li><a href="https://thangs.com" target="_blank">thangs</a></li>
-                        <li><a href="https://makerworld.com/en" target="_blank">makerworld</a></li>
-                        <li><a href="https://www.printables.com" target="_blank">printables</a></li>
-                        <li><a href="https://cults3d.com" target="_blank">cults3D</a></li>
-                        <li><a href="https://www.myminifactory.com/users/Miscast" target="_blank">myminifactory</a></li>
-                    </ul>
-                    <br/>
-                    <h2>Art</h2>
-                    <ul>
-                        <li><a href="https://www.awwwards.com" target="_blank">awwwards</a></li>
-                        <li><a href="https://godly.website" target="_blank">godly</a></li>
-                        <li><a href="https://thevaultofretroscifi.tumblr.com" target="_blank">retro sci-fi</a></li>
-                        <li><a href="https://scifiinterfaces.com" target="_blank">sci-fi interfaces</a></li>
-                        <li><a href="https://hydro74.carbonmade.com" target="_blank">hydro74</a></li>
-                        <li><a href="https://pixeljoint.com" target="_blank">pixeljoint</a></li>
-                        <li><a href="https://unsplash.com" target="_blank">unsplash</a></li>
-                        <li><a href="https://www.hudsandguis.com/" target="_blank">huds & guis</a></li>
-                        <li><a href="https://lovelyui.com" target="_blank">lovely ui</a></li>
-                        <li><a href="https://dribbble.com" target="_blank">dribble</a></li>
-                        <li><a href="https://vislib.tumblr.com" target="_blank">visual library</a></li>
-                        <li><a href="https://16colo.rs" target="_blank">16bit</a></li>
-                        <li><a href="https://www.microcopyinspirations.com" target="_blank">microcopy</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 2 -->
-                <div class="column">
-                    <h2>News</h2>
-                    <ul>
-                        <li><a href="https://hackernoon.com" target="_blank">hackernoon</a></li>
-                        <li><a href="https://www.theverge.com" target="_blank">the verge</a></li>
-                        <li><a href="https://www.theverge.com/installer-newsletter" target="_blank">the verge - installer</a></li>
-                        <li><a href="https://kotaku.com" target="_blank">kotaku</a></li>
-                        <li><a href="https://lifehacker.com" target="_blank">lifehacker</a></li>
-                        <li><a href="https://www.engadget.com" target="_blank">engadget</a></li>
-                        <li><a href="https://techcrunch.com" target="_blank">techcrunch</a></li>
-                        <li><a href="https://slashdot.org" target="_blank">slashdot</a></li>
-                        <li><a href="https://www.geekwire.com" target="_blank">geekwire</a></li>
-                        <li><a href="https://store.steampowered.com" target="_blank">steam</a></li>
-                        <li><a href="https://itch.io" target="_blank">itch.io</a></li>
-                        <li><a href="https://www.mlb.com/phillies" target="_blank">phillies</a></li>
-                        <li><a href="https://www.reddit.com/r/unixporn/" target="_blank">/r unixporn</a></li>
-                        <li><a href="https://www.reddit.com/r/battlestations/" target="_blank">/r battlestations</a></li>
-                        <li><a href="https://www.reddit.com/r/thinkpad/" target="_blank">/r thinkpad</a></li>
-                        <li><a href="https://www.reddit.com/r/cyberDeck/" target="_blank">/r cyberdecks</a></li>
-                    </ul>
-                    <br/>
-                    <h2>Browsing</h2>
-                    <ul>
-                        <li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
-                        <li><a href="https://wallhaven.cc" target="_blank">wallhaven</a></li>
-                        <li><a href="https://whimsical.club" target="_blank">whimsical web</a></li>
-                        <li><a href="https://personalsit.es" target="_blank">personalsit.es</a></li>
-                        <li><a href="https://walzr.com/IMG_0001" target="_blank">IMG_0001</a></li>
-                        <li><a href="https://neocities.org" target="_blank">neocities</a></li>
-                        <li><a href="https://sabukaru.online" target="_blank">sabukaru</a></li>
-                        <li><a href="https://www.yankodesign.com" target="_blank">yanko</a></li>
-                        <li><a href="https://www.hongkiat.com/blog/" target="_blank">hongkiat</a></li>
-                        <li><a href="https://www.thecoolector.com" target="_blank">cool</a></li>
-                        <li><a href="https://nuforc.org" target="_blank">nuforc</a></li>
-                        <li><a href="https://cloudhiker.net" target="_blank">cloudhiker</a></li>
-                        <li><a href="https://blog.prototypr.io" target="_blank">prototypr</a></li>
-                        <li><a href="https://tympanus.net/codrops/" target="_blank">codrops</a></li>
-                        <li><a href="https://thedesignest.net" target="_blank">designest</a></li>
-                        <li><a href="https://abduzeedo.com/#google_vignette" target="_blank">abduzeedo</a></li>
-                    </ul>
-                    <br/>
-                    <h2>People</h2>
-                    <ul>
-                        <li><a href="https://isak.me" target="_blank">isak</a></li>
-                        <li><a href="https://alexgriendling.com" target="_blank">alex griendling</a></li>
-                        <li><a href="https://miscast.co" target="_blank">miscast</a></li>
-                        <li><a href="https://brendandawes.com" target="_blank">dawes</a></li>
-                        <li><a href="https://brendandawes.com/blog" target="_blank">dawes blog</a></li>
-                        <li><a href="https://www.paradiso.zone" target="_blank">paradiso</a></li>
-                        <li><a href="https://vhsoverdrive.neocities.org" target="_blank">vhs overdrive</a></li>                        
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="column">
-                    <h2>my site</h2>
-                    <ul>
-                        <li><a href="https://www.marchawkins.com" target="_blank">me</a></li>
-                        <li><a href="https://hostinger.titan.email/login/" target="_blank">hostinger mail</a></li>
-                        <li><a href="https://statuspage.hostinger.com" target="_blank">hostinger status</a></li>
+            /* CRT scan lines effect */
+            body::before {
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    rgba(18, 16, 16, 0) 50%,
+                    rgba(0, 0, 0, 0.25) 50%
+                );
+                background-size: 100% 4px;
+                z-index: 2;
+                pointer-events: none;
+                opacity: 0.15;
+            }
 
-                    </ul>
-                    <br/>
-                    <h2>TOOLS</h2>
-                    <ul>
-                        <li><a href="https://privacycanada.net/strong-password-generator/" target="_blank">pwd generator</a></li>
-                        <li><a href="https://pagespeed.web.dev" target="_blank">google pagespeed</a></li>
-                        <li><a href="https://fontawesome.com/search" target="_blank">fontawesome</a></li>
-                        <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">emojis</a></li>
-                        <li><a href="https://iconic.app/?ref=sidebar" target="_blank">icons</a></li>
-                        <li><a href="https://andrewsink.github.io/STL-to-ASCII-Generator/" target="_blank">stl to ascii</a></li>
-                        <li><a href="https://doodad.dev/dither-me-this/" target="_blank">dither</a></li>
-                        <li><a href="https://color.adobe.com/create/image" target="_blank">adobe color tools</a></li>
-                        <li><a href="https://www.colordic.org/w" target="_blank">colors of japan</a></li>
-                        <li><a href="https://ascii.today" target="_blank">ascii.today</a></li>
-                        <li><a href="https://momentjs.com" target="_blank">js time</a></li>
-                        <li><a href="https://github.com/public-apis/public-apis" target="_blank">public apis</a></li>
-                        <li><a href="https://creativemarket.com/font-finder" target="_blank">font finder</a></li>
-                        <li><a href="https://freefrontend.com" target="_blank">free front-end</a></li>
-                        <li><a href="https://movie-screencaps.com" target="_blank">movie screencaps</a></li>
-                    </ul>
-                </div>
+            /* CRT screen effect */
+            body::after {
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(
+                    ellipse at center,
+                    rgba(0, 40, 0, 0.2) 0%,
+                    rgba(0, 40, 0, 0.4) 90%,
+                    rgba(0, 40, 0, 0.9) 100%
+                );
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .container {
+                width: 95%;
+                max-width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 3;
+            }
+
+            header {
+                border-bottom: 1px solid #33ff33;
+                padding: 10px 0 20px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            h1::before {
+                content: "[ ";
+            }
+
+            h1::after {
+                content: " ]";
+            }
+
+            .terminal-prompt::before {
+                content: "> ";
+            }
+
+            .columns {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            @media (min-width: 768px) {
+                .columns {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            .column {
+                border: 1px solid #33ff33;
+                padding: 20px;
+                position: relative;
+                background-color: #001a00; /* Darker background for columns */
+            }
+
+            .column::before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                right: -1px;
+                height: 25px;
+                background-color: #33ff33;
+                z-index: -1;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                color: #000;
+                background-color: #33ff33;
+                padding: 2px 10px;
+                margin: -20px -20px 20px -20px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            a {
+                display: block;
+                color: #33ff33;
+                text-decoration: none;
+                transition: all 0.2s;
+                position: relative;
+            }
+
+            a:hover {
+                color: #ffffff;
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+                background-color: #34ff3282;
+            }
+
+            footer {
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #33ff33;
+                text-align: center;
+                font-size: 0.9rem;
+                opacity: 0.7;
+            }
+
+            .boot-sequence {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                color: #33ff33;
+                z-index: 10;
+                padding: 50px;
+                overflow: hidden;
+                animation: bootup 1s forwards;
+                pointer-events: none;
+            }
+
+            @keyframes bootup {
+                0% {
+                    opacity: 1;
+                }
+                80% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+
+            .boot-text {
+                white-space: pre;
+                font-family: monospace;
+                animation: type 2s steps(60, end);
+            }
+
+            @keyframes type {
+                from {
+                    height: 0;
+                }
+                to {
+                    height: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boot-sequence">
+            <div class="boot-text">
+                TERMINAL OS v1.0.3 Copyright (c) 1985-1989 Initializing
+                system... Loading modules... Memory check: OK Display adapter:
+                CRT-3000 Resolution: 80x25 Color mode: GREEN SYSTEM READY
             </div>
         </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>TERMINAL OS v1.0.3 | MEMORY: 640K | CPU: 8MHz</p>
-        </div>
-    </footer>
-</body>
+
+        <header>
+            <div class="container">
+                <h1>hello, world</h1>
+                <p class="terminal-prompt">Access granted to link database</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="columns">
+                    <!-- Column 1 -->
+                    <div class="column">
+                        <h2>WORK</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.sideshow.com" target="_blank" >sideshow.exe</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.sideshow.com" target="_blank" >sideshow.docs</a>
+                            </li>
+                            <li>
+                                <a href="https://outlook.office.com/mail/" target="_blank" >outlook</a>
+                            </li>
+                            <li>
+                                <a href="https://sideshowinc.sharepoint.com/sites/Marketing/SitePages/Calendars.aspx?xsdata=MDV8MDF8fDcyOGE1Njk4M2MzNzQ4MGYxNTgyMDhkYjY4ZmNkZTdkfDFmZTgwOWQzNmRlZjQ5OTQ5Yjk2NmYxOTIwM2RmNDA3fDB8MHw2MzgyMTkyMDc0NzY4NDM5MDZ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPamRpTkdFMU9EVXlabUZqWlRSaU1EQTRZekpqTVdRMFlqUTBZbVU0TUdVelFIUm9jbVZoWkM1Mk1pOXRaWE56WVdkbGN5OHhOamcyTXpJek9UUTNNek01fDQ1ZWMxODYzNzQ1YTQzYjExNTgyMDhkYjY4ZmNkZTdkfDVkNTliNmMyZjQ2MDRjOWU4NjJmNWQzMzEzOTU1ZDJi&sdata=Y21VZnRKNG5CWnlYTHJjSFp1ZktmMlpBaC9pcFdOY0ZxUThJMmlTN2xJaz0%3D&ovuser=1fe809d3-6def-4994-9b96-6f19203df407%2Cmarc.hawkins%40sideshow.com&OR=Teams-HL&CT=1686323952625&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyOC8yMzA1MDEwMDQyMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank" >staff_calendar</a>
+                            </li>
+                            <li>
+                                <a href="https://sideshowinc.sharepoint.com/sites/EmployeePortal" target="_blank" >employee_portal</a>
+                            </li>
+                            <li>
+                                <a href="https://app.us1.exponea.com/login" target="_blank" >bloomreach engage</a>
+                            </li>
+                            <li>
+                                <a href="https://tools.bloomreach.com" target="_blank" >bloomreach discovery</a>
+                            </li>
+                            <li>
+                                <a href="https://gitlab.sideshow.com" target="_blank" >gitlab</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h2>3D</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.thingiverse.com" target="_blank">thingiverse</a>
+                            </li>
+                            <li>
+                                <a href="https://thangs.com" target="_blank">thangs</a>
+                            </li>
+                            <li>
+                                <a href="https://makerworld.com/en" target="_blank">makerworld</a>
+                            </li>
+                            <li>
+                                <a href="https://www.printables.com" target="_blank" >printables</a>
+                            </li>
+                            <li>
+                                <a href="https://cults3d.com" target="_blank" >cults3D</a>
+                            </li>
+                            <li>
+                                <a href="https://www.myminifactory.com/users/Miscast" target="_blank" >myminifactory</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h2>Art</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.awwwards.com" target="_blank" >awwwards</a>
+                            </li>
+                            <li>
+                                <a href="https://godly.website" target="_blank" >godly</a>
+                            </li>
+                            <li>
+                                <a href="https://thevaultofretroscifi.tumblr.com" target="_blank" >retro sci-fi</a>
+                            </li>
+                            <li>
+                                <a href="https://scifiinterfaces.com" target="_blank" >sci-fi interfaces</a>
+                            </li>
+                            <li>
+                                <a href="https://hydro74.carbonmade.com" target="_blank" >hydro74</a>
+                            </li>
+                            <li>
+                                <a href="https://pixeljoint.com" target="_blank" >pixeljoint</a>
+                            </li>
+                            <li>
+                                <a href="https://unsplash.com" target="_blank" >unsplash</a>
+                            </li>
+                            <li>
+                                <a href="https://www.hudsandguis.com/" target="_blank" >huds & guis</a>
+                            </li>
+                            <li>
+                                <a href="https://lovelyui.com" target="_blank" >lovely ui</a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com" target="_blank" >dribble</a>
+                            </li>
+                            <li>
+                                <a href="https://vislib.tumblr.com" target="_blank" >visual library</a>
+                            </li>
+                            <li>
+                                <a href="https://16colo.rs" target="_blank" >16bit</a>
+                            </li>
+                            <li>
+                                <a href="https://www.microcopyinspirations.com" target="_blank" >microcopy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="column">
+                        <h2>News</h2>
+                        <ul>
+                            <li>
+                                <a href="https://news.ycombinator.com/news" target="_blank" >hackernews</a>
+                            </li>
+                            <li>
+                                <a href="https://hackernoon.com" target="_blank" >hackernoon</a>
+                            </li>
+                            <li>
+                                <a href="https://www.theverge.com" target="_blank" >the verge</a>
+                            </li>
+                            <li>
+                                <a href="https://www.theverge.com/installer-newsletter" target="_blank" >the verge - installer</a>
+                            </li>
+                            <li>
+                                <a href="https://kotaku.com" target="_blank" >kotaku</a>
+                            </li>
+                            <li>
+                                <a href="https://lifehacker.com" target="_blank" >lifehacker</a>
+                            </li>
+                            <li>
+                                <a href="https://www.engadget.com" target="_blank" >engadget</a>
+                            </li>
+                            <li>
+                                <a href="https://techcrunch.com" target="_blank" >techcrunch</a>
+                            </li>
+                            <li>
+                                <a href="https://slashdot.org" target="_blank" >slashdot</a>
+                            </li>
+                            <li>
+                                <a href="https://www.geekwire.com" target="_blank" >geekwire</a>
+                            </li>
+                            <li>
+                                <a href="https://store.steampowered.com" target="_blank" >steam</a>
+                            </li>
+                            <li>
+                                <a href="https://itch.io" target="_blank" >itch.io</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mlb.com/phillies" target="_blank" >phillies</a>
+                            </li>
+                            <li>
+                                <a href="https://unixporn.tumblr.com/" target="_blank" >unixporn</a>
+                            </li>
+                            <li>
+                                <a href="https://www.reddit.com/r/unixporn/" target="_blank" >/r unixporn</a>
+                            </li>
+                            <li>
+                                <a href="https://www.reddit.com/r/battlestations/" target="_blank" >/r battlestations</a>
+                            </li>
+                            <li>
+                                <a href="https://www.reddit.com/r/thinkpad/" target="_blank" >/r thinkpad</a>
+                            </li>
+                            <li>
+                                <a href="https://www.reddit.com/r/cyberDeck/" target="_blank" >/r cyberdecks</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h2>Browsing</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank" >youtube</a>
+                            </li>
+                            <li>
+                                <a href="https://wallhaven.cc" target="_blank" >wallhaven</a>
+                            </li>
+                            <li>
+                                <a href="https://whimsical.club" target="_blank" >whimsical web</a>
+                            </li>
+                            <li>
+                                <a href="https://personalsit.es" target="_blank" >personalsit.es</a>
+                            </li>
+                            <li>
+                                <a href="https://walzr.com/IMG_0001" target="_blank" >IMG_0001</a>
+                            </li>
+                            <li>
+                                <a href="https://neocities.org" target="_blank" >neocities</a>
+                            </li>
+                            <li>
+                                <a href="https://sabukaru.online" target="_blank" >sabukaru</a>
+                            </li>
+                            <li>
+                                <a href="https://www.yankodesign.com" target="_blank" >yanko</a>
+                            </li>
+                            <li>
+                                <a href="https://www.hongkiat.com/blog/" target="_blank" >hongkiat</a>
+                            </li>
+                            <li>
+                                <a href="https://www.thecoolector.com" target="_blank" >cool</a>
+                            </li>
+                            <li>
+                                <a href="https://nuforc.org" target="_blank" >nuforc</a>
+                            </li>
+                            <li>
+                                <a href="https://cloudhiker.net" target="_blank" >cloudhiker</a>
+                            </li>
+                            <li>
+                                <a href="https://blog.prototypr.io" target="_blank" >prototypr</a>
+                            </li>
+                            <li>
+                                <a href="https://tympanus.net/codrops/" target="_blank" >codrops</a>
+                            </li>
+                            <li>
+                                <a href="https://thedesignest.net" target="_blank" >designest</a>
+                            </li>
+                            <li>
+                                <a href="https://abduzeedo.com/#google_vignette" target="_blank" >abduzeedo</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h2>People</h2>
+                        <ul>
+                            <li>
+                                <a href="https://isak.me" target="_blank" >isak</a>
+                            </li>
+                            <li>
+                                <a href="https://alexgriendling.com" target="_blank" >alex griendling</a>
+                            </li>
+                            <li>
+                                <a href="https://miscast.co" target="_blank" >miscast</a>
+                            </li>
+                            <li>
+                                <a href="https://brendandawes.com" target="_blank" >dawes</a>
+                            </li>
+                            <li>
+                                <a href="https://brendandawes.com/blog" target="_blank" >dawes blog</a>
+                            </li>
+                            <li>
+                                <a href="https://www.paradiso.zone" target="_blank" >paradiso</a>
+                            </li>
+                            <li>
+                                <a href="https://vhsoverdrive.neocities.org" target="_blank" >vhs overdrive</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/emmabostian/developer-portfolios" target="_blank" >dev portfolios</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="column">
+                        <h2>my site</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.marchawkins.com" target="_blank" >me</a>
+                            </li>
+                            <li>
+                                <a href="https://hostinger.titan.email/login/" target="_blank" >hostinger mail</a>
+                            </li>
+                            <li>
+                                <a href="https://statuspage.hostinger.com" target="_blank" >hostinger status</a>
+                            </li>
+                        </ul>
+                        <br />
+                        <h2>TOOLS</h2>
+                        <ul>
+                            <li>
+                                <a href="https://privacycanada.net/strong-password-generator/" target="_blank" >pwd generator</a>
+                            </li>
+                            <li>
+                                <a href="https://pagespeed.web.dev" target="_blank" >google pagespeed</a>
+                            </li>
+                            <li>
+                                <a href="https://fontawesome.com/search" target="_blank" >fontawesome</a>
+                            </li>
+                            <li>
+                                <a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank" >emojis</a>
+                            </li>
+                            <li>
+                                <a href="https://iconic.app/?ref=sidebar" target="_blank" >icons</a>
+                            </li>
+                            <li>
+                                <a href="https://andrewsink.github.io/STL-to-ASCII-Generator/" target="_blank" >stl to ascii</a>
+                            </li>
+                            <li>
+                                <a href="https://doodad.dev/dither-me-this/" target="_blank" >dither</a>
+                            </li>
+                            <li>
+                                <a href="https://color.adobe.com/create/image" target="_blank" >adobe color tools</a>
+                            </li>
+                            <li>
+                                <a href="https://www.colordic.org/w" target="_blank" >colors of japan</a>
+                            </li>
+                            <li>
+                                <a href="https://ascii.today" target="_blank" >ascii.today</a>
+                            </li>
+                            <li>
+                                <a href="https://momentjs.com" target="_blank" >js time</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/public-apis/public-apis" target="_blank" >public apis</a>
+                            </li>
+                            <li>
+                                <a href="https://creativemarket.com/font-finder" target="_blank" >font finder</a>
+                            </li>
+                            <li>
+                                <a href="https://freefrontend.com" target="_blank" >free front-end</a>
+                            </li>
+                            <li>
+                                <a href="https://movie-screencaps.com" target="_blank" >movie screencaps</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>TERMINAL OS v1.0.3 | MEMORY: 640K | CPU: 8MHz</p>
+            </div>
+        </footer>
+    </body>
 </html>
