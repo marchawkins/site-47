@@ -1,0 +1,46 @@
+Title: Pirate Coin 3D Print
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text: Straight from The Pirates of the Caribbean, this 3D model (not mine, from (link: https://www.thingiverse.com/thing:4861286 text: Thingiverse)) ran through the Creality Ender S1 Pro. Weathered and finished by me. Turned out pretty cool. Full disclosure, this is not a true replica as it has the same design on both sides. Good display piece, though.
+
+----
+
+Year-start: 2025
+
+----
+
+Year-end: 2025
+
+----
+
+Link: 
+
+----
+
+Tags: collectibles, 3D printing, painting
+
+----
+
+Mymap:
+
+lat: 39.9003875
+lon: -75.6257656
+city: Pocopson Township
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19366"
+osm: 158574827
+
+----
+
+Uuid: HQrqYcuvGHBGohOD
