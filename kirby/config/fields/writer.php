@@ -36,14 +36,14 @@ return [
 		/**
 		 * Maximum number of allowed characters
 		 */
-		'maxlength' => function (int $maxlength = null) {
+		'maxlength' => function (int|null $maxlength = null) {
 			return $maxlength;
 		},
 
 		/**
 		 * Minimum number of required characters
 		 */
-		'minlength' => function (int $minlength = null) {
+		'minlength' => function (int|null $minlength = null) {
 			return $minlength;
 		},
 		/**
@@ -63,7 +63,14 @@ return [
 	'computed' => [
 		'value' => function () {
 			$value = trim($this->value ?? '');
-			return Sane::sanitize($value, 'html');
+			$value = Sane::sanitize($value, 'html');
+
+			// convert non-breaking spaces to HTML entity
+			// as that's how ProseMirror handles it internally;
+			// will allow comparing saved and current content
+			$value = str_replace(' ', '&nbsp;', $value);
+
+			return $value;
 		}
 	],
 	'validations' => [
@@ -72,10 +79,10 @@ return [
 				$this->minlength &&
 				V::minLength(strip_tags($value), $this->minlength) === false
 			) {
-				throw new InvalidArgumentException([
-					'key' => 'validation.minlength',
-					'data' => ['min' => $this->minlength]
-				]);
+				throw new InvalidArgumentException(
+					key: 'validation.minlength',
+					data: ['min' => $this->minlength]
+				);
 			}
 		},
 		'maxlength'  => function ($value) {
@@ -83,10 +90,10 @@ return [
 				$this->maxlength &&
 				V::maxLength(strip_tags($value), $this->maxlength) === false
 			) {
-				throw new InvalidArgumentException([
-					'key' => 'validation.maxlength',
-					'data' => ['max' => $this->maxlength]
-				]);
+				throw new InvalidArgumentException(
+					key: 'validation.maxlength',
+					data: ['max' => $this->maxlength]
+				);
 			}
 		},
 	]

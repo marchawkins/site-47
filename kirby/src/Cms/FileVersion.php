@@ -2,6 +2,7 @@
 
 namespace Kirby\Cms;
 
+use Kirby\Filesystem\Asset;
 use Kirby\Filesystem\IsFile;
 
 /**
@@ -18,7 +19,7 @@ class FileVersion
 	use IsFile;
 
 	protected array $modifications;
-	protected $original;
+	protected File|Asset $original;
 
 	public function __construct(array $props)
 	{
@@ -50,7 +51,7 @@ class FileVersion
 
 		// content fields
 		if ($this->original() instanceof File) {
-			return $this->original()->content()->get($method, $arguments);
+			return $this->original()->content()->get($method);
 		}
 	}
 
@@ -108,10 +109,10 @@ class FileVersion
 	 */
 	public function toArray(): array
 	{
-		$array = array_merge(
-			$this->asset()->toArray(),
-			['modifications' => $this->modifications()]
-		);
+		$array = [
+			...$this->asset()->toArray(),
+			'modifications' => $this->modifications()
+		];
 
 		ksort($array);
 

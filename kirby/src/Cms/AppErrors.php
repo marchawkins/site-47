@@ -30,8 +30,6 @@ trait AppErrors
 	 * Allows to disable Whoops globally in CI;
 	 * can be overridden by explicitly setting
 	 * the `whoops` option to `true` or `false`
-	 *
-	 * @internal
 	 */
 	public static bool $enableWhoops = true;
 
@@ -148,11 +146,14 @@ trait AppErrors
 			if ($this->option('debug') === true) {
 				echo Response::json([
 					'status'    => 'error',
-					'exception' => get_class($exception),
+					'exception' => $exception::class,
 					'code'      => $code,
 					'message'   => $exception->getMessage(),
 					'details'   => $details,
-					'file'      => F::relativepath($exception->getFile(), $this->environment()->get('DOCUMENT_ROOT', '')),
+					'file'      => F::relativepath(
+						$exception->getFile(),
+						$this->environment()->get('DOCUMENT_ROOT', '')
+					),
 					'line'      => $exception->getLine(),
 				], $httpCode);
 			} else {
@@ -190,8 +191,19 @@ trait AppErrors
 	protected function getAdditionalWhoopsHandler(): CallbackHandler
 	{
 		return new CallbackHandler(function ($exception, $inspector, $run) {
-			$this->trigger('system.exception', compact('exception'));
-			error_log($exception);
+			$isLogged = true;
+
+			// allow hook to modify whether the exception should be logged
+			$isLogged = $this->apply(
+				'system.exception',
+				compact('exception', 'isLogged'),
+				'isLogged'
+			);
+
+			if ($isLogged !== false) {
+				error_log($exception);
+			}
+
 			return Handler::DONE;
 		});
 	}

@@ -55,9 +55,10 @@ class Api extends BaseApi
 	 */
 	public function clone(array $props = []): static
 	{
-		return parent::clone(array_merge([
-			'kirby' => $this->kirby
-		], $props));
+		return parent::clone([
+			'kirby' => $this->kirby,
+			...$props
+		]);
 	}
 
 	/**
@@ -71,7 +72,7 @@ class Api extends BaseApi
 		$field = Form::for($model)->field($name);
 
 		$fieldApi = $this->clone([
-			'data'   => array_merge($this->data(), ['field' => $field]),
+			'data'   => [...$this->data(), 'field' => $field],
 			'routes' => $field->api(),
 		]);
 
@@ -186,15 +187,39 @@ class Api extends BaseApi
 	}
 
 	/**
+	 * @throws \Kirby\Exception\NotFoundException if the section type cannot be found or the section cannot be loaded
+	 */
+	public function sectionApi(
+		ModelWithContent $model,
+		string $name,
+		string|null $path = null
+	): mixed {
+		if (!$section = $model->blueprint()?->section($name)) {
+			throw new NotFoundException(
+				message: 'The section "' . $name . '" could not be found'
+			);
+		}
+
+		$sectionApi = $this->clone([
+			'data'   => [...$this->data(), 'section' => $section],
+			'routes' => $section->api(),
+		]);
+
+		return $sectionApi->call(
+			$path,
+			$this->requestMethod(),
+			$this->requestData()
+		);
+	}
+
+	/**
 	 * Returns the current Session instance
 	 *
 	 * @param array $options Additional options, see the session component
 	 */
 	public function session(array $options = []): Session
 	{
-		return $this->kirby->session(array_merge([
-			'detect' => true
-		], $options));
+		return $this->kirby->session(['detect' => true, ...$options]);
 	}
 
 	/**
@@ -210,7 +235,6 @@ class Api extends BaseApi
 	 * returns the current authenticated user if no
 	 * id is passed
 	 *
-	 * @param string|null $id User's id
 	 * @throws \Kirby\Exception\NotFoundException if the user for the given id cannot be found
 	 */
 	public function user(string|null $id = null): User|null

@@ -26,11 +26,11 @@ class BlockUuid extends FieldUuid
 	/**
 	 * @var \Kirby\Cms\Block|null
 	 */
-	public Identifiable|null $model;
+	public Identifiable|null $model = null;
 
 	/**
 	 * Converts content field to a Blocks collection
-	 * @internal
+	 * @unstable
 	 */
 	public static function fieldToCollection(Field $field): Blocks
 	{

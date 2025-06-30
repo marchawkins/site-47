@@ -1,6 +1,7 @@
 <?php
 
 use Kirby\Cms\ModelWithContent;
+use Kirby\Form\Form;
 use Kirby\Toolkit\I18n;
 use Kirby\Toolkit\Str;
 
@@ -9,7 +10,7 @@ return [
 		/**
 		 * Columns config for `layout: table`
 		 */
-		'columns' => function (array $columns = null) {
+		'columns' => function (array|null $columns = null) {
 			return $columns ?? [];
 		},
 		/**
@@ -18,7 +19,15 @@ return [
 		 */
 		'layout' => function (string $layout = 'list') {
 			$layouts = ['list', 'cardlets', 'cards', 'table'];
-			return in_array($layout, $layouts) ? $layout : 'list';
+			return in_array($layout, $layouts, true) ? $layout : 'list';
+		},
+		/**
+		 * Whether the raw content file values should be used for the table column previews. Should not be used unless it eases performance issues in your setup introduced with Kirby 4.2
+		 *
+		 * @todo remove when Form classes have been refactored
+		 */
+		'rawvalues' => function (bool $rawvalues = false) {
+			return $rawvalues;
 		},
 		/**
 		 * The size option controls the size of cards. By default cards are auto-sized and the cards grid will always fill the full width. With a size you can disable auto-sizing. Available sizes: `tiny`, `small`, `medium`, `large`, `huge`, `full`
@@ -77,9 +86,12 @@ return [
 				// keep the original column name as id
 				$column['id'] = $columnName;
 
-				// add the custom column to the array with a key that won't
-				// override the system columns
-				$columns[$columnName . 'Cell'] = $column;
+				// add the custom column to the array
+				// allowing to extend/overwrite existing columns
+				$columns[$columnName] = [
+					...$columns[$columnName] ?? [],
+					...$column
+				];
 			}
 
 			if ($this->type === 'pages') {
@@ -129,19 +141,35 @@ return [
 				$item['info'] = $model->toString($this->info);
 			}
 
+			// if forcing raw values, get those directly from content file
+			// TODO: remove once Form classes have been refactored
+			// @codeCoverageIgnoreStart
+			if ($this->rawvalues === true) {
+				foreach ($this->columns as $columnName => $column) {
+					$item[$columnName] = match (empty($column['value'])) {
+						// if column value defined, resolve the query
+						false   => $model->toString($column['value']),
+						// otherwise use the form value,
+						// but don't overwrite columns
+						default => $item[$columnName] ?? $model->content()->get($column['id'] ?? $columnName)->value()
+					};
+				}
+
+				return $item;
+			}
+			// @codeCoverageIgnoreEnd
+
+			// Use form to get the proper values for the columns
+			$form = Form::for($model)->values();
+
 			foreach ($this->columns as $columnName => $column) {
-				// don't overwrite essential columns
-				if (isset($item[$columnName]) === true) {
-					continue;
-				}
-
-				if (empty($column['value']) === false) {
-					$value = $model->toString($column['value']);
-				} else {
-					$value = $model->content()->get($column['id'] ?? $columnName)->value();
-				}
-
-				$item[$columnName] = $value;
+				$item[$columnName] = match (empty($column['value'])) {
+					// if column value defined, resolve the query
+					false   => $model->toString($column['value']),
+					// otherwise use the form value,
+					// but don't overwrite columns
+					default => $item[$columnName] ?? $form[$column['id'] ?? $columnName] ?? null
+				};
 			}
 
 			return $item;

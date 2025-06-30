@@ -3,7 +3,6 @@
 namespace Kirby\Cms;
 
 use Kirby\Toolkit\I18n;
-use Kirby\Toolkit\Locale;
 use Kirby\Toolkit\Str;
 
 /**
@@ -32,7 +31,7 @@ trait AppTranslations
 				$this->multilang() === true &&
 				$language = $this->languages()->find($locale)
 			) {
-				$data = array_merge($data, $language->translations());
+				$data = [...$data, ...$language->translations()];
 			}
 
 
@@ -52,7 +51,7 @@ trait AppTranslations
 			if ($this->multilang() === true) {
 				// first try to fall back to the configured default language
 				$defaultCode = $this->defaultLanguage()->code();
-				$fallback = [$defaultCode];
+				$fallback    = [$defaultCode];
 
 				// if the default language is specified with a country code
 				// (e.g. `en-us`), also try with just the language code
@@ -105,38 +104,9 @@ trait AppTranslations
 	}
 
 	/**
-	 * Load and set the current language if it exists
-	 * Otherwise fall back to the default language
-	 *
-	 * @internal
-	 */
-	public function setCurrentLanguage(
-		string $languageCode = null
-	): Language|null {
-		if ($this->multilang() === false) {
-			Locale::set($this->option('locale', 'en_US.utf-8'));
-			return $this->language = null;
-		}
-
-		$this->language   = $this->language($languageCode);
-		$this->language ??= $this->defaultLanguage();
-
-		if ($this->language) {
-			Locale::set($this->language->locale());
-		}
-
-		// add language slug rules to Str class
-		Str::$language = $this->language->rules();
-
-		return $this->language;
-	}
-
-	/**
 	 * Set the current translation
-	 *
-	 * @internal
 	 */
-	public function setCurrentTranslation(string $translationCode = null): void
+	public function setCurrentTranslation(string|null $translationCode = null): void
 	{
 		I18n::$locale = $translationCode ?? 'en';
 	}
@@ -148,8 +118,8 @@ trait AppTranslations
 	 */
 	public function translation(string|null $locale = null): Translation
 	{
-		$locale = $locale ?? I18n::locale();
-		$locale = basename($locale);
+		$locale ??= I18n::locale();
+		$locale   = basename($locale);
 
 		// prefer loading them from the translations collection
 		if ($this->translations instanceof Translations) {
@@ -163,11 +133,15 @@ trait AppTranslations
 
 		// inject current language translations
 		if ($language = $this->language($locale)) {
-			$inject = array_merge($inject, $language->translations());
+			$inject = [...$inject, ...$language->translations()];
 		}
 
 		// load from disk instead
-		return Translation::load($locale, $this->root('i18n:translations') . '/' . $locale . '.json', $inject);
+		return Translation::load(
+			$locale,
+			$this->root('i18n:translations') . '/' . $locale . '.json',
+			$inject
+		);
 	}
 
 	/**
@@ -189,14 +163,17 @@ trait AppTranslations
 
 				// merges language translations with extensions translations
 				if (empty($languageTranslations) === false) {
-					$translations[$languageCode] = array_merge(
-						$translations[$languageCode] ?? [],
-						$languageTranslations
-					);
+					$translations[$languageCode] = [
+						...$translations[$languageCode] ?? [],
+						...$languageTranslations
+					];
 				}
 			}
 		}
 
-		return $this->translations = Translations::load($this->root('i18n:translations'), $translations);
+		return $this->translations = Translations::load(
+			$this->root('i18n:translations'),
+			$translations
+		);
 	}
 }

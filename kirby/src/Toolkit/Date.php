@@ -7,8 +7,11 @@ use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
 use Exception;
+use IntlCalendar;
 use IntlDateFormatter;
+use Kirby\Cms\App;
 use Kirby\Exception\InvalidArgumentException;
+use Stringable;
 
 /**
  * Extension for PHP's `DateTime` class
@@ -21,7 +24,7 @@ use Kirby\Exception\InvalidArgumentException;
  * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
-class Date extends DateTime
+class Date extends DateTime implements Stringable
 {
 	/**
 	 * Class constructor
@@ -95,6 +98,40 @@ class Date extends DateTime
 	}
 
 	/**
+	 * Returns the first day of the week (0 = Sunday ... 6 = Saturday)
+	 * for the given locale (or as defined via config option)
+	 *
+	 * @since 4.5.0
+	 */
+	public static function firstWeekday(string $locale): int
+	{
+		// config option, if available
+		$weekday = App::instance(null, true)?->option('date.weekday');
+
+		if (is_int($weekday) === true) {
+			return $weekday;
+		}
+
+		// returns Monday as default first day of week
+		// if `IntlCalendar` class not available
+		// @codeCoverageIgnoreStart
+		if (class_exists(IntlCalendar::class) === false) {
+			return 1;
+		}
+		// @codeCoverageIgnoreEnd
+
+		$calendar = IntlCalendar::createInstance(null, $locale);
+		$day      = $calendar->getFirstDayOfWeek();
+
+		return match ($day) {
+			// if any error occurs, return Monday
+			false   => 1, // @codeCoverageIgnore
+			// convert to 0-6 index numbering
+			default => $day - 1
+		};
+	}
+
+	/**
 	 * Rounds the datetime value down to the specified unit
 	 *
 	 * @param string $unit `year`, `month`, `day`, `hour`, `minute` or `second`
@@ -107,16 +144,16 @@ class Date extends DateTime
 		static::validateUnit($unit);
 
 		$formats = [
-			'year'   => 'Y-01-01P',
-			'month'  => 'Y-m-01P',
-			'day'    => 'Y-m-dP',
-			'hour'   => 'Y-m-d H:00:00P',
-			'minute' => 'Y-m-d H:i:00P',
-			'second' => 'Y-m-d H:i:sP'
+			'year'   => 'Y-01-01',
+			'month'  => 'Y-m-01',
+			'day'    => 'Y-m-d',
+			'hour'   => 'Y-m-d H:00:00',
+			'minute' => 'Y-m-d H:i:00',
+			'second' => 'Y-m-d H:i:s'
 		];
 
-		$flooredDate = date($formats[$unit], $this->timestamp());
-		$this->set($flooredDate);
+		$flooredDate = $this->format($formats[$unit]);
+		$this->set($flooredDate, $this->timezone());
 		return $this;
 	}
 
@@ -287,8 +324,6 @@ class Date extends DateTime
 
 	/**
 	 * Returns an instance of the current datetime
-	 *
-	 * @param \DateTimeZone|null $timezone
 	 */
 	public static function now(DateTimeZone|null $timezone = null): static
 	{
@@ -340,11 +375,13 @@ class Date extends DateTime
 
 		// validate step size
 		if (
-			in_array($unit, ['day', 'month', 'year']) && $size !== 1 ||
+			in_array($unit, ['day', 'month', 'year'], true) && $size !== 1 ||
 			$unit === 'hour' && 24 % $size !== 0 ||
-			in_array($unit, ['second', 'minute']) && 60 % $size !== 0
+			in_array($unit, ['second', 'minute'], true) && 60 % $size !== 0
 		) {
-			throw new InvalidArgumentException('Invalid rounding size for ' . $unit);
+			throw new InvalidArgumentException(
+				message: 'Invalid rounding size for ' . $unit
+			);
 		}
 
 		// round to other rounding steps
@@ -425,20 +462,22 @@ class Date extends DateTime
 		}
 
 		if (is_array($input) === true) {
-			$input = array_merge($default, $input);
-			$input['unit'] = strtolower($input['unit']);
-			return $input;
+			return [
+				...$default,
+				...$input,
+				'unit' => strtolower($input['unit'])
+			];
 		}
 
 		if (is_int($input) === true) {
-			return array_merge($default, ['size' => $input]);
+			return [...$default, 'size' => $input];
 		}
 
 		if (is_string($input) === true) {
-			return array_merge($default, ['unit' => strtolower($input)]);
+			return [...$default, 'unit' => strtolower($input)];
 		}
 
-		throw new InvalidArgumentException('Invalid input');
+		throw new InvalidArgumentException(message: 'Invalid input');
 	}
 
 	/**
@@ -490,7 +529,9 @@ class Date extends DateTime
 			'date'     => 'Y-m-d',
 			'time'     => 'H:i:s',
 			'datetime' => 'Y-m-d H:i:s',
-			default    => throw new InvalidArgumentException('Invalid mode')
+			default    => throw new InvalidArgumentException(
+				message: 'Invalid mode'
+			)
 		};
 
 		if ($timezone === true) {
@@ -521,8 +562,10 @@ class Date extends DateTime
 	protected static function validateUnit(string $unit): void
 	{
 		$units = ['year', 'month', 'day', 'hour', 'minute', 'second'];
-		if (in_array($unit, $units) === false) {
-			throw new InvalidArgumentException('Invalid rounding unit');
+		if (in_array($unit, $units, true) === false) {
+			throw new InvalidArgumentException(
+				message: 'Invalid rounding unit'
+			);
 		}
 	}
 }

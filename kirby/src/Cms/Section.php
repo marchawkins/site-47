@@ -2,6 +2,7 @@
 
 namespace Kirby\Cms;
 
+use Closure;
 use Kirby\Exception\InvalidArgumentException;
 use Kirby\Toolkit\Component;
 
@@ -32,11 +33,15 @@ class Section extends Component
 	public function __construct(string $type, array $attrs = [])
 	{
 		if (isset($attrs['model']) === false) {
-			throw new InvalidArgumentException('Undefined section model');
+			throw new InvalidArgumentException(
+				message: 'Undefined section model'
+			);
 		}
 
 		if ($attrs['model'] instanceof ModelWithContent === false) {
-			throw new InvalidArgumentException('Invalid section model');
+			throw new InvalidArgumentException(
+				message: 'Invalid section model'
+			);
 		}
 
 		// use the type as fallback for the name
@@ -44,6 +49,21 @@ class Section extends Component
 		$attrs['type']   = $type;
 
 		parent::__construct($type, $attrs);
+	}
+
+	/**
+	 * Returns field api call
+	 */
+	public function api(): mixed
+	{
+		if (
+			isset($this->options['api']) === true &&
+			$this->options['api'] instanceof Closure
+		) {
+			return $this->options['api']->call($this);
+		}
+
+		return null;
 	}
 
 	public function errors(): array
@@ -76,11 +96,12 @@ class Section extends Component
 
 	public function toResponse(): array
 	{
-		return array_merge([
+		return [
 			'status' => 'ok',
 			'code'   => 200,
 			'name'   => $this->name,
-			'type'   => $this->type
-		], $this->toArray());
+			'type'   => $this->type,
+			...$this->toArray()
+		];
 	}
 }

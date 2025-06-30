@@ -26,11 +26,11 @@ class StructureUuid extends FieldUuid
 	/**
 	 * @var \Kirby\Cms\StructureObject|null
 	 */
-	public Identifiable|null $model;
+	public Identifiable|null $model = null;
 
 	/**
 	 * Converts content field to a Structure collection
-	 * @internal
+	 * @unstable
 	 */
 	public static function fieldToCollection(Field $field): Structure
 	{
