@@ -26,7 +26,8 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         source: ./
         target: /var/www/marchawkins__usr/data/www/marchawkins.com
-        args: "-o ServerAliveInterval=60 -o ServerAliveCountMax=3"
+      env:
+        INPUT_TIMEOUT: 60
  
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
