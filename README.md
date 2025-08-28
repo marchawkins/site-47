@@ -5,4 +5,3 @@ You can learn more about Kirby at [getkirby.com](https://getkirby.com).
 
 
 © 2009 Bastian Allgeier
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
