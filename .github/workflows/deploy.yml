@@ -22,7 +22,6 @@ jobs:
       uses: appleboy/scp-action@v1.0.0
       with:
         host: ${{ secrets.HOST }}
-        port: 65002
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
         source: ./
