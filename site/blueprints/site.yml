@@ -3,12 +3,3 @@ title: Site
 sections:
   pages:
     type: pages
-    
-  pagestats:
-    type: pagestats
-    label: Site Stats
-    size: large
-    showTotals: true
-    showTimeline: true
-    showLanguages: true
-    showFullInfo: true
