@@ -8,7 +8,14 @@ return [
     'mauricerenck.komments.debug' => false,
     'notifications.email.enable' => true,
     'notifications.email.sender' => 'no-reply@marchawkins.com',
-    'notifications.email.emailReceiverList' => 'marchawkins@gmail.com'
+    'notifications.email.emailReceiverList' => 'marchawkins@gmail.com',
+    'ready' => function ($kirby) {
+        return [
+            'pechente.kirby-admin-bar' => [
+                'active' => $kirby->user() !== null
+            ]
+        ];
+    }
 ];
 
 ?>
