@@ -53,11 +53,11 @@ h4 {
     padding: 0 0 0.5em 0;
 }
 
-.text ul, .text li {
+/* .text ul, .text li {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+} */
 
 .comma-list {
     display: inline;

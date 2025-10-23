@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Link: 
+
+----
+
+Sort: 7
+
+----
+
+Uuid: 9zizpqu507e7xgqr
+
+----
+
+Template: gallery-image

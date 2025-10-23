@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Link: 
+
+----
+
+Sort: 6
+
+----
+
+Uuid: 4r0jv2ot2rymu0tk
+
+----
+
+Template: gallery-image

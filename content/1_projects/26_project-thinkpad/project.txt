@@ -1,0 +1,77 @@
+Title: Project ThinkPad
+
+----
+
+Featured-project: false
+
+----
+
+Full-gallery: true
+
+----
+
+Text:
+
+Totally jumped on this (link: https://www.reddit.com/r/thinkpad/ text: r/thinkpad ) bandwagon and picked up an old T440 (circa 2013) for $115. It had a little work done to it before I got it, but not much. Also came with the wrong charger and a missing TrackPoint (ie. "red nub"). Seller got that sorted out pretty quickly and I got to work.
+
+**Starting specs: **
+- Display: 14" 1366x768 LCD
+- CPU: Intel Core i5
+- RAM: 4gb
+- Storage: 128gb HDD
+- Trackpad: absolute shit
+
+**New specs after the upgrades, and rough costs:**
+- Display: 14" (link: https://www.amazon.com/dp/B0CHXZKXFV text: 1920 x 1080 display) ($60)
+- CPU: Intel Core i5
+- RAM: (link: https://www.amazon.com/dp/B0CVZMT7RT text: 12GB) ($25)
+- Storage: (link: https://www.amazon.com/dp/B07Y5VDNT9 text: 1tb SSD from PNY) ($60)
+
+**And a few more upgrades:**
+- New (link: https://www.amazon.com/dp/B0D9M69NW8 text: CMOS battery and cable) ($7)
+- New (link: https://www.amazon.com/dp/B01LWIKXDJ text: keyboard with backlight) ($40)
+- New proper (link: https://www.amazon.com/dp/B076JF393L text: trackpad) ($25)
+- Replacement (link: https://www.amazon.com/dp/B06X1HZYDV text: red nub TrackPoint) ($5)
+- Additional (link: https://www.amazon.com/dp/B08DXD7GZV text: weird-ass charger) ($20)
+
+**Notes:**
+- I didn't realize 4GB was soldered to the board, so could only add one 8gb stick for a total of 12gb. Should be plenty for Linux though
+- Charger uses some dumb proprietary connector, but luckily you can still find them cheap
+- Trackpad replacement was tedious, but actually easy
+- Keyboard replacement wasn't as bad as I thought it would be
+- Screen replacement went ok, but the glue holding it together has to be peeled apart which was a huge pain in the ass. Constantly felt like I was going to break it.
+- Was able to install Arch on it the first try. Very little tinkering to get things working.
+- Only issue I can't figure out yet is getting the backlight on the keyboard to work. Could be hardware or software, or just user error.
+
+----
+
+Year-start: 2025
+
+----
+
+Year-end: 
+
+----
+
+Link: 
+
+----
+
+Tags: computers
+
+----
+
+Mymap:
+
+lat: 39.9597213
+lon: -75.6059638
+city: West Chester
+region: Pennsylvania
+country: United States
+countryCode: us
+postcode: "19383"
+osm: 187665
+
+----
+
+Uuid: prczlecrvvfiqxgn

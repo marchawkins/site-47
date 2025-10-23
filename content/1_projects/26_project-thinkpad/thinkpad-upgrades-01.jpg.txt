@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Link: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: gl3voenkm2lxgdsv
+
+----
+
+Template: gallery-image

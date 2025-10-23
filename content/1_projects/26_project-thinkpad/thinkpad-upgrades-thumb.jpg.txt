@@ -1,0 +1,17 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: c8bylknaqthps5y6
+
+----
+
+Template: thumbnail-image
