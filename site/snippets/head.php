@@ -45,6 +45,17 @@
     <?php if($page->title()=='Guestbook'): ?>
         <?php echo css(['/media/plugins/mauricerenck/komments/komments.css']); ?>
     <?php endif ?>
+    <?php // Preload LCP images for the Home page with high fetch priority ?>
+    <?php if($page->title() == 'Home'): ?>
+        <!-- Preload hero/portrait image with srcset to cover 1x and 2x devices -->
+        <link rel="preload" as="image"
+              href="/assets/images/home-me.gif"
+              imagesrcset="/assets/images/home-me.gif 1x, /assets/images/home-me@2x.gif 2x"
+              imagesizes="300px"
+              fetchpriority="high">
+        <!-- Preload background animation used on the homepage -->
+        <link rel="preload" href="/assets/images/bg-animated-white.gif" as="image" fetchpriority="high">
+    <?php endif ?>
     <?= css('@auto'); ?>
     <?= css($page->files()->filterBy('extension', 'css')->pluck('url')) ?>
     <?= js($page->files()->filterBy('extension', 'js')->pluck('url')) ?>
