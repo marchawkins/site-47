@@ -1,5 +1,10 @@
 /* homepage-specific styles */
 
+/* Ensure percentage heights work in standards mode (doctype) */
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +15,9 @@ body {
 
 
 #home-container {
-    height: 100%;
+    /* use viewport-based min-height so the container fills the screen
+       even when ancestors don't have explicit heights */
+    min-height: 100vh;
     min-width: 300px;
     display: flex;
     justify-content: center;
@@ -20,8 +27,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 100%;
+    /* prefer filling the viewport; fall back to 600px on small viewports */
     min-height: 600px;
+    min-height: 100vh;
     background-image: image-set('/assets/images/home-me.gif' 1x, '/assets/images/home-me@2x.gif' 2x);
     background-position: 50% 0;
     background-repeat: no-repeat;
