@@ -1,3 +1,155 @@
+# [3.6.0](https://github.com/mauricerenck/komments/compare/v3.5.0...v3.6.0) (2025-10-08)
+
+
+### Features
+
+* spam phrases and keywords ([cfa7bb7](https://github.com/mauricerenck/komments/commit/cfa7bb7d156120acdbdf0152cee959eb4391803c))
+
+# [3.5.0](https://github.com/mauricerenck/komments/compare/v3.4.0...v3.5.0) (2025-09-05)
+
+
+### Features
+
+* Enriched Notifications ([e991980](https://github.com/mauricerenck/komments/commit/e9919809f9964714efad767bfa573d4a492fb5b5)), closes [#78](https://github.com/mauricerenck/komments/issues/78) [#78](https://github.com/mauricerenck/komments/issues/78) [#75](https://github.com/mauricerenck/komments/issues/75)
+
+# [3.4.0](https://github.com/mauricerenck/komments/compare/v3.3.1...v3.4.0) (2025-07-11)
+
+
+### Features
+
+* detect duplicated webmentions and dont store them again ([3593d11](https://github.com/mauricerenck/komments/commit/3593d11100036e89d7394917a8d2573804b7dc1a))
+
+## [3.3.1](https://github.com/mauricerenck/komments/compare/v3.3.0...v3.3.1) (2025-06-22)
+
+
+### Bug Fixes
+
+* avatar return string prevented saving comments in some cases ([f14a03f](https://github.com/mauricerenck/komments/commit/f14a03f329a72a7d89991d71800e7c25b2e3df0d))
+* prevent malicious chars in comment text ([01d0ca4](https://github.com/mauricerenck/komments/commit/01d0ca49329bf8a4be3be3332553d818c9d42d32))
+
+# [3.3.0](https://github.com/mauricerenck/komments/compare/v3.2.3...v3.3.0) (2025-06-20)
+
+
+### Bug Fixes
+
+* hand empty string secrets ([91ac5b0](https://github.com/mauricerenck/komments/commit/91ac5b0a1fa82bddb4cb9fe7cf546db2d9617f5d))
+
+
+### Features
+
+* new moderation hooks [#76](https://github.com/mauricerenck/komments/issues/76) ([7d7e355](https://github.com/mauricerenck/komments/commit/7d7e3558fedd1a11f945b40e3ab7f9c9a020cbd8))
+
+## [3.2.3](https://github.com/mauricerenck/komments/compare/v3.2.2...v3.2.3) (2025-06-20)
+
+
+### Bug Fixes
+
+* allow different outputs for better backwards compatibility ([47856c5](https://github.com/mauricerenck/komments/commit/47856c5fb51362e3549e8c1fadf6296ed9c80d7a))
+
+## [3.2.2](https://github.com/mauricerenck/komments/compare/v3.2.1...v3.2.2) (2025-06-20)
+
+
+### Bug Fixes
+
+* allow different return types ([5fe9e44](https://github.com/mauricerenck/komments/commit/5fe9e4458830646a045bf375657953f746d72c11))
+
+## [3.2.1](https://github.com/mauricerenck/komments/compare/v3.2.0...v3.2.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* reset default avatar service to gravatar ([3b042e6](https://github.com/mauricerenck/komments/commit/3b042e60fc6deb9dda072c48f2678076ce6f43c3))
+
+# [3.2.0](https://github.com/mauricerenck/komments/compare/v3.1.1...v3.2.0) (2025-06-20)
+
+
+### Features
+
+* use different avatar services ([4609a43](https://github.com/mauricerenck/komments/commit/4609a4338d5805b8b7218ff0081fee624d027c51))
+
+## [3.1.1](https://github.com/mauricerenck/komments/compare/v3.1.0...v3.1.1) (2025-04-18)
+
+
+### Bug Fixes
+
+* check if the x-return-type header is in request header ([#72](https://github.com/mauricerenck/komments/issues/72)) ([2131b85](https://github.com/mauricerenck/komments/commit/2131b853ee01c1feabcdb52f5c9d5ab51d687658))
+
+# [3.1.0](https://github.com/mauricerenck/komments/compare/v3.0.4...v3.1.0) (2025-04-04)
+
+
+### Features
+
+* reply via webmention ([#74](https://github.com/mauricerenck/komments/issues/74)) ([4f634a0](https://github.com/mauricerenck/komments/commit/4f634a0bc1814db5472e2079b302766eb39cd85a))
+
+## [3.0.4](https://github.com/mauricerenck/komments/compare/v3.0.3...v3.0.4) (2025-04-04)
+
+
+### Bug Fixes
+
+* use hostname as author of webmentions when not author name present ([9655e20](https://github.com/mauricerenck/komments/commit/9655e2085e88c30075f6fc2107f0e7c1415a64b3))
+
+## [3.0.3](https://github.com/mauricerenck/komments/compare/v3.0.2...v3.0.3) (2025-03-26)
+
+
+### Bug Fixes
+
+* gravatar link is saved instead of the e-mail address ([#71](https://github.com/mauricerenck/komments/issues/71)) ([2a42356](https://github.com/mauricerenck/komments/commit/2a42356cc5991daf85ed3b71d3b71694b082a91f))
+
+## [3.0.2](https://github.com/mauricerenck/komments/compare/v3.0.1...v3.0.2) (2025-03-21)
+
+
+### Bug Fixes
+
+* use textare field to avoid html content in replis ([ba5188a](https://github.com/mauricerenck/komments/commit/ba5188a54f1f7c7544c3410696355f9c17dda078))
+
+## [3.0.1](https://github.com/mauricerenck/komments/compare/v3.0.0...v3.0.1) (2025-03-20)
+
+
+### Bug Fixes
+
+* single language handling in form ([132050c](https://github.com/mauricerenck/komments/commit/132050c93ff343988427aafd69d66be422d4ff8c))
+
+# [3.0.0](https://github.com/mauricerenck/komments/compare/v2.1.2...v3.0.0) (2025-03-18)
+
+
+### Features
+
+* komments version 3 ([#69](https://github.com/mauricerenck/komments/issues/69)) ([c9553bc](https://github.com/mauricerenck/komments/commit/c9553bca7380ac54df5c8146fb51f1a6d17ef368))
+
+
+### BREAKING CHANGES
+
+* old comments have to be migrated
+
+* feat: SQLite storage
+
+* feat: new folder structure
+
+* feat: database migrations
+
+* feat: comments deep link via uuid
+
+* feat: new snippets for lists and responses
+* old snippets are deprecated, new snippets with different names and more condensed
+
+* feat: new panel view
+
+* feat: new comment moderation panel view
+
+* feat: reply from panel
+
+* feat: manage comments on page level
+
+* feat: show or hide webmentions in moderation view via field config or options
+
+* feat: updated comment form with less overhead
+
+* feat: new markdown inbox format
+
+* feat: akismet spam detection
+
+* feat: migration flow in panel
+
 ## [2.1.2](https://github.com/mauricerenck/komments/compare/v2.1.1...v2.1.2) (2024-09-02)
 
 
