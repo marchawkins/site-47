@@ -10,6 +10,26 @@ article {
     margin-top: 0;
 }
 
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery li {
+    box-sizing: border-box;
+    width: 25%; /* four-up grid by default */
+    padding: 0.25rem;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 article h1 {
     display: none;
 }

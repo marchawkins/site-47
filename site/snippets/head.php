@@ -56,6 +56,18 @@
         <!-- Preload background animation used on the homepage -->
         <link rel="preload" href="/assets/images/bg-animated-white.gif" as="image" fetchpriority="high">
     <?php endif ?>
+    <?php // Preload the first photo on the Photos page to improve LCP ?>
+    <?php if($page->intendedTemplate()->name() === 'photos' || $page->slug() === 'photos'): ?>
+        <?php
+            $firstPhoto = $page->children()->listed()->sortBy('date_taken', 'desc')->first();
+            if($firstPhoto && $firstPhoto->image()->exists()):
+                // preload 1x and 2x thumbnails for retina support
+                $thumb1x = $firstPhoto->image()->crop(200,200)->url();
+                $thumb2x = $firstPhoto->image()->crop(400,400)->url();
+        ?>
+            <link rel="preload" as="image" href="<?= $thumb1x ?>" imagesrcset="<?= $thumb1x ?> 1x, <?= $thumb2x ?> 2x" imagesizes="200px" fetchpriority="high">
+        <?php endif ?>
+    <?php endif ?>
     <?= css('@auto'); ?>
     <?= css($page->files()->filterBy('extension', 'css')->pluck('url')) ?>
     <?= js($page->files()->filterBy('extension', 'js')->pluck('url')) ?>
