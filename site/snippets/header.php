@@ -1,6 +1,6 @@
 <?php snippet('head') ?> 
 
-    <header>
+    <header id="site-header">
         <nav class="menu">
             <ul>
                 <?php foreach($site->children()->listed() as $item): ?>

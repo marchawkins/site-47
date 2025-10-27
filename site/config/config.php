@@ -4,7 +4,7 @@ return [
     // 'panel' =>[
     //     'install' => true
     //  ]
-    //'debug' => true
+    'debug' => true,
     'mauricerenck.komments.debug' => false,
     'mauricerenck.komments.storage.type' => 'markdown',
     'notifications.email.enable' => true,

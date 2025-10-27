@@ -7,9 +7,9 @@
             <section>
                 <?php echo $page->text() ?>
 
-                <?php snippet('komments/kommentform'); ?>
+                <?php snippet('komments/form'); ?>
 
-                <?php snippet('komments/webmention-splitted'); ?>
+                <?php snippet('komments/list/comments'); ?>
             </section>
         </div><!-- #content -->
     </article>

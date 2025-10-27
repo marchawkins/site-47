@@ -1,6 +1,0 @@
-{
-    "name": "marc",
-    "message": "hello, there.",
-    "status": "approved",
-    "timestamp": "2024-10-30_03-52-49"
-}

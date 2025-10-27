@@ -1,7 +1,0 @@
-{
-    "name": "carter",
-    "message": "somebody come pick me up",
-    "email": "carterhawkins08@gmail.com",
-    "status": "approved",
-    "timestamp": "2024-10-30_04-43-56"
-}

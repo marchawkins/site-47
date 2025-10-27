@@ -36,7 +36,7 @@ article {
     header & footer styles -----           */
 
 
-header {
+header#site-header {
     width: 100%;
     height: 60px;
     border-bottom: 2px solid #fff;
@@ -44,7 +44,7 @@ header {
     background-size: contain;
 }
 
-header nav {
+header#site-header nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ header nav {
     width: 100%;
 }
 
-header ul {
+header#site-header ul {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -60,11 +60,11 @@ header ul {
     padding: 0;
 }
 
-header li {
+header#site-header li {
     list-style: none;
 }
 
-header a {
+header#site-header a {
     display: block;
     margin: 30px 5px 0 5px;
     padding: 0;
@@ -76,20 +76,20 @@ header a {
     cursor: pointer;    
 }
 
-header a:hover {
+header#site-header a:hover {
     text-decoration: underline;
 }
 
-header a.active {
+header#site-header a.active {
     margin-top: 42px;
     text-decoration: line-through;
 }
 
-header a.active:hover {
+header#site-header a.active:hover {
     text-decoration: none;
 }
 
-header li.logo a {
+header#site-header li.logo a {
     width: 68px;
     height: 60px;
     margin-top: 0;
@@ -100,7 +100,7 @@ header li.logo a {
     text-indent: -9999px;
 }
 
-footer  {
+footer#site-footer  {
     margin-top: auto;
     text-align: center;
     background: #000;
@@ -141,7 +141,7 @@ footer  {
 }
 
 @media (min-width: 767px) {
-    header {
+    header#site-header {
         a {
             margin: 20px 5px 0 5px;
             padding: .5rem 1rem;
