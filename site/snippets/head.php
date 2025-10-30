@@ -36,14 +36,16 @@
     <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>"/>
     
     <!-- Google tag (gtag.js) -->
+    <?php if(!in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1','::1']) && stripos($_SERVER['HTTP_HOST'] ?? '', 'localhost') === false): ?>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5VGK1JHRQ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
 
     gtag('config', 'G-Y5VGK1JHRQ');
     </script>
+    <?php endif; ?>
 
     <?php if($page->title()!='Home'): ?>
         <?= css('assets/css/styles.css'); ?>
