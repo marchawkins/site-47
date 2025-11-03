@@ -19,7 +19,7 @@
           <p class="p-job-title title">Webmaster</p>
           <p><em>Employee #70</em></p>
           <hr/>
-          <p><a class="u-url url" href="https://www.marchawkins.com">marchawkins.com</a></p>
+          <p><a class="u-url url u-uid uid" rel="me" href="https://www.marchawkins.com">marchawkins.com</a></p>
           <p><a class="u-email email">marc@marchawkins.com</a></p>
           <hr/>
           <p><span class="p-locality locality">West Chester</span>, <span class="p-region region">PA</span>
