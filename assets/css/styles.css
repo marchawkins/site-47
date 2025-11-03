@@ -32,6 +32,10 @@ article {
     display: block;
 }
 
+.hide   {
+    display: none;
+}
+
 /* ----- 
     header & footer styles -----           */
 
