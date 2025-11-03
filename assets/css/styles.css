@@ -46,6 +46,7 @@ header#site-header {
     border-bottom: 2px solid #fff;
     background: url('/assets/images/vhs-bands.gif') 0 0 repeat;
     background-size: contain;
+    position: relative; /* allow absolutely-positioned hamburger inside header */
 }
 
 header#site-header nav {
@@ -231,6 +232,103 @@ footer#site-footer  {
       max-height: 75vh;
       min-width: 0;
     }
+}
+
+/* Mobile navigation (hamburger) - mobile only, not shown on homepage via PHP */
+.menu-toggle { display: none; }
+.mobile-menu { display: none; }
+
+/* Prefer aria-hidden for controlling visibility: honor aria-hidden on the menu so
+    it's hidden by default (server-side) and only shown when JS sets aria-hidden="false" */
+.mobile-menu[aria-hidden="true"] { display: none !important; }
+.mobile-menu[aria-hidden="false"] { display: flex !important; }
+
+@media (max-width: 768px) {
+    /* hide desktop nav and show hamburger */
+    header#site-header nav.menu { display: none; }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        width: 44px;
+        height: 44px;
+        padding: 6px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        z-index: 1100; /* sit above header background */
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #fff;
+        margin: 0;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        transform-origin: center;
+    }
+
+    /* open state: morph into an X using aria-expanded on the button */
+    /* open state: make bars overlap perfectly at center to form an X */
+    .menu-toggle[aria-expanded="true"] .bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 22px;
+        height: 2px;
+        transform-origin: center;
+    }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(2) {
+        opacity: 0;
+        transform: translate(-50%, -50%) scaleX(0);
+    }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* mobile-only centered logo */
+    .mobile-logo { display: block; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 68px; height: 60px; text-indent: -9999px; background-image: image-set('/assets/images/header-icon-face.gif' 1x, '/assets/images/header-icon-face@2x.gif' 2x); background-position: 50% 0; background-repeat: no-repeat; z-index: 1100; border: 0; padding: 0; cursor: pointer; }
+    
+    /* screen reader only text */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+    /* increase mobile menu item type by 25% */
+    .mobile-menu a { font-size: 1.25em; }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #111;
+        color: #fff;
+        z-index: 999;
+        padding: 0.25rem 0 1rem; /* reduce top padding to pull first item up */
+        box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+        flex-direction: column;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .mobile-menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+    .mobile-menu li { margin: 0; }
+    .mobile-menu li.text-link a { display: block; padding: .5rem 1rem; color: #fff; text-decoration: none; text-transform: uppercase; font-weight: bold; }
+    .mobile-menu li:first-child a { padding-top: .25rem; }
+    .mobile-menu li.text-link a:hover { background: rgba(255,255,255,0.03); }
+    .mobile-logo {background-color: transparent; }
 }
 
 
