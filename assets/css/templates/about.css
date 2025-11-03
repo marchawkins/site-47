@@ -1,3 +1,7 @@
+.main-carousel  {
+  display: none;
+}
+
 h1  {
     display: none;
 }
@@ -21,24 +25,14 @@ h2  {
 #content a:visited {
     color: #666;
 }
-
-@media (min-width: 767px) {
-    article h2 {
-        font-size: 2.5rem;
-        text-align: left;
-    }
-}
-
 .page-layout {
   min-height: 980px;
   background-color: #fcfcfb;
-  background-image: url('/assets/images/about-id-badge-sm.jpg');
+  background-image: url('/assets/images/about-id-badge-mobile.jpg');
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center top;
   background-size: contain;
   padding: 1.5rem;
-  transform: translateY(-40px);
-  will-change: transform;
 }
 
 .aside-left {
@@ -63,14 +57,13 @@ h2  {
 .h-card { display: flex; align-items: center; gap: 1rem; }
 .h-card .u-photo { width: 96px; height: 96px; border-radius: 8px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 4px 10px rgba(0,0,0,0.4); flex: 0 0 96px; }
 
-.h-card .p-name { font-size: 1.25rem; font-weight: 600; margin: 0 0 0.25rem 0; }
+.h-card .p-name { font-weight: 600; margin: 0 0 0.25rem 0; }
 
 .h-card .p-org,
 .h-card .p-role,
 .h-card .u-email,
 .h-card .u-url {
   margin: 0;
-  font-size: 0.95rem;
   opacity: 0.95;
 }
 
@@ -79,55 +72,10 @@ h2  {
 }
 .h-card .u-photo { width: 84px; height: 84px; border-radius: 6px; border: 2px solid rgba(255,255,255,0.9); }
 .h-card-details .p-name { font-weight: 700; margin: 0 0 0.25rem; }
-.h-card-details p, .h-card-details a { margin: 0; color: rgba(255,255,255,0.95); font-size: 0.95rem; text-decoration: none;}
+.h-card-details p, .h-card-details a { margin: 0; color: rgba(255,255,255,0.95); text-decoration: none;}
 
-.content-right { padding: 0 0.5rem; }
 
 main { overflow: visible; }
-
-@media (max-width: 768px) {
-  .page-layout {
-    min-height: 980px;
-    background-position: center top;
-  }
-  .aside-left { min-height: 160px; }
-  .h-card .u-photo { width: 64px; height: 64px; }
-  .h-card-section { max-width: 100%; }
-}
-
-@media (min-width: 769px) {
-  .page-layout { position: relative; padding-left: 360px; }
-  .aside-left {
-    position: absolute;
-    left: 1.5rem;
-    top: 20px;
-    width: 320px;
-    min-height: 360px;
-    z-index: 2;
-  }
-  .content-right { margin-left: 0; width: 100%; max-width: none; }
-}
-
-@media (min-width: 769px) {
-  .page-layout, .page-layout .content-right, .page-layout #content {
-    max-width: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
-  .page-layout .content-right > * { max-width: none !important; width: 100% !important; }
-}
-
-@media (min-width: 769px) {
-  .page-layout .content-right, .page-layout .content-right #content, .page-layout .content-right .container, .page-layout .content-right .wrap {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: auto !important;
-    max-width: none !important;
-    float: none !important;
-    display: block !important;
-  }
-}
-
 .h-card-section {
   background: transparent !important;
   border-radius: 0 !important;
@@ -135,8 +83,21 @@ main { overflow: visible; }
   padding: 0;
 }
 
+/* mobile only styles */
+
 @media (max-width: 768px) {
-  .aside-left { position: static; width: auto; min-height: 900px; }
+  #content {
+    padding: 0 0 2rem 0;
+  }
+  .page-layout {
+    min-height: 980px;
+    background-position: center top;
+  }
+  .aside-left { min-height: 160px; }
+  .h-card .u-photo { width: 64px; height: 64px; }
+  .h-card-section { max-width: 100%; }
+
+  .aside-left { position: static; width: auto; min-height: 760px; }
   .content-right { margin-left: 0; }
   .aside-left { display: flex; justify-content: center; align-items: flex-start; }
   .h-card-section {
@@ -146,15 +107,64 @@ main { overflow: visible; }
     justify-content: center;
     align-items: center;
   }
-  .h-card-details { margin: 575px 0 0 -10 0px; }
+  .h-card-details { margin: 440px 0 0 -20px; }
   .h-card { justify-content: center; }
   .content-right { margin-left: 0; margin-top: 1rem; }
 }
 
-@media (min-width: 769px) {
+/* desktop only styles */
+
+@media (min-width: 767px) {
+  .main-carousel  {
+    display: block;
+  }
+
+  article h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .page-layout { 
+    position: relative;
+    padding-left: 360px; 
+    background-image: url('/assets/images/about-id-badge-desktop.jpg');
+    background-position: left top;
+    transform: translateY(-40px);
+    will-change: transform;
+  }
+  .aside-left {
+    position: absolute;
+    left: 1.5rem;
+    top: 20px;
+    width: 320px;
+    min-height: 360px;
+    z-index: 2;
+  }
+  .content-right { margin-left: 0; padding: 0 0.5rem; width: 100%; max-width: none; }
+
+  .page-layout, .page-layout .content-right, .page-layout #content {
+    max-width: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .page-layout .content-right > * { max-width: none !important; width: 100% !important; }
+
+  .page-layout .content-right, .page-layout .content-right #content, .page-layout .content-right .container, .page-layout .content-right .wrap {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    float: none !important;
+    display: block !important;
+  }
+
   .page-layout, .page-layout * {
     max-width: none !important;
     width: auto !important;
     box-sizing: border-box !important;
+  }
+
+  .h-card {
+    font-size: 85%;
   }
 }
