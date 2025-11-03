@@ -32,7 +32,7 @@ article {
     display: block;
 }
 
-.hide   {
+.hide, .sr-only   {
     display: none;
 }
 
@@ -299,9 +299,6 @@ footer#site-footer  {
     /* mobile-only centered logo */
     .mobile-logo { display: block; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 68px; height: 60px; text-indent: -9999px; background-image: image-set('/assets/images/header-icon-face.gif' 1x, '/assets/images/header-icon-face@2x.gif' 2x); background-position: 50% 0; background-repeat: no-repeat; z-index: 1100; border: 0; padding: 0; cursor: pointer; }
     
-    /* screen reader only text */
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
-
     /* increase mobile menu item type by 25% */
     .mobile-menu a { font-size: 1.25em; }
 
