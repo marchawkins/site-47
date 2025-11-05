@@ -1,0 +1,13 @@
+Title: Slashes
+
+----
+
+Text: Staking my claim on the IndieWeb with a bunch of (link: https://slashpages.net text: /slash pages).
+
+----
+
+Tags: indieweb
+
+----
+
+Uuid: h7rjx1ol2mgbx8s5

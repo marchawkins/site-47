@@ -1,0 +1,13 @@
+Title: Ideas
+
+----
+
+Text: This (link: https://indieweb.org/ideas text: ideas page) is a list of things I might want to learn or projects to explore in the future.
+
+----
+
+Tags: 
+
+----
+
+Uuid: uf9yacy4tveagott

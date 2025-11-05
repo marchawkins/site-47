@@ -1,0 +1,55 @@
+/* projects page styles */
+
+h1  {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2  {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.projects-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr; /* one column on mobile */
+    gap: 10px; /* Space between items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.projects-wrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.projects-wrapper a {
+    display: block;
+    color: #000;
+    background: #efefef;
+    transition: background-color 0.5s ease; /* Transition for background color */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 80%;
+    padding: .25rem;
+}
+
+.projects-wrapper a:hover {
+    background: #ccc;
+}
+
+@media (min-width: 767px) {
+    .projects-wrapper ul {
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns on desktop */
+    }
+}
+
+@media (min-width: 1280px) {
+    .projects-wrapper ul {
+        grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns on desktop */
+    }
+}

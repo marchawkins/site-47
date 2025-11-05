@@ -1,0 +1,13 @@
+Title: Changelog
+
+----
+
+Text: A running list of (link: https://indieweb.org/release_notes text: release notes) for this site.
+
+----
+
+Tags: 
+
+----
+
+Uuid: 6pfmovcpomtlbz5s
