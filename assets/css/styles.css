@@ -145,28 +145,6 @@ footer#site-footer  {
     color: #efefef;
 }
 
-@media (min-width: 767px) {
-    header#site-header {
-        a {
-            margin: 20px 5px 0 5px;
-            padding: .5rem 1rem;
-            font-size: 1.5rem;
-        }
-
-        a.active {
-            margin-top: 30px;
-        }
-    }
-
-    article {
-        width: 80%;
-        margin: 2rem auto;
-    }
-    #content    {
-        padding: 1rem 2rem 2rem 2rem;
-    }
-}
-
 /* ----- 
     gallery styles -----           */
 
@@ -328,5 +306,28 @@ footer#site-footer  {
     .mobile-logo {background-color: transparent; }
 }
 
+@media (min-width: 767px) {
+    .mobile-logo{
+        display: none;
+    }
+    header#site-header {
+        a {
+            margin: 20px 5px 0 5px;
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+        }
 
+        a.active {
+            margin-top: 30px;
+        }
+    }
+
+    article {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    #content    {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+}
 

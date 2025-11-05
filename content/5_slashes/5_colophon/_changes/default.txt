@@ -1,0 +1,17 @@
+Title: Colophon
+
+----
+
+Text: This is a (link: https://indieweb.org/colophon text: colophon), a page outlining how the site was made, the tools and
+
+----
+
+Tags: 
+
+----
+
+Uuid: gihzx14xlmll8qmz
+
+----
+
+Lock: GAnGp6NU

@@ -57,6 +57,9 @@
     <?php if($page->title()=='Guestbook'): ?>
         <?php echo css(['/media/plugins/mauricerenck/komments/komments.css']); ?>
     <?php endif ?>
+    <?php if($page->isChildOf('slashes')): ?>
+         <?= css('assets/css/templates/slashes.css'); ?>
+    <?php endif ?>
     <?php // Preload LCP images for the Home page with high fetch priority ?>
     <?php if($page->title() == 'Home'): ?>
         <!-- Preload hero/portrait image with srcset to cover 1x and 2x devices -->

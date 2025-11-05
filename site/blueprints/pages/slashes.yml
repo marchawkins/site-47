@@ -1,0 +1,26 @@
+title: Slashes
+
+sections:
+  drafts:
+    headline: Drafts
+    type: pages
+    layout: list
+    template: slashes
+    text: "{{ page.title }}"
+    status: drafts
+    help: Always upload a nice cover first
+    image:
+      ratio: 4/5
+      cover: true
+  published:
+    headline: Published Slash Pages
+    type: pages
+    layout: list
+    text: "{{ page.title }}"
+    status: published
+    flip: false
+    limit: 36
+    image:
+      ratio: 4/5
+      cover: true
+      

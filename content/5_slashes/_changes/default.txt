@@ -1,0 +1,17 @@
+Title: Slashes
+
+----
+
+Text: Staking my claim on the IndieWeb with a bunch of /slash pages.
+
+----
+
+Tags: 
+
+----
+
+Uuid: h7rjx1ol2mgbx8s5
+
+----
+
+Lock: GAnGp6NU
