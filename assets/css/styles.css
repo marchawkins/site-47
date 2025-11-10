@@ -122,6 +122,7 @@ footer#site-footer  {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    clear: both;
 }
 
 .pagination a   {

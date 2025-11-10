@@ -20,6 +20,12 @@ h2  {
     margin-bottom: 1rem;
 }
 
+.article-image-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    max-width: 50%;
+}
+
 .projects-wrapper ul {
     display: grid;
     grid-template-columns: 1fr; /* one column on mobile */
