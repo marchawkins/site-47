@@ -13,6 +13,13 @@ h2  {
     color: #666;
 }
 
+.slashes-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
 .projects-wrapper ul {
     display: grid;
     grid-template-columns: 1fr; /* one column on mobile */

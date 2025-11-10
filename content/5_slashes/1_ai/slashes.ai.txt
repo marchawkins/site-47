@@ -2,7 +2,21 @@ Title: AI
 
 ----
 
-Text: This is a page about AI usage on this site.
+Text:
+
+~~**1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.**~~
+
+~~**2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.**~~
+
+**3. A robot must protect its own existence ~~as long as such protection does not conflict with the First or Second Law.~~**
+
+I freely admit to limited use of AI, specifically (link: https://github.com/features/copilot text: Github Copilot), to assist in some of the more mundane coding of this site. I've been building websites by hand for close to 30 years. If I can get someone (or some thing) to help figure out how to make some layout work in an oddball viewport, I'm going to let it do its thing. It's just another tool to help me get more done in less time.
+
+Generative AI is a little more tricky. I will occasionally draft work emails or documentation with ChatGPT, but it's never the final step. I always review and tweak the results. If it screws up once (which it has), I don't really trust it to do anything on its own.
+
+One thing I don't use AI for is generating images or videos. A few times I have used the AI tools in Photoshop to expand part of an image, or clip out something from a background, but that's about it. As someone who's been in a creative field in some capacity for decades, something just doesn't sit right with me in celebrating an AI's ability to "create" anything, as it's standing on the shoulders of thousands of human artists who've put in the work.
+
+To me, a lot of what people are doing with AI spits in the face of the principles of the early web. People freely shared countless creative projects - programming, photos, design, layouts - with the world, often encouraging others to download and remix them with their own work. Now mega-tech companies are just scooping up all that work to "train" their models, claiming the output as their own. It all feels like some real bullshit to me.
 
 ----
 
