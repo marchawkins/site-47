@@ -2,7 +2,7 @@ Title: Now
 
 ----
 
-Text: 
+Text: This (link: https://indieweb.org/now text: /now page) is list of things I'm into right now.
 
 ----
 
