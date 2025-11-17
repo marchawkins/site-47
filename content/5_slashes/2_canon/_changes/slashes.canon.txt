@@ -15,6 +15,54 @@ Items:
   link: ""
   thumb:
     - file://pdpfhcu4jais6xgf
+- 
+  type: website
+  title: k10k.net
+  description: ""
+  link: ""
+  thumb: [ ]
+- 
+  type: website
+  title: Github
+  description: ""
+  link: https://www.github.com
+  thumb: [ ]
+- 
+  type: person
+  title: Joshua Davis
+  description: ""
+  link: https://joshuadavis.com
+  thumb: [ ]
+- 
+  type: person
+  title: Brendan Dawes
+  description: ""
+  link: https://brendandawes.com
+  thumb: [ ]
+- 
+  type: person
+  title: Aaron Draplin
+  description: ""
+  link: https://www.draplin.com
+  thumb: [ ]
+- 
+  type: person
+  title: James Scholz
+  description: ""
+  link: https://jvscholz.com
+  thumb: [ ]
+- 
+  type: person
+  title: Trent Holbrook
+  description: ""
+  link: https://www.youtube.com/@trentholbrook
+  thumb: [ ]
+- 
+  type: person
+  title: Jeffrey Zeldman
+  description: ""
+  link: https://zeldman.com
+  thumb: [ ]
 
 ----
 
@@ -23,3 +71,7 @@ Tags:
 ----
 
 Uuid: momod6q4dfyqcftm
+
+----
+
+Lock: GAnGp6NU
