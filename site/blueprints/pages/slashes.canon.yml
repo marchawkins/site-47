@@ -27,8 +27,8 @@ columns:
                   person: Person
                   website: Website
                   game: Game
-                  movie: Movie
-                  music: Music
+                  video: Video
+                  audio: Audio
               title:
                 label: Title
                 type: text

@@ -2,7 +2,7 @@ Title: Canon
 
 ----
 
-Text: A list of people, concepts and objects that have shaped my work over the years. A "sort of (link: https://www.brendanschlagel.com/2017/11/05/canonize-creating-personal-canon-template/ text: annotated bibliography) of influences". This will probably be an evolving list, but this is what comes to mind most often right now.
+Text: A list of people, concepts and objects that have shaped and inspired my work, beliefs and philosophies throughout my life. A "sort of (link: https://www.brendanschlagel.com/2017/11/05/canonize-creating-personal-canon-template/ text: annotated bibliography of influences)". This will probably be an evolving list, but this is what comes to mind most often right now.
 
 ----
 
@@ -15,6 +15,180 @@ Items:
   link: ""
   thumb:
     - file://pdpfhcu4jais6xgf
+- 
+  type: website
+  title: k10k.net
+  description: ""
+  link: ""
+  thumb:
+    - file://w8n2jeamg0bdtwjd
+- 
+  type: website
+  title: github
+  description: ""
+  link: https://www.github.com
+  thumb:
+    - file://811hhobotehjsbgc
+- 
+  type: website
+  title: codepen
+  description: ""
+  link: https://codepen.io
+  thumb:
+    - file://ncn8bmqs49fcs9xp
+- 
+  type: website
+  title: IndieWeb
+  description: ""
+  link: https://indieweb.org
+  thumb:
+    - file://nqf4zblq12qosm5q
+- 
+  type: person
+  title: Joshua Davis
+  description: ""
+  link: https://joshuadavis.com
+  thumb:
+    - file://vsdyqnexrdl3mwly
+- 
+  type: person
+  title: Brendan Dawes
+  description: ""
+  link: https://brendandawes.com
+  thumb:
+    - file://ojcuyvs2o75rpde3
+- 
+  type: person
+  title: Aaron Draplin
+  description: ""
+  link: https://www.draplin.com
+  thumb:
+    - file://aas9prdlsak1wyia
+- 
+  type: person
+  title: James Scholz
+  description: ""
+  link: https://jvscholz.com
+  thumb:
+    - file://atz3udydsyd6ll9x
+- 
+  type: person
+  title: Trent Holbrook
+  description: ""
+  link: https://www.youtube.com/@trentholbrook
+  thumb:
+    - file://hqw9aueybafyltun
+- 
+  type: person
+  title: Jeffrey Zeldman
+  description: ""
+  link: https://zeldman.com
+  thumb:
+    - file://jlhvcjhjtstovart
+- 
+  type: person
+  title: Quentin Tarantino
+  description: ""
+  link: https://www.imdb.com/name/nm0000233/
+  thumb:
+    - file://hsszserlrojjwqak
+- 
+  type: book
+  title: How to Draw Comics the Marvel Way
+  description: ""
+  link: >
+    https://www.amazon.com/How-Draw-Comics-Marvel-Way/dp/0671530771
+  thumb:
+    - file://ia0plsg8f2kn4ckt
+- 
+  type: book
+  title: Atomic Habits
+  description: ""
+  link: https://jamesclear.com/atomic-habits
+  thumb:
+    - file://s1dlulxmtqu0vk9x
+- 
+  type: book
+  title: 'Dungeons & Dragons'
+  description: ""
+  link: https://www.dndbeyond.com
+  thumb:
+    - file://2ypa9x5ex5rai6tx
+- 
+  type: book
+  title: Ready Player One
+  description: ""
+  link: >
+    https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448
+  thumb:
+    - file://a4wc3haezpqgtgzy
+- 
+  type: audio
+  title: 'Sweet Oblivion - Screaming Trees'
+  description: ""
+  link: >
+    https://en.wikipedia.org/wiki/Screaming_Trees
+  thumb:
+    - file://jy9ijofasyf8d0oq
+- 
+  type: audio
+  title: The Daily Source Code Podcast
+  description: ""
+  link: >
+    https://en.wikipedia.org/wiki/Daily_Source_Code
+  thumb:
+    - file://tej7hjznxxi4l6sc
+- 
+  type: video
+  title: Jurassic Park
+  description: ""
+  link: https://www.imdb.com/title/tt0107290
+  thumb:
+    - file://ucll3whugy7af18b
+- 
+  type: video
+  title: The Matrix
+  description: ""
+  link: https://www.imdb.com/title/tt0133093
+  thumb:
+    - file://dhz2snvsz6turgd8
+- 
+  type: video
+  title: The X-Files
+  description: ""
+  link: https://www.imdb.com/title/tt0106179
+  thumb:
+    - file://nd4gd6zazbuyohbm
+- 
+  type: video
+  title: Stranger Things
+  description: ""
+  link: https://www.imdb.com/title/tt4574334/
+  thumb:
+    - file://wxbyfxnjoztuxcae
+- 
+  type: book
+  title: Designing with Web Standards
+  description: ""
+  link: >
+    https://www.peachpit.com/store/designing-with-web-standards-9780735712010
+  thumb:
+    - file://1zhdp1pg5eom1eiw
+- 
+  type: book
+  title: 'Batman: The Dark Knight Returns'
+  description: ""
+  link: >
+    https://www.peachpit.com/store/designing-with-web-standards-9780735712010
+  thumb:
+    - file://nowgyzlldammjlgl
+- 
+  type: book
+  title: The Crow
+  description: ""
+  link: https://en.wikipedia.org/wiki/The_Crow
+  thumb:
+    - file://0ttc4icduoy2c2c0
 
 ----
 
