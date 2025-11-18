@@ -27,13 +27,8 @@ columns:
                   person: Person
                   website: Website
                   game: Game
-<<<<<<< Updated upstream
                   video: Video
                   audio: Audio
-=======
-                  movie: Movie
-                  music: Music
->>>>>>> Stashed changes
               title:
                 label: Title
                 type: text
