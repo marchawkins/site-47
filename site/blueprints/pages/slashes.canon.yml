@@ -1,7 +1,7 @@
 title: Canon
 
 columns:
-  - width: 2/3
+  - width: 3/3
     sections:
       info:
         type: fields
@@ -39,7 +39,11 @@ columns:
               link:
                 label: Link
                 type: url
-              thumb:
+              year:
+                label: Year
+                type: number
+                width: 1/2
+              thumbnail:
                 label: Thumbnail
                 type: files
                 max: 1
@@ -52,18 +56,3 @@ columns:
                 template: thumbnail-image
                 image:
                   ratio: 1/1
-
-  - width: 1/3
-    sections:
-      thumbnail:
-        type: files
-        max: 1
-        multiple: false
-        headline: Thumbnail
-        size: medium
-        info: "{{ file.dimensions }}"
-        help: Make it a good one.
-        layout: cards
-        template: thumbnail-image
-        image:
-          ratio: 1/1

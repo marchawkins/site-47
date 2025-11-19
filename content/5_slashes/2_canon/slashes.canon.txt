@@ -13,84 +13,96 @@ Items:
   title: praystation.com
   description: "Sadly no longer, but this site was inspirational for a generation of flash developers, myself included. Joshua Davis' personal site was an amazing mix of art, code and design. And he gave everything away. Josh encouraged everyone to download any of it, dissect it and remix it. A few years in, he even burned his hard drive onto a CD and you could buy it. And yes, I did. Such a cool site. Such a cool dude."
   link: ""
-  thumb:
+  year: 1999
+  thumbnail:
     - file://pdpfhcu4jais6xgf
 - 
   type: website
   title: k10k.net
   description: ""
   link: ""
-  thumb:
+  year: 2000
+  thumbnail:
     - file://w8n2jeamg0bdtwjd
 - 
   type: website
   title: github
   description: ""
   link: https://www.github.com
-  thumb:
+  year: 2008
+  thumbnail:
     - file://811hhobotehjsbgc
 - 
   type: website
   title: codepen
   description: ""
   link: https://codepen.io
-  thumb:
+  year: 2012
+  thumbnail:
     - file://ncn8bmqs49fcs9xp
 - 
   type: website
   title: IndieWeb
   description: ""
   link: https://indieweb.org
-  thumb:
+  year: 2010
+  thumbnail:
     - file://nqf4zblq12qosm5q
 - 
   type: person
   title: Joshua Davis
   description: ""
   link: https://joshuadavis.com
-  thumb:
+  year: 1971
+  thumbnail:
     - file://vsdyqnexrdl3mwly
 - 
   type: person
   title: Brendan Dawes
   description: ""
   link: https://brendandawes.com
-  thumb:
+  year: 1966
+  thumbnail:
     - file://ojcuyvs2o75rpde3
 - 
   type: person
   title: Aaron Draplin
   description: ""
   link: https://www.draplin.com
-  thumb:
+  year: 1973
+  thumbnail:
     - file://aas9prdlsak1wyia
 - 
   type: person
-  title: James Scholz
+  title: Steven Spielberg
   description: ""
-  link: https://jvscholz.com
-  thumb:
-    - file://atz3udydsyd6ll9x
+  link: https://www.imdb.com/name/nm0000229/
+  year: 1946
+  thumbnail:
+    - file://y3aa5u5dyk3ja5oy
 - 
   type: person
   title: Trent Holbrook
   description: ""
   link: https://www.youtube.com/@trentholbrook
-  thumb:
+  year: ""
+  thumbnail:
     - file://hqw9aueybafyltun
 - 
   type: person
   title: Jeffrey Zeldman
   description: ""
   link: https://zeldman.com
-  thumb:
+  year: 1955
+  thumbnail:
     - file://jlhvcjhjtstovart
 - 
   type: person
   title: Quentin Tarantino
   description: ""
   link: https://www.imdb.com/name/nm0000233/
-  thumb:
+  year: 1963
+  thumbnail:
     - file://hsszserlrojjwqak
 - 
   type: book
@@ -98,21 +110,24 @@ Items:
   description: ""
   link: >
     https://www.amazon.com/How-Draw-Comics-Marvel-Way/dp/0671530771
-  thumb:
+  year: 1978
+  thumbnail:
     - file://ia0plsg8f2kn4ckt
 - 
   type: book
   title: Atomic Habits
   description: ""
   link: https://jamesclear.com/atomic-habits
-  thumb:
+  year: 2018
+  thumbnail:
     - file://s1dlulxmtqu0vk9x
 - 
   type: book
   title: 'Dungeons & Dragons'
   description: ""
   link: https://www.dndbeyond.com
-  thumb:
+  year: 1983
+  thumbnail:
     - file://2ypa9x5ex5rai6tx
 - 
   type: book
@@ -120,7 +135,8 @@ Items:
   description: ""
   link: >
     https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448
-  thumb:
+  year: 2011
+  thumbnail:
     - file://a4wc3haezpqgtgzy
 - 
   type: audio
@@ -128,7 +144,8 @@ Items:
   description: ""
   link: >
     https://en.wikipedia.org/wiki/Screaming_Trees
-  thumb:
+  year: 1992
+  thumbnail:
     - file://jy9ijofasyf8d0oq
 - 
   type: audio
@@ -136,35 +153,40 @@ Items:
   description: ""
   link: >
     https://en.wikipedia.org/wiki/Daily_Source_Code
-  thumb:
+  year: 2004
+  thumbnail:
     - file://tej7hjznxxi4l6sc
 - 
   type: video
   title: Jurassic Park
   description: ""
   link: https://www.imdb.com/title/tt0107290
-  thumb:
+  year: 1993
+  thumbnail:
     - file://ucll3whugy7af18b
 - 
   type: video
   title: The Matrix
   description: ""
   link: https://www.imdb.com/title/tt0133093
-  thumb:
+  year: 1999
+  thumbnail:
     - file://dhz2snvsz6turgd8
 - 
   type: video
   title: The X-Files
   description: ""
   link: https://www.imdb.com/title/tt0106179
-  thumb:
+  year: 1993
+  thumbnail:
     - file://nd4gd6zazbuyohbm
 - 
   type: video
   title: Stranger Things
   description: ""
   link: https://www.imdb.com/title/tt4574334/
-  thumb:
+  year: 2016
+  thumbnail:
     - file://wxbyfxnjoztuxcae
 - 
   type: book
@@ -172,7 +194,8 @@ Items:
   description: ""
   link: >
     https://www.peachpit.com/store/designing-with-web-standards-9780735712010
-  thumb:
+  year: 2003
+  thumbnail:
     - file://1zhdp1pg5eom1eiw
 - 
   type: book
@@ -180,14 +203,16 @@ Items:
   description: ""
   link: >
     https://www.peachpit.com/store/designing-with-web-standards-9780735712010
-  thumb:
+  year: 1986
+  thumbnail:
     - file://nowgyzlldammjlgl
 - 
   type: book
   title: The Crow
   description: ""
   link: https://en.wikipedia.org/wiki/The_Crow
-  thumb:
+  year: 1993
+  thumbnail:
     - file://0ttc4icduoy2c2c0
 
 ----
