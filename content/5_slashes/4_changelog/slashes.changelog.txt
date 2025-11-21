@@ -1,0 +1,13 @@
+Title: Changelog
+
+----
+
+Text: A running list of (link: https://indieweb.org/release_notes text: release notes) for this site. Full source code is available on (link: https://github.com/marchawkins/site-47 text: my github repo).
+
+----
+
+Tags: 
+
+----
+
+Uuid: 6pfmovcpomtlbz5s

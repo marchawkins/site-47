@@ -20,6 +20,10 @@ One thing I don't use AI for is generating images or videos. A few times I have 
 
 To me, a lot of what people are doing with AI spits in the face of the principles of the early web. People freely shared countless creative projects - programming, photos, design, layouts - with the world, often encouraging others to download and remix them with their own work. Now mega-tech companies are just scooping up all that work to "train" their models, claiming the output as their own. It all feels like some real bullshit to me.
 
+Ok, all that aside, I **DO** use AI to code some of this website. Mainly as an experiment to see how useful (or not) these tools can be in my real job. Currently, I have used AI to assist in coding these areas of the site:
+- Guestbook (saving entries and retrieving approved messages)
+- Changelog (using Github's API to grab commit messages)
+
 ----
 
 Tags: 
