@@ -70,7 +70,7 @@
                 echo "</ol>";
 
             }
-            echo "<p>Note: Only showing the first 100 commits. The <a href=\"https://github.com/{$owner}/{$repo}/commits/main/\">repository</a> has more.</p>";
+            echo "<p>Note: Only showing the last 100 commits. The <a href=\"https://github.com/{$owner}/{$repo}/commits/main/\">repository</a> has more.</p>";
         } else {
             // Error handling
             $errorMessage = "Unknown error";
@@ -98,36 +98,3 @@
 </main>
 
 <?php snippet('footer') ?>
-
-<?php /*
-
-function getAllCommits($owner, $repo) {
-    $all_commits = [];
-    $page = 1;
-    $per_page = 100; // Maximum allowed
-
-    while (true) {
-        $url = "https://api.github.com/repos/{$owner}/{$repo}/commits?per_page={$per_page}&page={$page}";
-
-        // Make API request (using the githubApiRequest function from previous example)
-        $commits = githubApiRequest($url);
-
-        if (empty($commits)) {
-            break; // No more data
-        }
-
-        $all_commits = array_merge($all_commits, $commits);
-
-        // If we got fewer than max items, it's the last page
-        if (count($commits) < $per_page) {
-            break;
-        }
-
-        $page++;
-    }
-
-    return $all_commits;
-}
-
-
-*/ ?>
