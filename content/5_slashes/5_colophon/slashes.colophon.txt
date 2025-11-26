@@ -1,0 +1,48 @@
+Title: Colophon
+
+----
+
+Text:
+
+This (link: https://indieweb.org/colophon text: colophon) outlines the tools and services used to create this site. I'll try to keep it updated as I try out new software, languages, and such. 
+
+**History**
+I registered the original domain name for this site, mh76.net, over twenty years ago in 2002. A few years later, in 2006 I was able to secure my permanent home at marchawkins.com. I still hold out hope of someday securing hawkins.com, but after checking every year for 20+ years, that seems like a long shot.
+
+**Purpose**
+This has and continues to be a virtual scratchpad, sketchbook, photo album and a cornucopia of all sorts of things. As this site has gone through countless iterations, I unfortunately scrapped the old stuff and started fresh every time. I'm hoping to change that with this version, which started in 2024.
+
+**Hosting and Deployment**
+<dl>
+<dt>Domains</dt><dd>Godaddy</dd>
+<dt>Hosting</dt><dd>Hostinger / Cloud Startup plan</dd>
+<dt>Server</dt><dd>2 core, 3gb ram, 200gb storage running linux</dd>
+<dt>Version Control</dt><dd>Git, Google Drive</dd>
+</dl>
+
+**Tools and Specs**
+<dl>
+<dt>CMS</dt><dd>Kirby</dd>
+<dt>Code</dt><dd>PHP, HTML, CSS, Javascript, Markdown</dd>
+<dt>IDE</dt><dd>VSCode with extensions: Github Copilot, Github Copilot Chat, GruvBoxer, JSON, Rainbow CSV, XML, XML Format</dd>
+<dt>Graphics</dd><dd>Photoshop, Illustrator</dd>
+<dt>Notes</dt><dd>Obsidian</dd>
+<dt>Other</dt><dd>MAMP, LM Studio</dd>
+</dl>
+
+**Workflow**
+This site is built with the Kirby, a file-based content management system. No databases. It's super customizable and an absolute joy to use. All content is stored as markdown files, so it's easy to create, view and edit it in a variety of applications.
+
+I edit all of Kirby's templates, styles, content and such in VS Code. As mentioned in my /ai page, I do employ Github Copilot extensions to help speed up some of my coding and develop new features. All the graphics are created or edited in Photoshop, with a few vector images edited in Illustrator. I keep track of everything using notes created in Obsidian.
+
+All the site's code is hosted on a GitHub repo. Locally, I have all the site files in google drive so it's always backed up and I can develop it on any of my machines and everything stays in sync. I usually chicken out and use Github Desktop to manage commits and branches. 
+
+I use a GitHub web hook with Hostinger, so when I commit files they go from my local machine, to the repo and then get pushed up to my server. There's an occasional hiccup, but I've found this to be the simplest deployment workflow I've used.
+
+----
+
+Tags: 
+
+----
+
+Uuid: gihzx14xlmll8qmz
