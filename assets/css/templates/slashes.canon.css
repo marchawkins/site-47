@@ -1,1 +1,38 @@
 /* canon page styles */
+
+/* Desktop: dt on left, dd on right in horizontal row */
+dl {
+    display: flex;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+dt {
+    flex: 0 0 200px; /* Fixed width for thumbnail/title column */
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+dd {
+    flex: 1; /* Takes remaining space */
+    margin: 0;
+}
+
+dt img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile: stack dt and dd vertically */
+@media (max-width: 768px) {
+    dl {
+        flex-direction: column;
+    }
+    
+    dt {
+        flex: none;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
