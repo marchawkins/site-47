@@ -31,13 +31,16 @@ This has and continues to be a virtual scratchpad, sketchbook, photo album and a
 </dl>
 
 **Workflow**
-This site is built with the Kirby, a file-based content management system. No databases. It's super customizable and an absolute joy to use. All content is stored as markdown files, so it's easy to create, view and edit it in a variety of applications.
+This site is built with the (link: https://getkirby.com text: Kirby), a file-based content management system. No databases. It's super customizable and an absolute joy to use. All content is stored as markdown files, so it's easy to create, view and edit it in a variety of applications.
 
-I edit all of Kirby's templates, styles, content and such in VS Code. As mentioned in my /ai page, I do employ Github Copilot extensions to help speed up some of my coding and develop new features. All the graphics are created or edited in Photoshop, with a few vector images edited in Illustrator. I keep track of everything using notes created in Obsidian.
+I edit all of Kirby's templates, styles, content and such in VS Code. As mentioned in my (link: /ai text: /ai page), I do employ Github Copilot extensions to help speed up some of my coding and develop new features. All the graphics are created or edited in Photoshop, with a few vector images edited in Illustrator. I keep track of everything using notes created in Obsidian.
 
 All the site's code is hosted on a GitHub repo. Locally, I have all the site files in google drive so it's always backed up and I can develop it on any of my machines and everything stays in sync. I usually chicken out and use Github Desktop to manage commits and branches. 
 
 I use a GitHub web hook with Hostinger, so when I commit files they go from my local machine, to the repo and then get pushed up to my server. There's an occasional hiccup, but I've found this to be the simplest deployment workflow I've used.
+
+**Style & Design**
+Growing up in the 80s and 90s has and continues to be a major influence in my design style. I love the look and feel of VHS, grunge, and retro tech. I may be living in the past, but the draw of that nostalgia is just something that I haven't been able to escape for 30+ years. I used to try to step away from it, but always find my self coming back to it. So with this personal site, I've decided to embrace it.
 
 ----
 
