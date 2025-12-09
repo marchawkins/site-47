@@ -1,0 +1,34 @@
+Title: Ideas
+
+----
+
+Text:
+
+This (link: https://indieweb.org/ideas text: ideas page) is a list of things I might want to learn or projects to explore in the future.
+
+**Ideas for this Site**
+- Switchable css theme(s) or option for no theme at all
+- Full site search
+- Full code validation
+- Last updated tag throughout
+- Add a fancy, animated footer
+- Catalog vinyl and display it here
+- Make some cool pixel art
+- Make a font of my handwriting
+
+**Hobby Ideas**
+- Assemble Gundam kit(s)
+- Build a Warhammer Warband or Army
+- Paint all my D&D minis
+- Various model kits
+- Learn to cast miniatures
+- Create an old-school zine
+- Build and/or train a custom, useful AI agent
+
+----
+
+Tags: 
+
+----
+
+Uuid: uf9yacy4tveagott
