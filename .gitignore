@@ -19,9 +19,15 @@ Icon
 /content/4_guestbook/guestbook_entries/
 /content/guestbook-entries/*
 
+# Claude / AI tooling
+# ---------------
+
+.claude/
+
 # Editors
 # (sensitive workspace files)
 # ---------------------------
+
 *.sublime-workspace
 /.vscode
 /.idea
@@ -54,9 +60,4 @@ Icon
 /site/config/.license
 /site/logs/simplestats.sqlite
 /site/logs
-site/logs/simplestats.sqlite
-site/logs/simplestats.sqlite
 .htaccess
-site/logs/simplestats.sqlite
-site/logs/simplestats.sqlite
-site/logs/simplestats.sqlite

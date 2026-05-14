@@ -47,9 +47,9 @@ return [
     'sitemap.ignore' => ['error'],
     'mauricerenck.komments.debug' => false,
     'mauricerenck.komments.storage.type' => 'markdown',
-    'notifications.email.enable' => true,
-    'notifications.email.sender' => 'no-reply@marchawkins.com',
-    'notifications.email.emailReceiverList' => 'marchawkins@gmail.com',
+    'mauricerenck.komments.notifications.email.enable' => true,
+    'mauricerenck.komments.notifications.email.sender' => 'no-reply@marchawkins.com',
+    'mauricerenck.komments.notifications.email.emailReceiverList' => 'marchawkins@gmail.com',
     'ready' => function ($kirby) {
         return [
             'pechente.kirby-admin-bar' => [
