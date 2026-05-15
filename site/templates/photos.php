@@ -18,8 +18,17 @@
                     }
                 }
                 $firstImage = $photopage->image();
-                $dateStr = $photopage->date_taken()->isNotEmpty() ? $photopage->date_taken()->toDate('F Y') : '';
+                $dateStr    = $photopage->date_taken()->isNotEmpty() ? $photopage->date_taken()->toDate('F Y') : '';
                 $captionStr = strip_tags($photopage->text()->kirbytext());
+
+                // extract youtube video IDs from raw text field
+                $rawText  = $photopage->text()->value();
+                $videoIds = [];
+                preg_match_all('/youtu\.be\/([a-zA-Z0-9_-]+)|youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/', $rawText, $vidMatches);
+                foreach($vidMatches[1] as $i => $id) {
+                    $videoIds[] = $id ?: $vidMatches[2][$i];
+                }
+                $videoIds = array_values(array_filter($videoIds));
             ?>
             <li class="photo-thumb"
                 role="button"
@@ -28,12 +37,17 @@
                 data-date="<?= htmlspecialchars($dateStr) ?>"
                 data-text="<?= htmlspecialchars($captionStr) ?>"
                 data-images="<?= htmlspecialchars(json_encode($imageUrls)) ?>"
+                data-videos="<?= htmlspecialchars(json_encode($videoIds)) ?>"
                 data-url="<?= $photopage->url() ?>">
                 <?php if($firstImage): ?>
                 <div class="thumb-img-wrap">
                     <img loading="lazy"
                          src="<?= $firstImage->crop(200, 150)->url() ?>"
                          alt="<?= htmlspecialchars($photopage->title()) ?>"/>
+                </div>
+                <?php elseif(!empty($videoIds)): ?>
+                <div class="thumb-img-wrap thumb-video-only">
+                    <span class="thumb-play">&#9654;</span>
                 </div>
                 <?php endif ?>
                 <span class="thumb-caption"><?= htmlspecialchars($photopage->title()) ?></span>
@@ -63,9 +77,10 @@
     <div class="lb-wrap">
         <button class="lb-close" aria-label="Close">&times;</button>
         <div class="lb-stage">
-            <button class="lb-arrow lb-prev" aria-label="Previous image">&#9664;</button>
+            <button class="lb-arrow lb-prev" aria-label="Previous">&#9664;</button>
             <img id="lb-img" class="lb-img" src="" alt=""/>
-            <button class="lb-arrow lb-next" aria-label="Next image">&#9654;</button>
+            <iframe id="lb-video" class="lb-video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <button class="lb-arrow lb-next" aria-label="Next">&#9654;</button>
         </div>
         <p class="lb-img-counter" id="lb-img-counter"></p>
         <div class="lb-info">
@@ -174,26 +189,27 @@
 
 // ----- lightbox -----
 (function() {
-    var thumbs = Array.from(document.querySelectorAll('.photo-thumb'));
-    var lb        = document.getElementById('lightbox');
-    var lbImg     = document.getElementById('lb-img');
-    var lbTitle   = document.getElementById('lb-title');
-    var lbDate    = document.getElementById('lb-date');
-    var lbText    = document.getElementById('lb-text');
-    var lbCounter = document.getElementById('lb-img-counter');
+    var thumbs      = Array.from(document.querySelectorAll('.photo-thumb'));
+    var lb          = document.getElementById('lightbox');
+    var lbImg       = document.getElementById('lb-img');
+    var lbVideo     = document.getElementById('lb-video');
+    var lbTitle     = document.getElementById('lb-title');
+    var lbDate      = document.getElementById('lb-date');
+    var lbText      = document.getElementById('lb-text');
+    var lbCounter   = document.getElementById('lb-img-counter');
     var lbPermalink = document.getElementById('lb-permalink');
-    var lbOlder   = document.getElementById('lb-older');
-    var lbNewer   = document.getElementById('lb-newer');
-    var lbPrev    = document.querySelector('.lb-prev');
-    var lbNext    = document.querySelector('.lb-next');
+    var lbOlder     = document.getElementById('lb-older');
+    var lbNewer     = document.getElementById('lb-newer');
+    var lbPrev      = document.querySelector('.lb-prev');
+    var lbNext      = document.querySelector('.lb-next');
 
     var currentPhotoIdx = 0;
-    var currentImgIdx   = 0;
-    var currentImages   = [];
+    var currentSlideIdx = 0;
+    var currentSlides   = [];
 
     function openLightbox(photoIdx) {
         currentPhotoIdx = photoIdx;
-        currentImgIdx   = 0;
+        currentSlideIdx = 0;
         loadPhoto(photoIdx);
         lb.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
@@ -201,32 +217,59 @@
     }
 
     function closeLightbox() {
+        lbVideo.src = ''; // stop video playback
         lb.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         thumbs[currentPhotoIdx].focus();
     }
 
     function loadPhoto(idx) {
-        var thumb = thumbs[idx];
-        currentImages   = JSON.parse(thumb.dataset.images || '[]');
-        currentImgIdx   = 0;
-        updateImage();
-        lbTitle.textContent     = thumb.dataset.title || '';
-        lbDate.textContent      = thumb.dataset.date  || '';
-        lbText.textContent      = thumb.dataset.text  || '';
-        lbPermalink.href        = thumb.dataset.url   || '#';
+        var thumb     = thumbs[idx];
+        var imageUrls = JSON.parse(thumb.dataset.images || '[]');
+        var videoIds  = JSON.parse(thumb.dataset.videos  || '[]');
+
+        // build unified slides array: photos first, then videos
+        currentSlides = [];
+        imageUrls.forEach(function(url) {
+            currentSlides.push({ type: 'image', url: url });
+        });
+        videoIds.forEach(function(id) {
+            currentSlides.push({ type: 'video', id: id });
+        });
+
+        currentSlideIdx = 0;
+        updateSlide();
+
+        lbTitle.textContent      = thumb.dataset.title || '';
+        lbDate.textContent       = thumb.dataset.date  || '';
+        lbText.textContent       = thumb.dataset.text  || '';
+        lbPermalink.href         = thumb.dataset.url   || '#';
         lbOlder.style.visibility = (idx < thumbs.length - 1) ? 'visible' : 'hidden';
         lbNewer.style.visibility = (idx > 0)                 ? 'visible' : 'hidden';
     }
 
-    function updateImage() {
-        if (!currentImages.length) return;
-        lbImg.src = currentImages[currentImgIdx];
-        lbImg.alt = lbTitle.textContent;
-        lbPrev.style.visibility = (currentImgIdx > 0)                          ? 'visible' : 'hidden';
-        lbNext.style.visibility = (currentImgIdx < currentImages.length - 1)   ? 'visible' : 'hidden';
-        if (currentImages.length > 1) {
-            lbCounter.textContent = (currentImgIdx + 1) + ' / ' + currentImages.length;
+    function updateSlide() {
+        if (!currentSlides.length) return;
+        var slide = currentSlides[currentSlideIdx];
+
+        if (slide.type === 'image') {
+            lbImg.src             = slide.url;
+            lbImg.alt             = lbTitle.textContent;
+            lbImg.style.display   = 'block';
+            lbVideo.src           = '';
+            lbVideo.style.display = 'none';
+        } else {
+            lbVideo.src           = 'https://www.youtube.com/embed/' + slide.id;
+            lbVideo.style.display = 'block';
+            lbImg.style.display   = 'none';
+            lbImg.src             = '';
+        }
+
+        lbPrev.style.visibility = (currentSlideIdx > 0)                          ? 'visible' : 'hidden';
+        lbNext.style.visibility = (currentSlideIdx < currentSlides.length - 1)   ? 'visible' : 'hidden';
+
+        if (currentSlides.length > 1) {
+            lbCounter.textContent = (currentSlideIdx + 1) + ' / ' + currentSlides.length;
         } else {
             lbCounter.textContent = '';
         }
@@ -240,16 +283,15 @@
         });
     });
 
-    // close
+    // close — X button or Escape key
     document.querySelector('.lb-close').addEventListener('click', closeLightbox);
-    document.querySelector('.lb-overlay').addEventListener('click', closeLightbox);
 
-    // image prev / next
+    // slide prev / next
     lbPrev.addEventListener('click', function() {
-        if (currentImgIdx > 0) { currentImgIdx--; updateImage(); }
+        if (currentSlideIdx > 0) { currentSlideIdx--; updateSlide(); }
     });
     lbNext.addEventListener('click', function() {
-        if (currentImgIdx < currentImages.length - 1) { currentImgIdx++; updateImage(); }
+        if (currentSlideIdx < currentSlides.length - 1) { currentSlideIdx++; updateSlide(); }
     });
 
     // photo page prev / next
@@ -266,10 +308,10 @@
         if (e.key === 'Escape') {
             closeLightbox();
         } else if (e.key === 'ArrowLeft') {
-            if (currentImgIdx > 0) { currentImgIdx--; updateImage(); }
+            if (currentSlideIdx > 0) { currentSlideIdx--; updateSlide(); }
             else if (currentPhotoIdx > 0) { currentPhotoIdx--; loadPhoto(currentPhotoIdx); }
         } else if (e.key === 'ArrowRight') {
-            if (currentImgIdx < currentImages.length - 1) { currentImgIdx++; updateImage(); }
+            if (currentSlideIdx < currentSlides.length - 1) { currentSlideIdx++; updateSlide(); }
             else if (currentPhotoIdx < thumbs.length - 1) { currentPhotoIdx++; loadPhoto(currentPhotoIdx); }
         }
     });

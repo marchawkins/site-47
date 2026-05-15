@@ -294,6 +294,27 @@ footer#site-footer  {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
+.lb-video {
+    display: none;
+    width: 720px;
+    max-width: 80vw;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+.thumb-video-only {
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-play {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .lb-arrow {
     position: absolute;
     top: 50%;
