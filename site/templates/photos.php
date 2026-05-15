@@ -10,10 +10,12 @@
         <ul class="photo-grid">
             <?php foreach($photos as $photopage): ?>
             <?php
-                $images = $photopage->files()->images();
+                $images = $photopage->images();
                 $imageUrls = [];
-                foreach($images as $img) {
-                    $imageUrls[] = $img->url();
+                if($images) {
+                    foreach($images as $img) {
+                        $imageUrls[] = $img->url();
+                    }
                 }
                 $firstImage = $photopage->image();
                 $dateStr = $photopage->date_taken()->isNotEmpty() ? $photopage->date_taken()->toDate('F Y') : '';
@@ -30,7 +32,7 @@
                 <?php if($firstImage): ?>
                 <div class="thumb-img-wrap">
                     <img loading="lazy"
-                         src="<?= $firstImage->crop(400, 300)->url() ?>"
+                         src="<?= $firstImage->crop(200, 150)->url() ?>"
                          alt="<?= htmlspecialchars($photopage->title()) ?>"/>
                 </div>
                 <?php endif ?>
@@ -44,7 +46,7 @@
     </article>
 
     <?php if ($pagination->hasPages()): ?>
-        <nav class="pagination">
+        <nav class="pagination photos-pagination">
         <?php if ($pagination->hasPrevPage()): ?>
             <a class="prev" href="<?= $pagination->prevPageURL() ?>">newer</a>
         <?php endif ?>
@@ -80,6 +82,97 @@
 </div>
 
 <script>
+// ----- scatter layout -----
+(function() {
+    function scatter() {
+        var grid = document.querySelector('.photo-grid');
+        if (!grid) return;
+        var thumbs = Array.from(grid.querySelectorAll('.photo-thumb'));
+        if (!thumbs.length) return;
+
+        var containerW = grid.offsetWidth;
+
+        // horizontal padding — keeps photos away from the article edges
+        var padX   = 40;
+        var usableW = containerW - padX * 2;
+
+        // thumb width scales with usable width but caps at 150px
+        var thumbW = Math.min(150, Math.floor(usableW / 3.5));
+
+        // column count based on usable width
+        var cols = Math.max(3, Math.round(usableW / (thumbW * 1.9)));
+        var rows = Math.ceil(thumbs.length / cols);
+
+        // on desktop: fit everything in the viewport (no scroll needed)
+        // on mobile: calculate height from row count as before
+        var isDesktop  = window.innerWidth > 768;
+        var headerEl   = document.querySelector('header#site-header');
+        var headerH    = headerEl ? headerEl.offsetHeight : 60;
+        var containerH;
+
+        if (isDesktop) {
+            containerH = Math.max(480, window.innerHeight - headerH - 120);
+        } else {
+            containerH = rows * (thumbW * 1.6) + 80;
+        }
+
+        grid.style.height = containerH + 'px';
+
+        var cellW = usableW / cols;
+        var cellH = containerH / rows;
+
+        // shuffle z-indices so overlap order is random each load
+        var zArr = thumbs.map(function(_, i) { return i + 1; });
+        for (var i = zArr.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = zArr[i]; zArr[i] = zArr[j]; zArr[j] = tmp;
+        }
+
+        thumbs.forEach(function(thumb, i) {
+            var col = i % cols;
+            var row = Math.floor(i / cols);
+
+            // zone center, offset from left by padX
+            var cx = padX + col * cellW + cellW / 2;
+            var cy = row * cellH + cellH / 2;
+
+            // random offset large enough to cause overlap between neighbors
+            var dx = (Math.random() - 0.5) * cellW * 0.9;
+            var dy = (Math.random() - 0.5) * cellH * 0.9;
+
+            var x = cx + dx - thumbW / 2;
+            var y = cy + dy - thumbW * 0.55;
+
+            // clamp within padded zone
+            x = Math.max(padX / 2, Math.min(containerW - thumbW - padX / 2, x));
+            y = Math.max(8, Math.min(containerH - thumbW * 0.4, y));
+
+            var angle = (Math.random() - 0.5) * 34; // ±17 degrees
+
+            thumb.style.position  = 'absolute';
+            thumb.style.width     = thumbW + 'px';
+            thumb.style.left      = Math.round(x) + 'px';
+            thumb.style.top       = Math.round(y) + 'px';
+            thumb.style.transform = 'rotate(' + angle.toFixed(2) + 'deg)';
+            thumb.style.zIndex    = zArr[i];
+        });
+    }
+
+    // debounced resize
+    var resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(scatter, 200);
+    });
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', scatter);
+    } else {
+        scatter();
+    }
+})();
+
+// ----- lightbox -----
 (function() {
     var thumbs = Array.from(document.querySelectorAll('.photo-thumb'));
     var lb        = document.getElementById('lightbox');
