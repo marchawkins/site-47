@@ -1,46 +1,30 @@
-name: Deploy
- 
+name: Deploy to Hostinger
+
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+
 jobs:
-  build:
- 
+  deploy:
     runs-on: ubuntu-latest
- 
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
- 
-    - name: Setup SSH connection
-      uses: webfactory/ssh-agent@v0.5.0
-      with:
-        ssh-private-key: ${{ secrets.SSHKEY }}
- 
-    - name: Copy files into the server
-      uses: appleboy/scp-action@v1.0.0
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEY }}
-        source: ./
-        target: /var/www/marchawkins__usr/data/www/marchawkins.com
- 
-    - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
-      with:
-        php-version: '8.0'
-    - uses: actions/checkout@v3
-      with:
-        ref: main
-    - name: Deploy
-      uses: fifsky/ssh-action@master
-      with:
-        command: | 
-          cd /var/www/marchawkins__usr/data/www/marchawkins.com
-          # run any command you want.
-        host: ${{ secrets.HOST }}
-        port: ${{ secrets.PORT }}
-        user: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEY}}
-        args: "-tt -vvv"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -p ${{ secrets.SSH_PORT }} -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.DS_Store' \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u667712297/domains/marchawkins.com/public_html/
