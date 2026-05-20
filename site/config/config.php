@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'panel' =>[
+    /* 'panel' =>[
          'install' => true
-      ],
+      ], */
     'debug' => false,
 
     'routes' => [
