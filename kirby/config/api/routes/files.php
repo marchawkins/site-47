@@ -47,7 +47,7 @@ return [
 			// move_uploaded_file() not working with unit test
 			// @codeCoverageIgnoreStart
 			return $this->upload(function ($source, $filename) use ($path) {
-				// move the source file to the content folder
+				// move the source file from the temp dir
 				return $this->parent($path)->createFile([
 					'content' => [
 						'sort' => $this->requestBody('sort')
@@ -70,7 +70,12 @@ return [
 				return $files->search($this->requestQuery('q'));
 			}
 
-			return $files->query($this->requestBody());
+			return $files->query(array_filter([
+				'limit'    => $this->requestBody('limit'),
+				'offset'   => $this->requestBody('offset'),
+				'paginate' => $this->requestBody('paginate'),
+				'search'   => $this->requestBody('search'),
+			], fn ($value) => $value !== null));
 		}
 	],
 	[
@@ -140,7 +145,12 @@ return [
 				return $files->search($this->requestQuery('q'));
 			}
 
-			return $files->query($this->requestBody());
+			return $files->query(array_filter([
+				'limit'    => $this->requestBody('limit'),
+				'offset'   => $this->requestBody('offset'),
+				'paginate' => $this->requestBody('paginate'),
+				'search'   => $this->requestBody('search'),
+			], fn ($value) => $value !== null));
 		}
 	],
 ];

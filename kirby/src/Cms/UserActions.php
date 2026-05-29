@@ -3,15 +3,16 @@
 namespace Kirby\Cms;
 
 use Closure;
-use Kirby\Content\ImmutableMemoryStorage;
-use Kirby\Content\MemoryStorage;
 use Kirby\Data\Data;
 use Kirby\Data\Json;
+use Kirby\Exception\LogicException;
 use Kirby\Exception\PermissionException;
 use Kirby\Filesystem\Dir;
 use Kirby\Filesystem\F;
+use Kirby\Form\Form;
 use Kirby\Http\Idn;
 use Kirby\Toolkit\A;
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Toolkit\Str;
 use SensitiveParameter;
 use Throwable;
@@ -30,13 +31,22 @@ trait UserActions
 	/**
 	 * Changes the user email address
 	 */
+	#[BlockCollectionAccess]
 	public function changeEmail(string $email): static
 	{
 		$email = trim($email);
 
 		return $this->commit('changeEmail', ['user' => $this, 'email' => Idn::decodeEmail($email)], function ($user, $email) {
-			$user = $user->clone(['email' => $email]);
-			$user->updateCredentials(['email' => $email]);
+			$user = $user->clone([
+				'email' => $email
+			]);
+
+			$user->updateCredentials([
+				'email' => $email
+			]);
+
+			// update the users collection
+			$user->kirby()->users()->set($user->id(), $user);
 
 			return $user;
 		});
@@ -45,11 +55,20 @@ trait UserActions
 	/**
 	 * Changes the user language
 	 */
+	#[BlockCollectionAccess]
 	public function changeLanguage(string $language): static
 	{
 		return $this->commit('changeLanguage', ['user' => $this, 'language' => $language], function ($user, $language) {
-			$user = $user->clone(['language' => $language]);
-			$user->updateCredentials(['language' => $language]);
+			$user = $user->clone([
+				'language' => $language,
+			]);
+
+			$user->updateCredentials([
+				'language' => $language
+			]);
+
+			// update the users collection
+			$user->kirby()->users()->set($user->id(), $user);
 
 			return $user;
 		});
@@ -58,13 +77,22 @@ trait UserActions
 	/**
 	 * Changes the screen name of the user
 	 */
+	#[BlockCollectionAccess]
 	public function changeName(string $name): static
 	{
 		$name = trim($name);
 
 		return $this->commit('changeName', ['user' => $this, 'name' => $name], function ($user, $name) {
-			$user = $user->clone(['name' => $name]);
-			$user->updateCredentials(['name' => $name]);
+			$user = $user->clone([
+				'name' => $name
+			]);
+
+			$user->updateCredentials([
+				'name' => $name
+			]);
+
+			// update the users collection
+			$user->kirby()->users()->set($user->id(), $user);
 
 			return $user;
 		});
@@ -76,16 +104,20 @@ trait UserActions
 	 * If this method is used with user input, it is recommended to also
 	 * confirm the current password by the user via `::validatePassword()`
 	 */
+	#[BlockCollectionAccess]
 	public function changePassword(
 		#[SensitiveParameter]
 		string $password
 	): static {
 		return $this->commit('changePassword', ['user' => $this, 'password' => $password], function ($user, $password) {
 			$user = $user->clone([
-				'password' => $password = static::hashPassword($password)
+				'password' => $password = User::hashPassword($password)
 			]);
 
 			$user->writePassword($password);
+
+			// update the users collection
+			$user->kirby()->users()->set($user->id(), $user);
 
 			// keep the user logged in to the current browser
 			// if they changed their own password
@@ -101,11 +133,20 @@ trait UserActions
 	/**
 	 * Changes the user role
 	 */
+	#[BlockCollectionAccess]
 	public function changeRole(string $role): static
 	{
 		return $this->commit('changeRole', ['user' => $this, 'role' => $role], function ($user, $role) {
-			$user = $user->clone(['role' => $role]);
-			$user->updateCredentials(['role' => $role]);
+			$user = $user->clone([
+				'role' => $role,
+			]);
+
+			$user->updateCredentials([
+				'role' => $role
+			]);
+
+			// update the users collection
+			$user->kirby()->users()->set($user->id(), $user);
 
 			return $user;
 		});
@@ -115,6 +156,7 @@ trait UserActions
 	 * Changes the user's TOTP secret
 	 * @since 4.0.0
 	 */
+	#[BlockCollectionAccess]
 	public function changeTotp(
 		#[SensitiveParameter]
 		string|null $secret
@@ -136,10 +178,10 @@ trait UserActions
 	/**
 	 * Commits a user action, by following these steps
 	 *
-	 * 1. applies the `before` hook
-	 * 2. checks the action rules
+	 * 1. checks the action rules
+	 * 2. sends the before hook
 	 * 3. commits the action
-	 * 4. applies the `after` hook
+	 * 4. sends the after hook
 	 * 5. returns the result
 	 *
 	 * @throws \Kirby\Exception\PermissionException
@@ -150,55 +192,68 @@ trait UserActions
 		Closure $callback
 	): mixed {
 		if ($this->isKirby() === true) {
-			throw new PermissionException(
-				message: 'The Kirby user cannot be changed'
-			);
+			throw new PermissionException('The Kirby user cannot be changed');
 		}
 
-		$commit = new ModelCommit(
-			model: $this,
-			action: $action
-		);
+		$old            = $this->hardcopy();
+		$kirby          = $this->kirby();
+		$argumentValues = array_values($arguments);
 
-		return $commit->call($arguments, $callback);
+		$this->rules()->$action(...$argumentValues);
+		$kirby->trigger('user.' . $action . ':before', $arguments);
+
+		$result = $callback(...$argumentValues);
+
+		$argumentsAfter = match ($action) {
+			'create',
+			'createAvatar',
+			'replaceAvatar' => ['user' => $result],
+			'delete',
+			'deleteAvatar'  => ['status' => $result, 'user' => $old],
+			default         => ['newUser' => $result, 'oldUser' => $old]
+		};
+
+		$kirby->trigger('user.' . $action . ':after', $argumentsAfter);
+
+		$kirby->cache('pages')->flush();
+		return $result;
 	}
 
 	/**
 	 * Creates a new User from the given props and returns a new User object
 	 */
-	public static function create(array $props): User
+	#[BlockCollectionAccess]
+	public static function create(array|null $props = null): User
 	{
-		$input = $props;
-		$props = self::normalizeProps($props);
+		// Prevent injecting blueprint as this always must be derived from
+		// the template/model name and blueprint object in the app,
+		// never directly be supplied by the caller
+		unset($props['blueprint']);
 
-		// create the instance without content or translations
-		// to avoid that the user is created in memory storage
-		$user = User::factory([
-			...$props,
-			'content'      => null,
-			'translations' => null
+		$data = $props;
+
+		if (isset($props['email']) === true) {
+			$data['email'] = Idn::decodeEmail($props['email']);
+		}
+
+		if (isset($props['password']) === true) {
+			$data['password'] = User::hashPassword($props['password']);
+		}
+
+		$props['role'] = $props['model'] = strtolower($props['role'] ?? 'default');
+
+		$user = User::factory($data);
+
+		// create a form for the user
+		$form = Form::for($user, [
+			'values' => $props['content'] ?? []
 		]);
 
-		// merge the content with the defaults
-		$props['content'] = [
-			...$user->createDefaultContent(),
-			...$props['content'],
-		];
-
-		// keep the initial storage class
-		$storage = $user->storage()::class;
-
-		// make sure that the temporary user is stored in memory
-		$user->changeStorage(MemoryStorage::class);
-
 		// inject the content
-		$user->setContent($props['content']);
-
-		// inject the translations
-		$user->setTranslations($props['translations'] ?? null);
+		$user = $user->clone(['content' => $form->strings(true)]);
 
 		// run the hook
-		return $user->commit('create', ['user' => $user, 'input' => $input], function ($user) use ($storage) {
+		return $user->commit('create', ['user' => $user, 'input' => $props], function ($user, $props) {
 			$user->writeCredentials([
 				'email'    => $user->email(),
 				'language' => $user->language(),
@@ -207,9 +262,38 @@ trait UserActions
 			]);
 
 			$user->writePassword($user->password());
-			$user->changeStorage($storage);
+
+			// always create users in the default language
+			if ($user->kirby()->multilang() === true) {
+				$languageCode = $user->kirby()->defaultLanguage()->code();
+			} else {
+				$languageCode = null;
+			}
+
+			// add the user to users collection
+			$user->kirby()->users()->add($user);
 
 			// write the user data
+			return $user->save($user->content()->toArray(), $languageCode);
+		});
+	}
+
+	/**
+	 * Creates a new avatar for the user
+	 */
+	#[BlockCollectionAccess]
+	public function createAvatar(string $source, string $extension, bool $move = false): static
+	{
+		return $this->commit('createAvatar', ['user' => $this, 'source' => $source, 'extension' => $extension], function ($user, $source, $extension) use ($move) {
+			$user->createFile(
+				[
+					'filename' => 'profile.' . $extension,
+					'template' => 'avatar',
+					'source'   => $source
+				],
+				$move
+			);
+
 			return $user;
 		});
 	}
@@ -217,6 +301,7 @@ trait UserActions
 	/**
 	 * Returns a random user id
 	 */
+	#[BlockCollectionAccess]
 	public function createId(): string
 	{
 		$length = 8;
@@ -224,8 +309,9 @@ trait UserActions
 		do {
 			try {
 				$id = Str::random($length);
-				UserRules::validId($this, $id);
-				return $id;
+				if (UserRules::validId($this, $id) === true) {
+					return $id;
+				}
 
 				// we can't really test for a random match
 				// @codeCoverageIgnoreStart
@@ -241,54 +327,38 @@ trait UserActions
 	 *
 	 * @throws \Kirby\Exception\LogicException
 	 */
+	#[BlockCollectionAccess]
 	public function delete(): bool
 	{
 		return $this->commit('delete', ['user' => $this], function ($user) {
-			$old = $user->clone();
-
-			// keep the content in iummtable memory storage
-			// to still have access to it in after hooks
-			$user->changeStorage(ImmutableMemoryStorage::class);
-
-			// delete all files individually
-			foreach ($old->files() as $file) {
-				$file->delete();
+			if ($user->exists() === false) {
+				return true;
 			}
 
-			// delete all versions,
-			// the plain text storage handler will then clean
-			// up the directory if it's empty
-			$old->versions()->delete();
+			// delete all public assets for this user
+			Dir::remove($user->mediaRoot());
 
-			// delete the user directory to get rid
-			// of the .htpasswd and index.php files.
-			// we need to solve this at a later point with
-			// something like a credential storage
-			Dir::remove($old->root());
+			// delete the user directory
+			if (Dir::remove($user->root()) !== true) {
+				throw new LogicException('The user directory for "' . $user->email() . '" could not be deleted');
+			}
+
+			// remove the user from users collection
+			$user->kirby()->users()->remove($user);
 
 			return true;
 		});
 	}
 
-	protected static function normalizeProps(array $props): array
+	/**
+	 * Deletes the existing avatar if it exists
+	 */
+	#[BlockCollectionAccess]
+	public function deleteAvatar(): bool
 	{
-		$content = $props['content'] ?? [];
-		$role    = $props['role']    ?? 'default';
-
-		if (isset($props['email']) === true) {
-			$props['email'] = Idn::decodeEmail($props['email']);
-		}
-
-		if (isset($props['password']) === true) {
-			$props['password'] = static::hashPassword($props['password']);
-		}
-
-		return [
-			...$props,
-			'content' => $content,
-			'model'   => $props['model'] ?? $role,
-			'role'    => $role
-		];
+		return $this->commit('deleteAvatar', ['user' => $this], function ($user) {
+			return $user->avatar()->delete();
+		});
 	}
 
 	/**
@@ -343,8 +413,49 @@ trait UserActions
 	}
 
 	/**
+	 * Replaces the existing avatar for the user
+	 */
+	#[BlockCollectionAccess]
+	public function replaceAvatar(string $source, string $extension, bool $move = false): static
+	{
+		return $this->commit('replaceAvatar', ['user' => $this, 'source' => $source, 'extension' => $extension], function ($user, $source, $extension) use ($move) {
+			$oldAvatar = $user->avatar();
+
+			// if the file type stayed the same, we can fall back to the
+			// replace method, which is the cleanest solution here.
+			if ($oldAvatar->extension() === $extension) {
+				$oldAvatar->replace($source, $move);
+
+				return $user;
+			}
+
+			// check if the user can delete the old avatar,
+			// but don't delete it yet. If creating the new one fails
+			// we can still keep the old one around
+			FileRules::delete($oldAvatar);
+
+			// try to create the new avatar
+			$user->createFile(
+				[
+					'filename' => 'profile.' . $extension,
+					'template' => 'avatar',
+					'source'   => $source,
+				],
+				$move
+			);
+
+			// if the new avatar was successfully created,
+			// delete the old one to make sure that we don't have two.
+			$oldAvatar->delete();
+
+			return $user;
+		});
+	}
+
+	/**
 	 * Updates the user data
 	 */
+	#[BlockCollectionAccess]
 	public function update(
 		array|null $input = null,
 		string|null $languageCode = null,
@@ -355,12 +466,10 @@ trait UserActions
 		// set auth user data only if the current user is this user
 		if ($user->isLoggedIn() === true) {
 			$this->kirby()->auth()->setUser($user);
-
-			ModelState::update(
-				method: 'set',
-				current: $user,
-			);
 		}
+
+		// update the users collection
+		$user->kirby()->users()->set($user->id(), $user);
 
 		return $user;
 	}
@@ -376,10 +485,7 @@ trait UserActions
 			$credentials['email'] = Str::lower(trim($credentials['email']));
 		}
 
-		return $this->writeCredentials([
-			...$this->credentials(),
-			...$credentials
-		]);
+		return $this->writeCredentials(array_merge($this->credentials(), $credentials));
 	}
 
 	/**

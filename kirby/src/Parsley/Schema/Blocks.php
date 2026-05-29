@@ -4,19 +4,21 @@ namespace Kirby\Parsley\Schema;
 
 use DOMElement;
 use DOMText;
+use Kirby\Http\Url;
 use Kirby\Parsley\Element;
 use Kirby\Toolkit\Str;
 
 /**
- * The blocks schema definition converts
- * the entire document into blocks for the blocks field
+ * The plain schema definition converts
+ * the entire document into simple text blocks
+ *
+ * @since 3.5.0
  *
  * @package   Kirby Parsley
- * @author    Bastian Allgeier <bastian@getkirby.com>
+ * @author    Bastian Allgeier <bastian@getkirby.com>,
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
- * @since     3.5.0
  */
 class Blocks extends Plain
 {
@@ -155,6 +157,10 @@ class Blocks extends Plain
 		$figcaption = $node->find('ancestor::figure[1]//figcaption');
 		$caption    = $figcaption?->innerHTML($this->marks());
 
+		if (Url::hasDangerousScheme($link) === true) {
+			$link = null;
+		}
+
 		// avoid parsing the caption twice
 		$figcaption?->remove();
 
@@ -186,7 +192,7 @@ class Blocks extends Plain
 				} elseif ($child instanceof DOMElement) {
 					$child = new Element($child);
 					$list  = ['ul', 'ol'];
-					$innerHtml .= match (in_array($child->tagName(), $list, true)) {
+					$innerHtml .= match (in_array($child->tagName(), $list)) {
 						true    => $this->list($child),
 						default => $child->innerHTML($this->marks())
 					};

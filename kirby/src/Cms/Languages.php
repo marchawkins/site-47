@@ -13,8 +13,6 @@ use Kirby\Filesystem\F;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
- *
- * @extends \Kirby\Cms\Collection<\Kirby\Cms\Language>
  */
 class Languages extends Collection
 {
@@ -39,9 +37,7 @@ class Languages extends Collection
 		);
 
 		if (count($defaults) > 1) {
-			throw new DuplicateException(
-				message: 'You cannot have multiple default languages. Please check your language config files.'
-			);
+			throw new DuplicateException('You cannot have multiple default languages. Please check your language config files.');
 		}
 
 		parent::__construct($objects, null);
@@ -57,6 +53,7 @@ class Languages extends Collection
 
 	/**
 	 * Creates a new language with the given props
+	 * @internal
 	 */
 	public function create(array $props): Language
 	{
@@ -72,26 +69,8 @@ class Languages extends Collection
 	}
 
 	/**
-	 * Provides a collection of installed languages, even
-	 * if in single-language mode. In single-language mode
-	 * `Language::single()` is used to create the default language
-	 *
-	 * @unstable
-	 */
-	public static function ensure(): static
-	{
-		$kirby = App::instance();
-
-		if ($kirby->multilang() === true) {
-			return $kirby->languages();
-		}
-
-		return new static([Language::single()]);
-	}
-
-	/**
-	 * Load all languages from the languages directory
-	 * and convert them to a collection
+	 * Convert all defined languages to a collection
+	 * @internal
 	 */
 	public static function load(): static
 	{

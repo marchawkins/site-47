@@ -41,9 +41,7 @@ class Yaml extends Handler
 		}
 
 		if (is_string($string) === false) {
-			throw new InvalidArgumentException(
-				message: 'Invalid YAML data; please pass a string'
-			);
+			throw new InvalidArgumentException('Invalid YAML data; please pass a string');
 		}
 
 		return match (static::handler()) {
@@ -55,6 +53,7 @@ class Yaml extends Handler
 	/**
 	 * Returns which YAML parser (`spyc` or `symfony`)
 	 * is configured to be used
+	 * @internal
 	 */
 	public static function handler(): string
 	{

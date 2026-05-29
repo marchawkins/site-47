@@ -2,6 +2,7 @@
 
 namespace Kirby\Cms;
 
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Uuid\Uuid;
 
 /**
@@ -41,13 +42,13 @@ trait HasFiles
 	 *
 	 * @param bool $move If set to `true`, the source will be deleted
 	 */
+	#[BlockCollectionAccess]
 	public function createFile(array $props, bool $move = false): File
 	{
-		$props = [
-			...$props,
+		$props = array_merge($props, [
 			'parent' => $this,
 			'url'    => null
-		];
+		]);
 
 		return File::create($props, $move);
 	}
@@ -76,7 +77,7 @@ trait HasFiles
 			return Uuid::for($filename, $this->$in())->model();
 		}
 
-		if (str_contains($filename, '/') === true) {
+		if (strpos($filename, '/') !== false) {
 			$path     = dirname($filename);
 			$filename = basename($filename);
 

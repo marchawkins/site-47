@@ -5,6 +5,7 @@ namespace Kirby\Query;
 use Closure;
 use Kirby\Exception\BadMethodCallException;
 use Kirby\Exception\InvalidArgumentException;
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Toolkit\Str;
 
 /**
@@ -28,7 +29,7 @@ class Segment
 
 	/**
 	 * Throws an exception for an access to an invalid method
-	 * @unstable
+	 * @internal
 	 *
 	 * @param mixed $data Variable on which the access was tried
 	 * @param string $name Name of the method/property that was accessed
@@ -36,6 +37,7 @@ class Segment
 	 *
 	 * @throws \Kirby\Exception\BadMethodCallException
 	 */
+	#[BlockCollectionAccess]
 	public static function error(mixed $data, string $name, string $label): void
 	{
 		$type = strtolower(gettype($data));
@@ -44,7 +46,7 @@ class Segment
 			$type = 'float';
 		}
 
-		$nonExisting = in_array($type, ['array', 'object'], true) ? 'non-existing ' : '';
+		$nonExisting = in_array($type, ['array', 'object']) ? 'non-existing ' : '';
 
 		$error = 'Access to ' . $nonExisting . $label . ' "' . $name . '" on ' . $type;
 
@@ -80,6 +82,7 @@ class Segment
 	 *
 	 * @param mixed $base Current value of the query chain
 	 */
+	#[BlockCollectionAccess]
 	public function resolve(mixed $base = null, array|object $data = []): mixed
 	{
 		// resolve arguments to array
@@ -145,9 +148,7 @@ class Segment
 			array_key_exists($this->method, $array) &&
 			$args !== []
 		) {
-			throw new InvalidArgumentException(
-				message: 'Cannot access array element "' . $this->method . '" with arguments'
-			);
+			throw new InvalidArgumentException('Cannot access array element "' . $this->method . '" with arguments');
 		}
 
 		// last, the standard error for trying to access something

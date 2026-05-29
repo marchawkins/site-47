@@ -5,8 +5,6 @@ namespace Kirby\Panel;
 use Kirby\Cms\File as CmsFile;
 use Kirby\Cms\ModelWithContent;
 use Kirby\Filesystem\Asset;
-use Kirby\Panel\Ui\Buttons\ViewButtons;
-use Kirby\Panel\Ui\FilePreview;
 use Kirby\Toolkit\I18n;
 use Throwable;
 
@@ -67,44 +65,35 @@ class File extends Model
 	}
 
 	/**
-	 * Returns header button names which should be displayed
-	 * on the file view
-	 */
-	public function buttons(): array
-	{
-		return ViewButtons::view($this)->defaults(
-			'open',
-			'settings',
-			'languages'
-		)->render();
-	}
-
-	/**
 	 * Provides a kirbytag or markdown
 	 * tag for the file, which will be
 	 * used in the panel, when the file
 	 * gets dragged onto a textarea
 	 *
+	 * @internal
 	 * @param string|null $type (`auto`|`kirbytext`|`markdown`)
 	 */
 	public function dragText(
-		string|null $type = 'auto',
+		string|null $type = null,
 		bool $absolute = false
 	): string {
 		$type = $this->dragTextType($type);
+		$url  = $this->model->filename();
 		$file = $this->model->type();
-		$url  = match ($type) {
-			'markdown' => $this->model->permalink(),
-			default    => $this->model->uuid()
-		};
 
-		// if UUIDs are disabled, fall back to the filename
-		// as relative link or the full absolute URL
-		$url ??= match ($absolute) {
-			false   => $this->model->filename(),
-			default => $this->model->url()
-		};
+		// By default only the filename is added as relative URL.
+		// If an absolute URL is required, either use the permalink
+		// for markdown notation or the UUID for Kirbytext (since
+		// Kirbytags support can resolve UUIDs directly)
+		if ($absolute === true) {
+			$url = match ($type) {
+				'markdown' => $this->model->permalink(),
+				default    => $this->model->uuid()
+			};
 
+			// if UUIDs are disabled, fall back to URL
+			$url ??= $this->model->url();
+		}
 
 		if ($callback = $this->dragTextFromCallback($type, $url)) {
 			return $callback;
@@ -130,8 +119,8 @@ class File extends Model
 	{
 		$file     = $this->model;
 		$request  = $file->kirby()->request();
-		$defaults = $request->get(['view', 'delete']);
-		$options  = [...$defaults, ...$options];
+		$defaults = $request->get(['view', 'update', 'delete']);
+		$options  = array_merge($defaults, $options);
 
 		$permissions = $this->options(['preview']);
 		$view        = $options['view'] ?? 'view';
@@ -160,7 +149,7 @@ class File extends Model
 				'dialog'   => $url . '/changeSort',
 				'icon'     => 'sort',
 				'text'     => I18n::translate('file.sort'),
-				'disabled' => $this->isDisabledDropdownOption('sort', $options, $permissions)
+				'disabled' => $this->isDisabledDropdownOption('update', $options, $permissions)
 			];
 		}
 
@@ -239,11 +228,10 @@ class File extends Model
 	 */
 	protected function imageDefaults(): array
 	{
-		return [
-			...parent::imageDefaults(),
+		return array_merge(parent::imageDefaults(), [
 			'color' => $this->imageColor(),
 			'icon'  => $this->imageIcon(),
-		];
+		]);
 	}
 
 	/**
@@ -279,6 +267,7 @@ class File extends Model
 
 	/**
 	 * Returns the image file object based on provided query
+	 * @internal
 	 */
 	protected function imageSource(
 		string|null $query = null
@@ -296,7 +285,7 @@ class File extends Model
 	public function isFocusable(): bool
 	{
 		// blueprint option
-		$option   = $this->model->blueprint()->focus();
+		$option = $this->model->blueprint()->focus();
 		// fallback to whether the file is viewable
 		// (images should be focusable by default, others not)
 		$option ??= $this->model->isViewable();
@@ -376,62 +365,93 @@ class File extends Model
 
 		$params['text'] ??= '{{ file.filename }}';
 
-		return [
-			...parent::pickerData($params),
-			'dragText' => $this->dragText('auto', absolute: $absolute ?? false),
+		return array_merge(parent::pickerData($params), [
+			'dragText' => $this->dragText('auto', $absolute ?? false),
 			'filename' => $name,
 			'id'	   => $id,
 			'type'     => $this->model->type(),
 			'url'      => $this->model->url()
-		];
+		]);
 	}
 
 	/**
-	 * Returns the data array for the view's component props
+	 * Returns the data array for the
+	 * view's component props
+	 * @internal
 	 */
 	public function props(): array
 	{
-		$props = parent::props();
-		$file  = $this->model;
+		$file       = $this->model;
+		$dimensions = $file->dimensions();
 
-		// Additional model information
-		// @deprecated Use the top-level props instead
-		$model = [
-			'dimensions' => $file->dimensions()->toArray(),
-			'extension'  => $file->extension(),
-			'filename'   => $file->filename(),
-			'link'       => $props['link'],
-			'mime'       => $file->mime(),
-			'niceSize'   => $file->niceSize(),
-			'id'         => $props['id'],
-			'parent'     => $file->parent()->panel()->path(),
-			'template'   => $file->template(),
-			'type'       => $file->type(),
-			'url'        => $file->url(),
-			'uuid'       => $props['uuid'],
-		];
-
-		return [
-			...$props,
-			...$this->prevNext(),
-			'blueprint' => $this->model->template() ?? 'default',
-			'extension' => $model['extension'],
-			'filename'  => $model['filename'],
-			'mime'      => $model['mime'],
-			'model'     => $model,
-			'preview'   => FilePreview::factory($this->model)->render(),
-			'type'      => $model['type'],
-			'url'       => $model['url'],
-		];
+		return array_merge(
+			parent::props(),
+			$this->prevNext(),
+			[
+				'blueprint' => $this->model->template() ?? 'default',
+				'model' => [
+					'content'    => $this->content(),
+					'dimensions' => $dimensions->toArray(),
+					'extension'  => $file->extension(),
+					'filename'   => $file->filename(),
+					'link'       => $this->url(true),
+					'mime'       => $file->mime(),
+					'niceSize'   => $file->niceSize(),
+					'id'         => $id = $file->id(),
+					'parent'     => $file->parent()->panel()->path(),
+					'template'   => $file->template(),
+					'type'       => $file->type(),
+					'url'        => $file->url(),
+					'uuid'       => fn () => $file->uuid()?->toString(),
+				],
+				'preview' => [
+					'focusable' => $this->isFocusable(),
+					'image'     => $this->image([
+						'back'  => 'transparent',
+						'ratio' => '1/1'
+					], 'cards'),
+					'url'       => $url = $file->previewUrl(),
+					'details'   => [
+						[
+							'title' => I18n::translate('template'),
+							'text'  => $file->template() ?? '—'
+						],
+						[
+							'title' => I18n::translate('mime'),
+							'text'  => $file->mime()
+						],
+						[
+							'title' => I18n::translate('url'),
+							'text'  => $id,
+							'link'  => $url
+						],
+						[
+							'title' => I18n::translate('size'),
+							'text'  => $file->niceSize()
+						],
+						[
+							'title' => I18n::translate('dimensions'),
+							'text'  => $file->type() === 'image' ? $file->dimensions() . ' ' . I18n::translate('pixel') : '—'
+						],
+						[
+							'title' => I18n::translate('orientation'),
+							'text'  => $file->type() === 'image' ? I18n::translate('orientation.' . $dimensions->orientation()) : '—'
+						],
+					]
+				]
+			]
+		);
 	}
 
 	/**
-	 * Returns navigation array with previous and next file
+	 * Returns navigation array with
+	 * previous and next file
+	 * @internal
 	 */
 	public function prevNext(): array
 	{
 		$file     = $this->model;
-		$siblings = $file->templateSiblings()->sortBy(
+		$siblings = $file->templateSiblings()->filter('isListable', true)->sortBy(
 			'sort',
 			'asc',
 			'filename',
@@ -460,7 +480,9 @@ class File extends Model
 	}
 
 	/**
-	 * Returns the data array for this model's Panel view
+	 * Returns the data array for
+	 * this model's Panel view
+	 * @internal
 	 */
 	public function view(): array
 	{

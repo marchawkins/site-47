@@ -20,9 +20,6 @@ use Kirby\Toolkit\Str;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
- *
- * @template TCollection of \Kirby\Cms\Items
- * @use \Kirby\Cms\HasSiblings<TCollection>
  */
 class Item
 {

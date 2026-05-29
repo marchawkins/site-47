@@ -18,7 +18,7 @@ return [
 			return $icon;
 		},
 		/**
-		 * Text shown when no option is selected yet
+		 * Custom placeholder string for empty option.
 		 */
 		'placeholder' => function (string|array $placeholder = '—') {
 			return I18n::translate($placeholder, $placeholder);

@@ -30,7 +30,7 @@ class StructureUuid extends FieldUuid
 
 	/**
 	 * Converts content field to a Structure collection
-	 * @unstable
+	 * @internal
 	 */
 	public static function fieldToCollection(Field $field): Structure
 	{

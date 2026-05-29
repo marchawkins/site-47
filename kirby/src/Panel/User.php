@@ -7,7 +7,6 @@ use Kirby\Cms\ModelWithContent;
 use Kirby\Cms\Translation;
 use Kirby\Cms\Url;
 use Kirby\Filesystem\Asset;
-use Kirby\Panel\Ui\Buttons\ViewButtons;
 use Kirby\Toolkit\I18n;
 
 /**
@@ -38,19 +37,6 @@ class User extends Model
 				'link'  => $this->url(true),
 			]
 		];
-	}
-
-	/**
-	 * Returns header buttons which should be displayed
-	 * on the user view
-	 */
-	public function buttons(): array
-	{
-		return ViewButtons::view($this)->defaults(
-			'theme',
-			'settings',
-			'languages'
-		)->render();
 	}
 
 	/**
@@ -161,16 +147,16 @@ class User extends Model
 	 */
 	protected function imageDefaults(): array
 	{
-		return [
-			...parent::imageDefaults(),
+		return array_merge(parent::imageDefaults(), [
 			'back'  => 'black',
 			'icon'  => 'user',
 			'ratio' => '1/1',
-		];
+		]);
 	}
 
 	/**
 	 * Returns the image file object based on provided query
+	 * @internal
 	 */
 	protected function imageSource(
 		string|null $query = null
@@ -202,67 +188,65 @@ class User extends Model
 	{
 		$params['text'] ??= '{{ user.username }}';
 
-		return [
-			...parent::pickerData($params),
+		return array_merge(parent::pickerData($params), [
 			'email'    => $this->model->email(),
 			'username' => $this->model->username(),
-		];
+		]);
 	}
 
 	/**
 	 * Returns navigation array with
 	 * previous and next user
+	 *
+	 * @internal
 	 */
 	public function prevNext(): array
 	{
-		$user = $this->model;
+		$user     = $this->model;
+		$siblings = $user->siblings()->filter('isListable', true);
 
 		return [
-			'next' => fn () => $this->toPrevNextLink($user->next(), 'username'),
-			'prev' => fn () => $this->toPrevNextLink($user->prev(), 'username')
+			'next' => fn () => $this->toPrevNextLink($user->next($siblings), 'username'),
+			'prev' => fn () => $this->toPrevNextLink($user->prev($siblings), 'username')
 		];
 	}
 
 	/**
-	 * Returns the data array for the view's component props
+	 * Returns the data array for the
+	 * view's component props
+	 *
+	 * @internal
 	 */
 	public function props(): array
 	{
-		$props       = parent::props();
 		$user        = $this->model;
+		$account     = $user->isLoggedIn();
 		$permissions = $this->options();
 
-		// Additional model information
-		// @deprecated Use the top-level props instead
-		$model = [
-			'account'  => $user->isLoggedIn(),
-			'avatar'   => $user->avatar()?->url(),
-			'email'    => $user->email(),
-			'id'       => $props['id'],
-			'language' => $this->translation()->name(),
-			'link'     => $props['link'],
-			'name'     => $user->name()->toString(),
-			'role'     => $user->role()->title(),
-			'username' => $user->username(),
-			'uuid'     => $props['uuid'],
-		];
-
-		return [
-			...parent::props(),
-			...$this->prevNext(),
-			'avatar'            => $model['avatar'],
-			'blueprint'         => $this->model->role()->name(),
-			'canChangeEmail'    => $permissions['changeEmail'],
-			'canChangeLanguage' => $permissions['changeLanguage'],
-			'canChangeName'     => $permissions['changeName'],
-			'canChangeRole'     => $this->model->roles()->count() > 1,
-			'email'             => $model['email'],
-			'language'          => $model['language'],
-			'model'             => $model,
-			'name'              => $model['name'],
-			'role'              => $model['role'],
-			'username'          => $model['username'],
-		];
+		return array_merge(
+			parent::props(),
+			$this->prevNext(),
+			[
+				'blueprint'         => $this->model->role()->name(),
+				'canChangeEmail'    => $permissions['changeEmail'],
+				'canChangeLanguage' => $permissions['changeLanguage'],
+				'canChangeName'     => $permissions['changeName'],
+				'canChangeRole'     => $this->model->roles()->count() > 1,
+				'model' => [
+					'account'  => $account,
+					'avatar'   => $user->avatar()?->url(),
+					'content'  => $this->content(),
+					'email'    => $user->email(),
+					'id'       => $user->id(),
+					'language' => $this->translation()->name(),
+					'link'     => $this->url(true),
+					'name'     => $user->name()->toString(),
+					'role'     => $user->role()->title(),
+					'username' => $user->username(),
+					'uuid'     => fn () => $user->uuid()?->toString()
+				]
+			]
+		);
 	}
 
 	/**
@@ -277,7 +261,10 @@ class User extends Model
 	}
 
 	/**
-	 * Returns the data array for this model's Panel view
+	 * Returns the data array for
+	 * this model's Panel view
+	 *
+	 * @internal
 	 */
 	public function view(): array
 	{

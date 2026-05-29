@@ -5,8 +5,8 @@ namespace Kirby\Cms;
 use Kirby\Content\Content;
 use Kirby\Content\Field;
 use Kirby\Exception\InvalidArgumentException;
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Toolkit\Str;
-use Stringable;
 use Throwable;
 
 /**
@@ -20,15 +20,17 @@ use Throwable;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
- *
- * @extends \Kirby\Cms\Item<\Kirby\Cms\Blocks>
  */
-class Block extends Item implements Stringable
+class Block extends Item
 {
 	use HasMethods;
-	use HasModels;
 
 	public const ITEMS_CLASS = Blocks::class;
+
+	/**
+	 * Registry with all block models
+	 */
+	public static array $models = [];
 
 	protected Content $content;
 	protected bool $isHidden;
@@ -64,9 +66,7 @@ class Block extends Item implements Stringable
 		// @codeCoverageIgnoreEnd
 
 		if (isset($params['type']) === false) {
-			throw new InvalidArgumentException(
-				message: 'The block type is missing'
-			);
+			throw new InvalidArgumentException('The block type is missing');
 		}
 
 		// make sure the content is always defined as array to keep
@@ -101,6 +101,7 @@ class Block extends Item implements Stringable
 	/**
 	 * Controller for the block snippet
 	 */
+	#[BlockCollectionAccess]
 	public function controller(): array
 	{
 		return [
@@ -126,12 +127,35 @@ class Block extends Item implements Stringable
 
 	/**
 	 * Constructs a block object with registering blocks models
+	 * @internal
 	 *
 	 * @throws \Kirby\Exception\InvalidArgumentException
 	 */
 	public static function factory(array $params): static
 	{
-		return static::model($params['type'] ?? 'default', $params);
+		$type = $params['type'] ?? null;
+
+		if (
+			empty($type) === false &&
+			$class = (static::$models[$type] ?? null)
+		) {
+			$object = new $class($params);
+
+			if ($object instanceof self) {
+				return $object;
+			}
+		}
+
+		// default model for blocks
+		if ($class = (static::$models['default'] ?? null)) {
+			$object = new $class($params);
+
+			if ($object instanceof self) {
+				return $object;
+			}
+		}
+
+		return new static($params);
 	}
 
 	/**
@@ -195,6 +219,7 @@ class Block extends Item implements Stringable
 	 * object. This can be used further
 	 * with all available field methods
 	 */
+	#[BlockCollectionAccess]
 	public function toField(): Field
 	{
 		return new Field($this->parent(), $this->id(), $this->toHtml());
@@ -203,6 +228,7 @@ class Block extends Item implements Stringable
 	/**
 	 * Converts the block to HTML
 	 */
+	#[BlockCollectionAccess]
 	public function toHtml(): string
 	{
 		try {

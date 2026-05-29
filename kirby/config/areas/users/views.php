@@ -2,7 +2,6 @@
 
 use Kirby\Cms\App;
 use Kirby\Cms\Find;
-use Kirby\Panel\Ui\Buttons\ViewButtons;
 use Kirby\Toolkit\Escape;
 
 return [
@@ -11,7 +10,7 @@ return [
 		'action'  => function () {
 			$kirby = App::instance();
 			$role  = $kirby->request()->get('role');
-			$roles = $kirby->roles()->toArray(fn ($role) => [
+			$roles = Find::roles()->toArray(fn ($role) => [
 				'id'    => $role->id(),
 				'title' => $role->title(),
 			]);
@@ -19,11 +18,7 @@ return [
 			return [
 				'component' => 'k-users-view',
 				'props'     => [
-					'buttons' => fn () =>
-						ViewButtons::view('users')
-							->defaults('create')
-							->bind(['role' => $role])
-							->render(),
+					'canCreate' => $kirby->roles()->canBeCreated()->count() > 0,
 					'role' => function () use ($roles, $role) {
 						if ($role) {
 							return $roles[$role] ?? null;
@@ -31,7 +26,7 @@ return [
 					},
 					'roles' => array_values($roles),
 					'users' => function () use ($kirby, $role) {
-						$users = $kirby->users();
+						$users = $kirby->users()->filter('isListable', true);
 
 						if (empty($role) === false) {
 							$users = $users->role($role);

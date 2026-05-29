@@ -14,8 +14,6 @@ use Kirby\Toolkit\Collection;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
- *
- * @extends \Kirby\Toolkit\Collection<\Kirby\Query\Segment>
  */
 class Segments extends Collection
 {
@@ -39,7 +37,7 @@ class Segments extends Collection
 			$segments,
 			function ($segment) use (&$position) {
 				// leave connectors as they are
-				if (in_array($segment, ['.', '?.'], true) === true) {
+				if (in_array($segment, ['.', '?.']) === true) {
 					return $segment;
 				}
 
@@ -56,7 +54,7 @@ class Segments extends Collection
 	/**
 	 * Splits the string of a segment chaing into an
 	 * array of segments as well as conenctors (`.` or `?.`)
-	 * @unstable
+	 * @internal
 	 */
 	public static function parse(string $string): array
 	{

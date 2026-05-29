@@ -5,11 +5,13 @@ namespace Kirby\Cms;
 use Kirby\Data\Data;
 use Kirby\Exception\Exception;
 use Kirby\Exception\InvalidArgumentException;
-use Kirby\Exception\NotFoundException;
+use Kirby\Exception\LogicException;
+use Kirby\Exception\PermissionException;
 use Kirby\Filesystem\F;
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Toolkit\Locale;
 use Kirby\Toolkit\Str;
-use Stringable;
+use Throwable;
 
 /**
  * The `$language` object represents
@@ -26,17 +28,10 @@ use Stringable;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
- *
- * @use \Kirby\Cms\HasSiblings<\Kirby\Cms\Languages>
  */
-class Language implements Stringable
+class Language
 {
 	use HasSiblings;
-
-	/**
-	 * Short human-readable version used in template queries
-	 */
-	public const CLASS_ALIAS = 'language';
 
 	/**
 	 * The parent Kirby instance
@@ -48,7 +43,6 @@ class Language implements Stringable
 	protected string $direction;
 	protected array $locale;
 	protected string $name;
-	protected bool $single;
 	protected array $slugs;
 	protected array $smartypants;
 	protected array $translations;
@@ -60,9 +54,7 @@ class Language implements Stringable
 	public function __construct(array $props)
 	{
 		if (isset($props['code']) === false) {
-			throw new InvalidArgumentException(
-				message: 'The property "code" is required'
-			);
+			throw new InvalidArgumentException('The property "code" is required');
 		}
 
 		static::$kirby      = $props['kirby'] ?? null;
@@ -70,7 +62,6 @@ class Language implements Stringable
 		$this->default      = ($props['default'] ?? false) === true;
 		$this->direction    = ($props['direction'] ?? null) === 'rtl' ? 'rtl' : 'ltr';
 		$this->name         = trim($props['name'] ?? $this->code);
-		$this->single       = $props['single'] ?? false;
 		$this->slugs        = $props['slugs'] ?? [];
 		$this->smartypants  = $props['smartypants'] ?? [];
 		$this->translations = $props['translations'] ?? [];
@@ -152,12 +143,23 @@ class Language implements Stringable
 
 	/**
 	 * Creates a new language object
+	 * @internal
 	 */
+	#[BlockCollectionAccess]
 	public static function create(array $props): static
 	{
-		$kirby         = App::instance();
-		$languages     = $kirby->languages();
+		$kirby = App::instance();
+		$user  = $kirby->user();
+
+		if (
+			$user === null ||
+			$user->role()->permissions()->for('languages', 'create') === false
+		) {
+			throw new PermissionException(['key' => 'language.create.permission']);
+		}
+
 		$props['code'] = Str::slug($props['code'] ?? null);
+		$languages     = $kirby->languages();
 
 		// make the first language the default language
 		if ($languages->count() === 0) {
@@ -166,30 +168,25 @@ class Language implements Stringable
 
 		$language = new static($props);
 
-		// validate the new language
-		LanguageRules::create($language);
-
-		// apply before hook
-		$language = $kirby->apply(
+		// trigger before hook
+		$kirby->trigger(
 			'language.create:before',
 			[
 				'input'    => $props,
 				'language' => $language
-			],
-			'language'
+			]
 		);
 
-		// re-validate the language after before hook was applied
+		// validate the new language
 		LanguageRules::create($language);
 
 		$language->save();
 
-		// convert content storage to multilang
 		if ($languages->count() === 0) {
 			foreach ($kirby->models() as $model) {
-				$model->storage()->moveLanguage(
-					Language::single(),
-					$language
+				$model->storage()->convertLanguage(
+					'default',
+					$language->code()
 				);
 			}
 		}
@@ -197,14 +194,13 @@ class Language implements Stringable
 		// update the main languages collection in the app instance
 		$kirby->languages(false)->append($language->code(), $language);
 
-		// apply after hook
-		$language = $kirby->apply(
+		// trigger after hook
+		$kirby->trigger(
 			'language.create:after',
 			[
 				'input'    => $props,
 				'language' => $language
-			],
-			'language'
+			]
 		);
 
 		return $language;
@@ -213,36 +209,42 @@ class Language implements Stringable
 	/**
 	 * Delete the current language and
 	 * all its translation files
+	 * @internal
 	 *
 	 * @throws \Kirby\Exception\Exception
 	 */
+	#[BlockCollectionAccess]
 	public function delete(): bool
 	{
 		$kirby = App::instance();
+		$user  = $kirby->user();
 		$code  = $this->code();
 
-		// validate the language rules
-		LanguageRules::delete($this);
-
-		// apply before hook
-		$language = $kirby->apply(
-			'language.delete:before',
-			['language' => $this]
-		);
-
-		// re-validate the language rules after before hook was applied
-		LanguageRules::delete($language);
-
-		if (F::remove($language->root()) !== true) {
-			throw new Exception(message: 'The language could not be deleted');
+		if (
+			$user === null ||
+			$user->role()->permissions()->for('languages', 'delete') === false
+		) {
+			throw new PermissionException(['key' => 'language.delete.permission']);
 		}
 
-		// if needed, convert content storage to single lang
+		if ($this->isDeletable() === false) {
+			throw new Exception('The language cannot be deleted');
+		}
+
+		// trigger before hook
+		$kirby->trigger('language.delete:before', [
+			'language' => $this
+		]);
+
+		if (F::remove($this->root()) !== true) {
+			throw new Exception('The language could not be deleted');
+		}
+
 		foreach ($kirby->models() as $model) {
-			if ($language->isLast() === true) {
-				$model->storage()->moveLanguage($this, Language::single());
+			if ($this->isLast() === true) {
+				$model->storage()->convertLanguage($code, 'default');
 			} else {
-				$model->storage()->deleteLanguage($this);
+				$model->storage()->deleteLanguage($code);
 			}
 		}
 
@@ -251,7 +253,7 @@ class Language implements Stringable
 
 		// trigger after hook
 		$kirby->trigger('language.delete:after', [
-			'language' => $language
+			'language' => $this
 		]);
 
 		return true;
@@ -266,49 +268,11 @@ class Language implements Stringable
 	}
 
 	/**
-	 * Converts a "user-facing" language code to a `Language` object
-	 *
-	 * @throws \Kirby\Exception\NotFoundException If the language does not exist
-	 * @unstable
-	 */
-	public static function ensure(self|string|null $code = null): static
-	{
-		if ($code instanceof self) {
-			return $code;
-		}
-
-		$kirby = App::instance();
-
-		// single language
-		if ($kirby->multilang() === false) {
-			return static::single();
-		}
-
-		// look up the actual language object if possible
-		if ($language = $kirby->language($code)) {
-			return $language;
-		}
-
-		// validate the language code
-		throw new NotFoundException(message: 'Invalid language: ' . $code);
-	}
-
-	/**
 	 * Check if the language file exists
 	 */
 	public function exists(): bool
 	{
 		return file_exists($this->root());
-	}
-
-	/**
-	 * Checks if the language is the same
-	 * as the given language or language code
-	 * @since 5.0.0
-	 */
-	public function is(self|string $language): bool
-	{
-		return $this->code() === static::ensure($language)->code();
 	}
 
 	/**
@@ -325,11 +289,6 @@ class Language implements Stringable
 	 */
 	public function isDeletable(): bool
 	{
-		// a single-language object cannot be deleted
-		if ($this->isSingle() === true) {
-			return false;
-		}
-
 		// the default language can only be deleted if it's the last
 		if ($this->isDefault() === true && $this->isLast() === false) {
 			return false;
@@ -344,14 +303,6 @@ class Language implements Stringable
 	public function isLast(): bool
 	{
 		return App::instance()->languages()->count() === 1;
-	}
-
-	/**
-	 * Checks if this is the single language object
-	 */
-	public function isSingle(): bool
-	{
-		return $this->single;
 	}
 
 	/**
@@ -385,7 +336,11 @@ class Language implements Stringable
 			$file = $kirby->root('i18n:rules') . '/' . Str::before($code, '_') . '.json';
 		}
 
-		return Data::read($file, fail: false);
+		try {
+			return Data::read($file);
+		} catch (\Exception) {
+			return [];
+		}
 	}
 
 	/**
@@ -438,16 +393,9 @@ class Language implements Stringable
 	}
 
 	/**
-	 * Returns the permissions object for this language
-	 */
-	public function permissions(): LanguagePermissions
-	{
-		return new LanguagePermissions($this);
-	}
-
-	/**
 	 * Returns the absolute path to the language file
 	 */
+	#[BlockCollectionAccess]
 	public function root(): string
 	{
 		return App::instance()->root('languages') . '/' . $this->code() . '.php';
@@ -465,28 +413,31 @@ class Language implements Stringable
 
 	/**
 	 * Get slug rules for language
+	 * @internal
 	 */
 	public function rules(): array
 	{
 		$code = $this->locale(LC_CTYPE);
-
-		return [
-			...static::loadRules($code),
-			...$this->slugs()
-		];
+		$data = static::loadRules($code);
+		return array_merge($data, $this->slugs());
 	}
 
 	/**
 	 * Saves the language settings in the languages folder
+	 * @internal
 	 *
 	 * @return $this
 	 */
+	#[BlockCollectionAccess]
 	public function save(): static
 	{
-		$existingData = Data::read($this->root(), fail: false);
+		try {
+			$existingData = Data::read($this->root());
+		} catch (Throwable) {
+			$existingData = [];
+		}
 
-		$data = [
-			...$existingData,
+		$props = [
 			'code'         => $this->code(),
 			'default'      => $this->isDefault(),
 			'direction'    => $this->direction(),
@@ -495,6 +446,8 @@ class Language implements Stringable
 			'translations' => $this->translations(),
 			'url'          => $this->url,
 		];
+
+		$data = array_merge($existingData, $props);
 
 		ksort($data);
 
@@ -506,23 +459,9 @@ class Language implements Stringable
 	/**
 	 * Private siblings collector
 	 */
-	protected function siblingsCollection(): Languages
+	protected function siblingsCollection(): Collection
 	{
 		return App::instance()->languages();
-	}
-
-	/**
-	 * Create a placeholder language object in a
-	 * single-language installation
-	 */
-	public static function single(): static
-	{
-		return new static([
-			'code'    => 'en',
-			'default' => true,
-			'locale'  => App::instance()->option('locale', 'en_US.utf-8'),
-			'single'  => true
-		]);
 	}
 
 	/**
@@ -542,7 +481,8 @@ class Language implements Stringable
 	}
 
 	/**
-	 * Returns the most important properties as array
+	 * Returns the most important
+	 * properties as array
 	 */
 	public function toArray(): array
 	{
@@ -577,10 +517,20 @@ class Language implements Stringable
 
 	/**
 	 * Update language properties and save them
+	 * @internal
 	 */
+	#[BlockCollectionAccess]
 	public function update(array|null $props = null): static
 	{
 		$kirby = App::instance();
+		$user  = $kirby->user();
+
+		if (
+			$user === null ||
+			$user->role()->permissions()->for('languages', 'update') === false
+		) {
+			throw new PermissionException(['key' => 'language.update.permission']);
+		}
 
 		// don't change the language code
 		unset($props['code']);
@@ -588,27 +538,23 @@ class Language implements Stringable
 		// make sure the slug is nice and clean
 		$props['slug'] = Str::slug($props['slug'] ?? null);
 
-		// trigger before hook
-		$language = $kirby->apply(
-			'language.update:before',
-			[
-				'language' => $this,
-				'input'    => $props
-			]
-		);
-
-		// updated language object
-		$language = $language->clone($props);
+		$updated = $this->clone($props);
 
 		if (isset($props['translations']) === true) {
-			$language->translations = $props['translations'];
+			$updated->translations = $props['translations'];
 		}
 
-		// validate the language rules after before hook was applied
-		LanguageRules::update($language, $this);
+		// validate the updated language
+		LanguageRules::update($updated);
+
+		// trigger before hook
+		$kirby->trigger('language.update:before', [
+			'language' => $this,
+			'input' => $props
+		]);
 
 		// if language just got promoted to be the new default language…
-		if ($this->isDefault() === false && $language->isDefault() === true) {
+		if ($this->isDefault() === false && $updated->isDefault() === true) {
 			// convert the current default to a non-default language
 			$previous = $kirby->defaultLanguage()?->clone(['default' => false])->save();
 			$kirby->languages(false)->set($previous->code(), $previous);
@@ -618,20 +564,27 @@ class Language implements Stringable
 			}
 		}
 
-		$language = $language->save();
+		// if language was the default language and got demoted…
+		if (
+			$this->isDefault() === true &&
+			$updated->isDefault() === false &&
+			$kirby->defaultLanguage()->code() === $this->code()
+		) {
+			// ensure another language has already been set as default
+			throw new LogicException('Please select another language to be the primary language');
+		}
+
+		$language = $updated->save();
 
 		// make sure the language is also updated in the languages collection
 		$kirby->languages(false)->set($language->code(), $language);
 
 		// trigger after hook
-		$language = $kirby->apply(
-			'language.update:after',
-			[
-				'newLanguage' => $language,
-				'oldLanguage' => $this,
-				'input'       => $props
-			]
-		);
+		$kirby->trigger('language.update:after', [
+			'newLanguage' => $language,
+			'oldLanguage' => $this,
+			'input' => $props
+		]);
 
 		return $language;
 	}
@@ -640,19 +593,14 @@ class Language implements Stringable
 	 * Returns a language variable object
 	 * for the key in the translations array
 	 */
-	public function variable(
-		string $key,
-		bool $decode = false
-	): LanguageVariable {
+	public function variable(string $key, bool $decode = false): LanguageVariable
+	{
 		// allows decoding if base64-url encoded url is sent
 		// for compatibility of different environments
 		if ($decode === true) {
 			$key = rawurldecode(base64_decode($key));
 		}
 
-		return new LanguageVariable(
-			language: $this,
-			key:      $key
-		);
+		return new LanguageVariable($this, $key);
 	}
 }

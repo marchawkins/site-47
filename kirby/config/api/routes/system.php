@@ -14,20 +14,27 @@ return [
 		'auth'    => false,
 		'action'  => function () {
 			$system = $this->kirby()->system();
+			$model  = $this->resolve($system);
 
 			if ($this->kirby()->user()) {
-				return $system;
+				return $model->view('panel');
 			}
 
-			$info = match ($system->isOk()) {
-				true  => $this->resolve($system)->view('login')->toArray(),
-				false => $this->resolve($system)->view('troubleshooting')->toArray()
+			return match ($system->isOk()) {
+				true  => $model->view('login'),
+				false => $model->view('troubleshooting')
 			};
-
+		}
+	],
+	[
+		'pattern' => 'system/method-test',
+		'method'  => 'PATCH',
+		'action'  => function () {
 			return [
-				'status' => 'ok',
-				'data'   => $info,
-				'type'   => 'model'
+				'status' => match ($this->kirby()->request()->method()) {
+					'PATCH' => 'ok',
+					default => 'fail'
+				}
 			];
 		}
 	],
@@ -48,27 +55,19 @@ return [
 
 			// csrf token check
 			if ($auth->type() === 'session' && $auth->csrf() === false) {
-				throw new InvalidArgumentException(
-					message: 'Invalid CSRF token'
-				);
+				throw new InvalidArgumentException('Invalid CSRF token');
 			}
 
 			if ($system->isOk() === false) {
-				throw new Exception(
-					message: 'The server is not setup correctly'
-				);
+				throw new Exception('The server is not setup correctly');
 			}
 
 			if ($system->isInstallable() === false) {
-				throw new Exception(
-					message: 'The Panel cannot be installed'
-				);
+				throw new Exception('The Panel cannot be installed');
 			}
 
 			if ($system->isInstalled() === true) {
-				throw new Exception(
-					message: 'The Panel is already installed'
-				);
+				throw new Exception('The Panel is already installed');
 			}
 
 			// create the first user

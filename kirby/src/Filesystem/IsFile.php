@@ -62,9 +62,7 @@ trait IsFile
 			return $this->asset()->$method(...$arguments);
 		}
 
-		throw new BadMethodCallException(
-			message: 'The method: "' . $method . '" does not exist'
-		);
+		throw new BadMethodCallException('The method: "' . $method . '" does not exist');
 	}
 
 	/**
@@ -76,27 +74,23 @@ trait IsFile
 	}
 
 	/**
-	 * Returns the file asset object. A new object will be created if it doesn't
-	 * exist yet. The instance will be cached to avoid multiple instantiations,
-	 * when calling asset methods.
+	 * Returns the file asset object
 	 */
 	public function asset(array|string|null $props = null): File
 	{
-		return $this->asset ??= $this->assetFactory($props ?? []);
-	}
+		if ($this->asset !== null) {
+			return $this->asset;
+		}
 
-	/**
-	 * Creates a new asset object based on the file type
-	 */
-	protected function assetFactory(array|string $props = []): File|Image
-	{
+		$props ??= [];
+
 		if (is_string($props) === true) {
 			$props = ['root' => $props];
 		}
 
 		$props['model'] ??= $this;
 
-		return match ($this->type()) {
+		return $this->asset = match ($this->type()) {
 			'image' => new Image($props),
 			default => new File($props)
 		};

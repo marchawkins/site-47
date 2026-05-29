@@ -28,10 +28,12 @@ return [
 			$page = Find::page($id);
 
 			if ($page->blueprint()->num() !== 'default') {
-				throw new PermissionException(
-					key: 'page.sort.permission',
-					data: ['slug' => $page->slug()]
-				);
+				throw new PermissionException([
+					'key'  => 'page.sort.permission',
+					'data' => [
+						'slug' => $page->slug()
+					]
+				]);
 			}
 
 			return [
@@ -148,10 +150,12 @@ return [
 			$blueprints = $page->blueprints();
 
 			if (count($blueprints) <= 1) {
-				throw new Exception(
-					key: 'page.changeTemplate.invalid',
-					data: ['slug' => $id]
-				);
+				throw new Exception([
+					'key'  => 'page.changeTemplate.invalid',
+					'data' => [
+						'slug' => $id
+					]
+				]);
 			}
 
 			return [
@@ -260,17 +264,20 @@ return [
 
 			// the page title changed
 			if ($page->title()->value() !== $title) {
-				$page = $page->changeTitle($title);
+				$page->changeTitle($title);
 				$response['event'][] = 'page.changeTitle';
 			}
 
 			// the slug changed
 			if ($page->slug() !== $slug) {
-				$response['event'][] = 'page.changeSlug';
-
 				$newPage = $page->changeSlug($slug);
-				$oldUrl  = $page->panel()->url(true);
-				$newUrl  = $newPage->panel()->url(true);
+				$response['event'][] = 'page.changeSlug';
+				$response['dispatch'] = [
+					'content/move' => [
+						$oldUrl = $page->panel()->url(true),
+						$newUrl = $newPage->panel()->url(true)
+					]
+				];
 
 				// check for a necessary redirect after the slug has changed
 				if (Panel::referrer() === $oldUrl && $oldUrl !== $newUrl) {
@@ -365,9 +372,7 @@ return [
 				$page->childrenAndDrafts()->count() > 0 &&
 				$request->get('check') !== $page->title()->value()
 			) {
-				throw new InvalidArgumentException(
-					key: 'page.delete.confirm'
-				);
+				throw new InvalidArgumentException(['key' => 'page.delete.confirm']);
 			}
 
 			$page->delete(true);
@@ -380,6 +385,7 @@ return [
 
 			return [
 				'event'    => 'page.delete',
+				'dispatch' => ['content/remove' => [$url]],
 				'redirect' => $redirect
 			];
 		}
@@ -410,17 +416,19 @@ return [
 
 			if ($hasFiles === true) {
 				$fields['files'] = [
-					'label' => I18n::translate('page.duplicate.files'),
-					'type'  => 'toggle',
-					'width' => $toggleWidth
+					'label'    => I18n::translate('page.duplicate.files'),
+					'type'     => 'toggle',
+					'required' => true,
+					'width'    => $toggleWidth
 				];
 			}
 
 			if ($hasChildren === true) {
 				$fields['children'] = [
-					'label' => I18n::translate('page.duplicate.pages'),
-					'type'  => 'toggle',
-					'width' => $toggleWidth
+					'label'    => I18n::translate('page.duplicate.pages'),
+					'type'     => 'toggle',
+					'required' => true,
+					'width'    => $toggleWidth
 				];
 			}
 
@@ -432,11 +440,11 @@ return [
 			$duplicateSlug = $page->slug() . '-' . $slugAppendix;
 			$siblingKeys   = $page->parentModel()->childrenAndDrafts()->pluck('uid');
 
-			if (in_array($duplicateSlug, $siblingKeys, true) === true) {
+			if (in_array($duplicateSlug, $siblingKeys) === true) {
 				$suffixCounter = 2;
 				$newSlug       = $duplicateSlug . $suffixCounter;
 
-				while (in_array($newSlug, $siblingKeys, true) === true) {
+				while (in_array($newSlug, $siblingKeys) === true) {
 					$newSlug = $duplicateSlug . ++$suffixCounter;
 				}
 
@@ -542,13 +550,19 @@ return [
 		'submit' => function (string $id) {
 			$kirby    = App::instance();
 			$parentId = $kirby->request()->get('parent');
-			$parent   = (empty($parentId) === true || $parentId === '/' || $parentId === 'site://') ? $kirby->site() : Find::page($parentId);
+			$parent   = (empty($parentId) === true || $parentId === '/' || $parentId === 'site://') ? Find::site() : Find::page($parentId);
 			$oldPage  = Find::page($id);
 			$newPage  = $oldPage->move($parent);
 
 			return [
 				'event'    => 'page.move',
-				'redirect' => $newPage->panel()->url(true)
+				'redirect' => $newPage->panel()->url(true),
+				'dispatch' => [
+					'content/move' => [
+						$oldPage->panel()->url(true),
+						$newPage->panel()->url(true)
+					]
+				],
 			];
 		}
 	],
@@ -557,6 +571,8 @@ return [
 	'site.changeTitle' => [
 		'pattern' => 'site/changeTitle',
 		'load' => function () {
+			$site = Find::site();
+
 			return [
 				'component' => 'k-form-dialog',
 				'props' => [
@@ -568,14 +584,14 @@ return [
 					],
 					'submitButton' => I18n::translate('rename'),
 					'value' => [
-						'title' => App::instance()->site()->title()->value()
+						'title' => $site->title()->value()
 					]
 				]
 			];
 		},
 		'submit' => function () {
 			$kirby = App::instance();
-			$kirby->site()->changeTitle($kirby->request()->get('title'));
+			Find::site()->changeTitle($kirby->request()->get('title'));
 
 			return [
 				'event' => 'site.changeTitle',
@@ -629,7 +645,13 @@ return [
 	'changes' => [
 		'pattern' => 'changes',
 		'load'    => function () {
-			return (new ChangesDialog())->load();
+			$dialog = new ChangesDialog();
+			return $dialog->load();
 		},
+		'submit' => function () {
+			$dialog = new ChangesDialog();
+			$ids    = App::instance()->request()->get('ids');
+			return $dialog->submit($ids);
+		}
 	],
 ];

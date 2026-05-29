@@ -1,13 +1,12 @@
 <?php
 
-use Kirby\Panel\Lab\Doc;
 use Kirby\Panel\Lab\Docs;
 
 return [
 	'lab.docs' => [
 		'pattern' => 'lab/docs/(:any)',
 		'load'    => function (string $component) {
-			if (Docs::isInstalled() === false) {
+			if (Docs::installed() === false) {
 				return [
 					'component' => 'k-text-drawer',
 					'props' => [
@@ -16,12 +15,14 @@ return [
 				];
 			}
 
+			$docs = new Docs($component);
+
 			return [
 				'component' => 'k-lab-docs-drawer',
 				'props' => [
 					'icon' => 'book',
 					'title' => $component,
-					'docs'  => Doc::factory($component)->toArray()
+					'docs'  => $docs->toArray()
 				]
 			];
 		},
