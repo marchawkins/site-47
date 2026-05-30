@@ -27,4 +27,5 @@ jobs:
             --exclude='.git' \
             --exclude='.github' \
             --exclude='.DS_Store' \
+            --exclude ='health/'\
             ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u667712297/domains/marchawkins.com/public_html/
